@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- the following fields are technically required:
+        - provinz
+        - land 
+        - lit/lit_line
+        - sprache 
+        - bearbeiter
+        - datum
+        - textus
+     all other are optional.   
+     For additional explanations for data fields read the online help at:
+     http://edh-www.adw.uni-heidelberg.de/inschrift/erweiterteSuche
+-->
+<EDH xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://edh-www.adw.uni-heidelberg.de xml2edh.xsd">
+    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/1148">
+        <!-- content provider's URI of inscription -->
+        <tmUri>http://www.trismegistos.org/text/154495</tmUri>
+        <!-- trismegistos ID; integer number, max. 10 digits -->
+        <provinz>Bruttium et Lucania (Regio III)</provinz>
+        <!-- according to EDH province list only one of the following are valid values (trailing questionmark may be added):
+             - Aemilia (Regio VIII)
+             - Apulia et Calabria (Regio II)
+             - Arabia
+             - Armenia
+             - Asia
+             - Baetica
+             - Barbaricum
+             - Belgica
+             - Bithynia et Pontus
+             - Britannia
+             - Bruttium et Lucania (Regio III)
+             - Cappadocia
+             - Cilicia
+             - Corsica
+             - Creta
+             - Cyprus
+             - Cyrene
+             - Dacia
+             - Dalmatia
+             - Epirus
+             - Etruria (Regio VII)
+             - Galatia
+             - Germania inferior
+             - Germania superior
+             - Hispania citerior
+             - Provincia incerta
+             - Iudaea
+             - Latium et Campania (Regio I)
+             - Liguria (Regio IX)
+             - Lugdunensis
+             - Lusitania
+             - Lycia et Pamphylia
+             - Macedonia
+             - Mauretania Caesariensis
+             - Mauretania Tingitana
+             - Mesopotamia
+             - Moesia inferior
+             - Moesia superior
+             - Narbonensis
+             - Noricum
+             - Numidia
+             - Pannonia inferior
+             - Pannonia superior
+             - Picenum (Regio V)
+             - Raetia
+             - Regnum Bospori
+             - Roma
+             - Samnium (Regio IV)
+             - Sardinia
+             - Sicilia, Melita
+             - Syria
+             - Thracia
+             - Transpadana (Regio XI)
+             - Umbria (Regio VI)
+             - Venetia et Histria (Regio X)
+        -->
+        <land>United Kingdom</land>
+        <!-- according to EDH country list only one of the following are valid values (trailing questionmark may be added):
+            - Albania
+            - Algeria
+            - Andorra
+            - Armenia
+            - Austria
+            - Azerbaijan
+            - Belgium
+            - Bosnia and Herzegovina
+            - Bulgaria
+            - Croatia
+            - Cyprus
+            - Czech Republic
+            - Denmark
+            - Egypt
+            - France
+            - Georgia
+            - Germany
+            - Gibraltar
+            - Greece
+            - Hungary
+            - Iraq
+            - Israel
+            - Italy
+            - Jordan
+            - Kazakhstan
+            - Kosovo
+            - Kyrgyzstan
+            - Lebanon
+            - Libyan Arab Jamahiriya
+            - Liechtenstein
+            - Luxembourg
+            - Macedonia
+            - Malta
+            - Moldova
+            - Monaco
+            - Montenegro
+            - Morocco
+            - Netherlands
+            - Poland
+            - Portugal
+            - Romania
+            - Russia
+            - San Marino
+            - Saudi Arabia
+            - Serbia
+            - Slovakia
+            - Slovenia
+            - Spain
+            - Sudan
+            - Sweden
+            - Switzerland
+            - Syrian Arab Republic
+            - Tajikistan
+            - Tunisia
+            - Turkey
+            - Ukraine
+            - United Kingdom
+            - unknown
+            - Uzbekistan
+            - Vatican City State
+            - Yemen
+        -->
+        <fo_antik pleiades="http://pleiades.stoa.org/places/89152">Coriosopitum/Coria</fo_antik>
+        <!-- maxLength: 100 characters -->
+        <fo_modern geonames="http://www.geonames.org/2652382/corbridge.html">Corbridge</fo_modern>
+        <!-- maxLength: 70 characters -->
+        <fundjahr>1907</fundjahr>
+        <!-- 4 digit integer -->
+        <fundstelle>site VII</fundstelle>
+        <!-- maxLength: 90 characters -->
+        <aufbewahrung>Corbridge</aufbewahrung>
+        <!-- maxLength: 100 characters -->
+        <dekor/>
+        <!-- value "J" (capital 'J') if any kind of ornamentation exists/is used, otherwise leave blank -->
+        <i_gattung/>
+        <!-- only one of the following is valid (trailing questionmark may be added):
+             - Acclamation
+             - Adnuntiatio
+             - Assignation inscription
+             - Boundary inscription
+             - Building/dedicatory inscription
+             - Calendar
+             - Defixio
+             - Elogium
+             - Epitaph
+             - Honorific inscription
+             - Identification inscription
+             - Label
+             - List
+             - Mile-/Leaguestone
+             - Military diploma
+             - Owner/artist inscription
+             - Prayer
+             - Private legal inscription
+             - Public legal inscription
+             - Seat inscription
+             - Votive inscription
+        -->
+        <denkmaltyp>Slab</denkmaltyp>
+        <!-- only one of the following is valid (trailing questionmark may be added):
+             - Altar
+             - Architectural member
+             - Bar
+             - Base
+             - Bench
+             - Block
+             - Bust
+             - Cippus
+             - Cliff
+             - Cupa
+             - Diptych
+             - Fortification
+             - Fountain
+             - Grave monument
+             - Herm
+             - Honorific/votive arch
+             - Honorific/votive column
+             - Instrumentum domesticum
+             - Instrumentum militare
+             - Instrumentum sacrum
+             - Jewellery
+             - Mile-/Leaguestone
+             - Olla
+             - Paving stone
+             - Relief
+             - Sarcophagus
+             - Sculpture
+             - Shield
+             - Slab
+             - Statue
+             - Statue base
+             - Stele
+             - Table
+             - Tabula
+             - Tessera
+             - Tile
+             - Urn
+             - Weapon
+        -->
+        <material>Sandstone</material>
+        <!-- try to be as specific as possible by choosing a value of the lowest level
+        - Rocks
+            - indefinite
+            - Magmatic Rocks
+                 - Andesite
+                 - Aplit
+                 - Basalt
+                 - Granite
+                 - Porphyry
+                 - Syenite
+            - Metamorphic Rocks
+                 - Gneiss
+                 - Marble (colour indefinite)
+                 - Marble, white
+                 - Marble, veined / coloured
+                 - Quartzite
+                 - Slate
+                 - Soapstone
+            - Biological Sediments
+                 - Carbonaceous Limestone
+                 - Shell limestone
+            - Chemical Sediments
+                 - Oolite
+                 - Travertine
+            - Clastic Sediments
+                 - Breccia
+                 - Calc-Sinter / Alabaster
+                 - Calcareous Tuff
+                 - Conglomerate
+                 - Lime marl / marl
+                 - Limestone
+                 - Molasse
+                 - Sandstone
+            - Pyroclastic Sediments
+                 - Nenfro
+                 - Peperino
+                 - Trachytes
+                 - Volcanic Tuff
+            - Minerals
+                 - Agate
+                 - Carnelian
+                 - Haematite
+                 - Heliotrope
+                 - Jasper
+                 - Lapislazuli
+                 - Magnetite
+                 - Onyx
+                 - Opal
+                 - Sardonyx
+                 - Volcanic Tuff
+        - Metals
+            - indefinite
+            - Brass
+            - Bronze
+            - Copper
+            - Gold
+            - Iron
+            - Lead
+            - Silver
+            - Tin
+        - other materials / substances
+            - Amber
+            - Bone
+            - Clay
+            - Enamel
+            - Glass
+            - Ivory
+            - Leather
+            - Plaster
+            - Stucco
+            - Wax
+            - Wood
+        -->
+        <hoehe>86.4</hoehe>
+        <!-- height of inscription block in cm; float numbers, use dot; only one cipher after dot -->
+        <breite>109.2</breite>
+        <!-- widht of inscription blockin in cm; float numbers, use dot; only one cipher after dot -->
+        <tiefe/>
+        <!-- depth of inscription block in cm; float numbers, use dot; only one cipher after dot -->
+        <bh/>
+        <!-- height of letters in cm; float numbers, use dot; maxLength: 10 characters -->
+        <metrik/>
+        <!-- value "J" (capital 'J') if metrical inscription text, otherwise leave blank -->
+        <sprache>Latin</sprache>
+        <!-- language of inscription text; multivalue: one or more of the following (insert comma between values for multilingual inscriptions)
+            - Celtic
+            - Greek
+            - Hebrew
+            - Iberian
+            - Italic
+            - Latin
+            - Palmyrenic
+            - Punic
+        -->
+        <!-- dating: if an inscription can be dated exactly to a specific day, both datierung_von and datierung_bis should have the same value 
+                     for specifying ranges see online help http://edh-www.adw.uni-heidelberg.de/inschrift/suche
+        -->
+        <datierung_von>0210</datierung_von>
+        <!-- format: YYYY or YYYY-MM or YYYY-MM-DD, use negative year number for BC -->
+        <datierung_bis>0300</datierung_bis>
+        <!-- format: YYYY or YYYY-MM or YYYY-MM-DD, use negative year number for BC  -->
+        <soziales/>
+        <!-- 'J' if inscription has information about social / economic / legal history -->
+        <religion/>
+        <!-- numbers from 1 to 4 and combinations thereof are valid:
+                1 = pagan (pagan priests: 13)
+                2 = Judaeo-Christian
+                3 = priests (christian priests: 23)
+                4 = magic 
+        -->
+        <geographie/>
+        <!-- 'J' if in the inscription geographic data is mentioned, otherwise leave blank -->
+        <militaer/>
+        <!-- 'J' if in the inscription military data is mentioned, otherwise leave blank -->
+        <beleg/>
+        <!-- work status; one of the following:
+           	- completed - no image
+           	- completed - checked with drawing
+           	- completed - checked with photo
+           	- completed - checked through autopsy
+            - provisional
+        -->
+        <bearbeiter>SDV</bearbeiter>
+        <!-- last name of responsible individual -->
+        <datum>2011-06-11</datum>
+        <!-- date of last update; format: YYYY-MM-DD -->
+        <lit>
+            <!-- each bibliographic entry in a lit_line element; maxLength of lit_line: 200 characters; 
+                 split in 2 or more lit_lines if needed; last character of each entry must be dot 
+            -->
+            <lit_line>AE 1984, 0239.</lit_line>
+            <lit_line>L. Bove, RAAN 44, 1969, 43-49; fig. 8-10. - AE 1971.</lit_line>
+        </lit>
+        <kommentar>
+            <!-- maxLength of komm_line: 120 characters -->
+            <komm_line>The drawing enlarges the final letters of 4 and 6 (I and T) </komm_line>
+            <komm_line>to balance the
+                enlarged initial letters (S and L).</komm_line>
+            <komm_line>This is unlikely (cf. RIB 1147, where it does not occur); </komm_line>
+            <komm_line>the enlarged initial letters, like the leftward setting, simply mark
+                paragraphs, </komm_line>
+            <komm_line>a convention found in Roman manuscript documents.</komm_line>
+        </kommentar>
+        <personen>
+            <person n="1">
+                <!-- persons are numbered by attribute n starting by 1 -->
+                <name>Caes. [T.] Ael[io] Antonino A[ug.] Pi[o]</name>
+                <!-- maxLength: 240 characters -->
+                <praenomen>+</praenomen>
+                <!-- maxLength: 100 characters -->
+                <nomen>Aelius+</nomen>
+                <!-- maxLength: 100 characters -->
+                <cognomen/>
+                <!-- maxLength: 100 characters -->
+                <supernomen/>
+                <!-- maxLength: 100 characters -->
+                <tribus/>
+                <!-- one of the following:
+                    - Aelia
+                    - Aemilia
+                    - Aniensis
+                    - Arnensis
+                    - Camilia
+                    - Claudia
+                    - Clustumina
+                    - Collinaxs:ma
+                    - Cornelia
+                    - Esquilina
+                    - Fabia
+                    - Falerna
+                    - Galeria
+                    - Horatia
+                    - Lemonia
+                    - Maecia
+                    - Menenia
+                    - Oufentina
+                    - Palatina
+                    - Papiria
+                    - Pollia
+                    - Pomptina
+                    - Publilia
+                    - Pupinia
+                    - Quirina
+                    - Romilia
+                    - Sabatina
+                    - Scaptia
+                    - Sergia
+                    - Stellatina
+                    - Suburana
+                    - Sulpicia
+                    - Teretina
+                    - Tromentina
+                    - Ulpia
+                    - Velina
+                    - Voltinia
+                    - Voturia
+                -->
+                <origo/>
+                <!-- maxLength: 150 characters -->
+                <geschlecht>M</geschlecht>
+                <!-- gender: 'M' = male, 'W' = female ; trailing questionmark is allowed -->
+                <status>1</status>
+                <!-- social status of person; one of the following numbers:
+                    0 = emperor / imperial household
+                    1 = senatorial order
+                    2 = equestrian order
+                    3 = decurial order, holders of higher local ofﬁces
+                    4 = holders of lower local ofﬁces; administration of imperial holdings
+                    5 = Augustales
+                    6 = freedmen / freedwomen
+                    7 = slaves
+                    8 = rulers (foreign)
+                    9 = military personnel
+                -->
+                <beruf/>
+                <!-- 'J' if in the inscription occupation related data is mentioned, otherwise leave blank -->
+                <l_jahre/>
+                <!-- integer number -->
+                <l_monate/>
+                <!-- integer number -->
+                <l_tage/>
+                <!-- integer number -->
+                <l_stunden/>
+                <!-- integer number -->
+            </person>
+            <person n="2">
+                <name>Q. [Lolli] [Urbici]</name>
+                <praenomen/>
+                <nomen>Lollius+</nomen>
+                <cognomen>Urbicus+</cognomen>
+                <supernomen/>
+                <tribus/>
+                <origo/>
+                <geschlecht/>
+                <status/>
+                <beruf/>
+                <l_jahre/>
+                <l_monate/>
+                <l_tage/>
+                <l_stunden/>
+            </person>
+        </personen>
+        <!-- 
+            
+        
+        -->
+        <textus>Imp(eratori) Caes(ari) [T(ito)] Ael[io]
+            / Antonino A[ug(usto)] Pi[o] / III co(n)[s(uli)] [p(atri)] [p(atriae)] / sub cura
+            Q(uinti) [Lolli] [Urbici] / leg(ati) Au[g(usti)] [pr(o)] [pr(aetore)] / leg(io) II
+            A[ug(usta)] [fecit] </textus>
+    </record>
+</EDH>

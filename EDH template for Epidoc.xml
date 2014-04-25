@@ -1,0 +1,178 @@
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xml:space="preserve" xml:lang="de" xml:base="ex-epidoctemplate.xml" xmlns="http://www.tei-c.org/ns/1.0" >
+<!-- above: xml:lang="de" as I assume we are exporting the german  -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><!--HD Nr.--></title>
+            </titleStmt>  
+            <publicationStmt>
+                <idno type="URI"><!--HD - URI--></idno>
+                <idno type="URI">www.trismegistos.org/text/<!--TM_ID--></idno>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">Licensed 
+                        under a Creative Commons CC0 1.0 Universal  Public Domain Dedication licence.
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>
+                            <placeName type="modern" ref="<!--geonames uri Modern Country-->"><!--Modern Country--></placeName>
+                        </country>
+                        <region>
+                            <placeName type="modern" ref="<!--geonames uri Modern region-->"><!--Modern region--></placeName>
+                        </region>
+                        <settlement>
+                            <placeName ref="<!--geonames uri Modern findspot-->"><!--modern findspot--></placeName>                     
+                        </settlement>
+                        <repository ref="<!-- trismegistos collection uri-->"><!--present location--></repository>
+                        <collection></collection>
+                        <idno></idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType ref="<!--http://www.eagle-network.eu/voc/objtyp/lod/XX-->"><!--Type of Monument--></objectType>
+                                    <material ref="<!--http://www.eagle-network.eu/voc/material/lod/XX-->"><!--material--></material>
+                                    <p></p>
+                                    <dimensions unit="cm">
+                                        <height><!--height--></height>
+                                        <width><!--width--></width>
+                                        <depth><!--depth--></depth>
+                                    </dimensions>
+                                    <rs type="decoration" ref="<!--www.eagle-network.eu/voc/decoration/lod/XX-->"><!--decoration--></rs>
+                                    <rs type="statPreserv" ref="<!--www.eagle-network.eu/voc/statepreserv/lod/XX-->"></rs>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <rs type="execution" ref="<!--www.eagle-network.eu/voc/writing/lod/XX-->"><!--engraving tecnique--></rs>
+                                    <dimensions>
+                                        <width unit="cm"></width>
+                                        <height unit="cm"><!--letter size--></height>
+                                    </dimensions>
+                                    <rs type="metre"></rs>
+<!--                                   GUIDELINES | HEDERAE -->
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                               
+                                <height unit="cm"></height>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                    
+                    <history>
+                        <origin>
+                            <origPlace>
+                                <placeName ref="<!--TM geo ID | pleiades-->" type="provinceItalicRegion"><!--PROVINCE ITALIC REGION--></placeName>
+                                <placeName ref="<!--TM geo ID | pleiades-->"><!--ANCIENT FINDSPOT--></placeName>
+                            </origPlace>
+                            <origDate 
+                                notBefore-custom="<!--FROM format DD-MM-YYYY-->" 
+                                notAfter-custom="<!--TO format DD-MM-YYYY-->" 
+                                datingMethod="http://en.wikipedia.org/wiki/Julian_calendar" 
+                                period="www.eagle-network.eu/voc/dates/lod/XX">
+<!--                   any descriptive info on date, if any             -->
+<!--  when there is uncertainty: add into <origDate/>       <certainty level=”high” target=”..”/>                        -->
+                            </origDate>
+                           
+                        </origin>
+                        <provenance type="found">  
+                            <date when=""><!--YEAR OF FIND--></date>
+<!--    THE FOLLOWING INFORMATIONS ARE REPEATED IN THE MODEL. I THINK THERE IS NO NEED.
+                                
+                                <placeName ref="<!-\-geonames uri Modern findspot-\->"><!-\-modern findspot-\-></placeName> 
+                            <placeName type="modern" ref="<!-\-geonames uri Modern Country-\->"><!-\-Modern Country-\-></placeName>
+                            <placeName type="modern" ref="<!-\-geonames uri Modern region-\->"><!-\-Modern region-\-></placeName>-->
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc><!-- all this section can be standard and does not need any 
+            change by CP. it contains the change element which I think we can 
+            use to track revisions since no versioning repository is being used -->
+            
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+                <textClass>
+<keywords>
+    <term ref="<!--http://www.eagle-network.eu/voc/typeins/lod/XX-->"><!--Type of inscription--></term>
+</keywords>
+    </textClass>
+
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+                <language ident="sp">Spanish</language>
+                <!-- all other languages -->
+            </langUsage>
+        <creation>EAGLE - Europeana Network of Ancient Greek and Latin Epigraphy</creation></profileDesc>
+        <revisionDesc>
+         <change 
+             when="<!--last update format: YYYY-MM-DD-->" 
+             who="<!--responsible-->">
+             <!--WORK STATUS-->
+         </change>
+
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="<!--Foto in EDH url-->">
+            <desc><!--FOTO ID--></desc>
+        </graphic>
+        <graphic url="<!--external photo link-->">
+        </graphic>
+    </facsimile>
+    <text>
+        <body>
+                       
+            <div type="bibliography">
+                <listBibl>
+                    <!--Literature: if possible each entry as below-->
+                    <bibl>
+                        <ref target="<!--Bibliography URI-->"/>
+                        <!--publication name or abbreviation--> <citedRange><!--pages, images or number--></citedRange>
+                    </bibl>                    
+                </listBibl>
+            </div>
+            
+            
+            <div type="edition" xml:lang="<!--la | grc | both separated by comma-->">
+                <!--    TEXT
+                ESCAPED if possible (no &, < or > but the respective entities &amp; &lt; &gt;)-->
+            </div>
+
+            <div type="apparatus">
+                <p></p>
+            </div>
+
+            <div type="commentary">
+                <p><!--Commentary--></p>
+            </div>
+
+        </body>
+    </text>
+</TEI>
