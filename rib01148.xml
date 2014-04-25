@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xml:id="RIB01148" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>RIB 1148</title>
+                <editor>R. G. Collingwood</editor>
+                <editor>R. P. Wright</editor>
+                <editor role="addenda">R. S. O. Tomlin</editor>
+                <editor role="markup">Scott Vanderbilt</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority/>
+                <idno type="rib">1148</idno>
+                <idno type="filename">RIB01148</idno>
+                <idno type="nid">1166</idno>
+                <idno type="vid">1166</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">Licensed under a
+                        Creative Commons-Attribution 3.0 licence.</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>R. G. Collingwood</author> and <author>R. P. Wright</author>, addenda
+                    and corrigenda by <author>R. S. O. Tomlin</author>
+                    <ref target="bibC00001"><title level="m">The Roman Inscriptions of
+                            Britain</title></ref>, <biblScope unit="vol">i</biblScope>, <edition>new
+                        edition</edition>, <pubPlace>Stroud, Gloucestershire</pubPlace>:
+                        <publisher>Alan Sutton Publishing Limited</publisher>, <date>1995</date>.
+                        <biblScope unit="pp" facs="RIBv1pg0378.png RIBv1pg0379.png RIBv1pg0780.png"
+                        >378-379, 780</biblScope>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Corbridge</settlement>
+                        <institution key="db01969" ref="inst-corbridge-museum">Corbridge
+                            Museum</institution>
+                        <repository/>
+                        <idno type="accession">CO 23332</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang mainLang="la"/>
+                        <msItem class="#tbd">
+                            <p/>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType ana="#slab.dedication">Dedication-slab</objectType>
+                                    <material ana="#stone.sandstone.buff">sandstone</material>
+                                    <dimensions unit="m">
+                                        <width quantity="1.0922">1.0922 (incomplete)</width>
+                                        <height quantity="0.8636">0.8636</height>
+                                    </dimensions>
+                                    <p>Left-hand part, with four inscribed and three moulded
+                                        fragments.</p>
+                                    <rs type="decoration">hedera</rs>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout/>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote/>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>
+                                <placeName key="db01128">Corbridge</placeName>
+                            </origPlace>
+                            <origDate when-custom="0140" datingMethod="#julian"
+                                evidence="consulship">a.d. 140</origDate>
+                            <placeName type="ribSite" key="site-corbridge">Corbridge</placeName>
+                            <placeName type="ribSiteLatin" key="sitelat-coria"
+                                >Coria/Corstopitum</placeName>
+                        </origin>
+                        <provenance type="found">
+                            <placeName type="findspot" subtype="pleiades"
+                                ref="http://pleiades.stoa.org/places/89152"
+                                >Coriosopitum/Coria</placeName>
+                            <placeName type="findspot" subtype="geonames"
+                                ref="http://www.geonames.org/2652382/corbridge.html"
+                                >Corbridge</placeName>
+                            <date type="foundDate" when="1907">1907</date>
+                            <location type="findspot" precision="low" cert="low"
+                                source="Provisional">
+                                <geo decls="#WGS">54.978193 -2.029312</geo>
+                                <geo decls="#OS">NY 98222 64843</geo>
+                            </location>
+                            <p>Reused as a paving-slab in the east granary (<rs>site VII</rs>) at
+                                    <placeName key="db01128">Roman Corbridge</placeName>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                            <p>Once at <placeName key="db00947">Beaufront Castle</placeName>.</p>
+                        </provenance>
+                        <provenance type="lastLocation">
+                            <p>Now in <orgName key="db01969">Corbridge Museum</orgName>.</p>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <xi:include href="../include/include-taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for RIB controlled values</p>
+                </xi:fallback>
+            </xi:include>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <geoDecl xml:id="WGS" datum="WGS84">World Geodetic System</geoDecl>
+            <geoDecl xml:id="OS" datum="OSGB36">Ordnance Survey</geoDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en-uk">U.K. English</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+            <textClass/>
+            <textClass>
+                <keywords scheme="RIB">
+                    <term>
+                        <geogName type="ancientRegion" key="Britannia">Britannia</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="UK">United Kingdom</geogName>
+                    </term>
+                </keywords>
+            </textClass>
+            <creation>
+                <rs type="transcriber">Collingwood, Wright, Tomlin</rs>
+            </creation>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2011-06-11" who="SDV">Encoded print edition (EpiDoc RNG schema v.
+                8)</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <surface>
+            <figure>
+                <note type="credit">Drawn by <rs key="db00747">R. P. W.</rs>, <date when="1947"
+                        >1947</date>, from restoration drawn by <rs key="db00100">W.
+                    Bulmer</rs>.</note>
+                <note type="scale">
+                    <measure type="scale">
+                        <num type="fraction" value="0.0833">&#185;⁄&#8321;&#8322;</num>
+                    </measure>
+                </note>
+                <graphic url="RIB001148.png" width="1127px" height="582px"/>
+            </figure>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl>
+                        <ref target="bibC00978"><title>EE</title> ix</ref>
+                        <biblScope unit="item">1146</biblScope>
+                    </bibl>
+                    <bibl><author><rs key="db00300">Haverfield</rs></author> in <ptr
+                            target="bibC00100"/>
+                        <biblScope unit="pp">99</biblScope></bibl>
+                    <bibl>
+                        <ptr target="bibC00962"/>
+                        <citedRange unit="pp">262</citedRange>
+                        <biblScope unit="fig">fig. 8</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr target="bibC00966"/>
+                        <citedRange unit="pp">269</citedRange>
+                    </bibl>
+                    <bibl>
+                        <ptr target="bibC00980"/>
+                        <citedRange unit="pp">500</citedRange>
+                        <biblScope>no. 14</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr target="bibC00768"/>
+                        <citedRange unit="pp">123</citedRange>
+                        <biblScope unit="fig">pl. iii</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr target="bibC00275"/>
+                        <biblScope unit="pp">136 f.</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref target="bibA00263">
+                            <title>Trismegistos</title>
+                        </ref>
+                        <biblScope unit="dbid">155641</biblScope>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="edition" xml:lang="la" xml:space="preserve">
+                <ab type="original">Imp(eratori) Caes(ari) [T(ito)] Ael[io] | Antonino A[ug(usto)] Pi[o] | III co(n)[s(uli) p(atri) p(atriae)]
+                    | sub cura Q(uinti) [Lolli Urbici] | leg(ati) Au[g(usti) pr(o) pr(aetore) | leg(io) II A[ug(usta) fecit]</ab>
+                <ab type="markup">
+                    <lb n="1"/><w lemma="imperator"><expan>Imp<ex>eratori</ex></expan></w> <persName type="emperor"><name nymRef="#Caesar"><expan>Caes<ex>ari</ex></expan></name> <supplied reason="lost"><name nymRef="#Titus" type="praenomen"><expan>T<ex>ito</ex></expan></name></supplied> <name nymRef="#Aelius" type="gentilicium">Ael<supplied reason="lost">io</supplied></name>
+                    <lb n="2"/><name nymRef="#Antoninus">Antonino</name> <name nymRef="#Augustus">A<supplied reason="lost"><expan>ug<ex>usto</ex></expan></supplied></name> <name nymRef="#Pius">Pi<supplied reason="lost">o</supplied></name></persName>
+                    <lb n="3"/><hi rend="supraline"><num value="3">III</num></hi> <w lemma="consul"><expan>co<ex>n</ex></expan><supplied reason="lost"><expan>s<ex>uli</ex></expan></supplied></w> <supplied reason="lost"><w lemma="pater"><expan>p<ex>atri</ex></expan></w></supplied> <supplied reason="lost"><w lemma="patria"><expan>p<ex>atriae</ex></expan></w></supplied>
+                    <lb n="4"/><w lemma="sub">sub</w> <w lemma="cura">cura</w> <persName type="roman" role="governor"><name nymRef="#Quintus" type="praenomen"><expan>Q<ex>uinti</ex></expan></name> <supplied reason="lost"><name nymRef="#Lollius" type="gentilicium">Lolli</name></supplied> <name nymRef="#Urbicus" type="cognomen"><supplied reason="lost">Urbici</supplied></name></persName>
+                    <lb n="5"/><w lemma="legatus"><expan>leg<ex>ati</ex></expan></w> <w lemma="Augustus">Au<supplied reason="lost"><expan>g<ex>usti</ex></expan></supplied></w> <w lemma="pro"><supplied reason="lost"><expan>pr<ex>o</ex></expan></supplied></w> <w lemma="praetor"><supplied reason="lost"><expan>pr<ex>aetore</ex></expan></supplied></w>
+                    <lb n="6"/><orgName type="legion"><w lemma="legio"><expan>leg<ex>io</ex></expan></w> <hi rend="supraline"><num value="2">II</num></hi> <name nymRef="#Augusta">A<supplied reason="lost"><expan>ug<ex>usta</ex></expan></supplied></name></orgName> <w lemma="facio"><supplied reason="lost">fecit</supplied></w>
+                </ab>
+            </div>
+            <div type="translation" xml:lang="en" xml:space="preserve">
+                <ab>For the Emperor Caesar <persName type="emperor">Titus Aelius Antoninus Augustus Pius</persName>, in his third consulship, father of his country,
+                    under the charge of <persName key="db02505" type="roman">Quintus Lollius Urbicus</persName>, emperor's propraetorian legate,
+                    the <orgName key="db01920" type="auxiliary">Second Legion Augusta</orgName> built this.</ab>
+            </div>
+            <div type="commentary">
+                <p>
+                    <seg resp="bibC00001">The drawing enlarges the final letters of 4 and 6 (<c
+                            rend="diplo">I</c> and <c rend="diplo">T</c>) to balance the enlarged
+                        initial letters (<c rend="diplo">S</c> and <c rend="diplo">L</c>). This is
+                        unlikely (cf. <ref type="inscription">RIB 1147</ref>, where it does not
+                        occur); the enlarged initial letters, like the leftward setting, simply mark
+                            <quote>paragraphs</quote>, a convention found in Roman manuscript
+                        documents.</seg>
+                </p>
+            </div>
+            <div type="apparatus">
+                <p>
+                    <app loc="1-3">
+                        <rdg resp="db00300">imp · caes [·t ] ael [hadr] | antonino a[vg] pi[o tr p]
+                            | <hi rend="supraline">iii</hi> · co[s <hi rend="supraline">iii</hi> p
+                            p]</rdg>
+                        <note><rs key="db00300">F. H.</rs>;</note>
+                        <rdg resp="db00063">imp · caes [t] ael[io] | antonino a[vg] pi[o] | <hi
+                                rend="supraline">iii</hi> cos p p</rdg>
+                        <note>
+                            <rs key="db00063">Bir.</rs>
+                        </note>
+                    </app>
+                    <app loc="4">
+                        <rdg resp="db00063">[pro praet]</rdg>
+                        <note><rs key="db00063">Bir.</rs>;</note>
+                        <rdg resp="db00747">[pr pr]</rdg>
+                        <note>
+                            <rs key="db00747">R. P. W.</rs>
+                        </note>
+                    </app>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

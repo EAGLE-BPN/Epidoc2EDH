@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <head>
+        <title>RIB EDH TM txt</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>EDH</th>
+                <th>TM</th>
+                <th>RIB</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>1051</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>154495</td>
+                <td>1148</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>154496</td>
+                <td>1234</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>1235</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>154516</td>
+                <td>23</td>
+            </tr>
+        </table>
+    </body>
+</html>

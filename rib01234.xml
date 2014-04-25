@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xml:id="RIB01234" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>RIB 1234</title>
+                <editor>R. G. Collingwood</editor>
+                <editor>R. P. Wright</editor>
+                <editor role="addenda">R. S. O. Tomlin</editor>
+                <editor role="markup">Scott Vanderbilt</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority/>
+                <idno type="rib">1234</idno>
+                <idno type="filename">RIB01234</idno>
+                <idno type="nid">1252</idno>
+                <idno type="vid">1252</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">Licensed under a
+                        Creative Commons-Attribution 3.0 licence.</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>R. G. Collingwood</author> and <author>R. P. Wright</author>, addenda
+                    and corrigenda by <author>R. S. O. Tomlin</author>
+                    <ref target="bibC00001"><title level="m">The Roman Inscriptions of
+                            Britain</title></ref>, <biblScope unit="vol">i</biblScope>, <edition>new
+                        edition</edition>, <pubPlace>Stroud, Gloucestershire</pubPlace>:
+                        <publisher>Alan Sutton Publishing Limited</publisher>, <date>1995</date>.
+                        <biblScope unit="pp" facs="RIBv1pg0406.png RIBv1pg0407.png RIBv1pg0781.png"
+                        >406-407, 781</biblScope>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Newcastle upon Tyne</settlement>
+                        <institution key="db02595" ref="inst-great-north-museum-hancock">Great North
+                            Museum: Hancock</institution>
+                        <repository/>
+                        <idno type="accession">1845.4</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang mainLang="la"/>
+                        <msItem class="#tbd">
+                            <p n="provisional">Dedication-slab</p>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType ana="#slab.dedication">Dedication-slab</objectType>
+                                    <material ana="#stone.sandstone.buff">Buff sandstone</material>
+                                    <dimensions unit="m">
+                                        <width quantity="1.803">1.803</width>
+                                        <height quantity="1.245">1.245</height>
+                                        <depth quantity="0.1778">0.1778</depth>
+                                    </dimensions>
+                                    <dimensions n="original" unit="m">
+                                        <width quantity="1.803">1.803</width>
+                                        <height quantity="1.3462" precision="low">1.35</height>
+                                        <height quantity="0.1778">0.1778</height>
+                                    </dimensions>
+                                    <p>The sandstone has weathered badly.</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout/>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote/>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>
+                                <placeName key="db01578">Risingham</placeName>
+                            </origPlace>
+                            <origDate notBefore-custom="0205" notAfter-custom="0208"
+                                datingMethod="#julian" source="bibC00001" evidence="reign">a.d.
+                                205-about 208</origDate>
+                            <placeName type="ribSite" key="site-risingham">Risingham</placeName>
+                            <placeName type="ribSiteLatin" key="sitelat-habitancum"
+                                >Habitancum</placeName>
+                        </origin>
+                        <provenance type="found">
+                            <placeName type="findspot" subtype="pleiades"
+                                ref="http://pleiades.stoa.org/places/89196">Habitancum</placeName>
+                            <!-- Risingham not in GeoNames as of Feb. 2013 -->
+                            <date type="foundDate" when="1844">1844</date>
+                            <location type="findspot" precision="low" cert="low"
+                                source="Provisional">
+                                <geo decls="#WGS">55.170121 -2.17376</geo>
+                                <geo decls="#OS">NY 89030 86215</geo>
+                            </location>
+                            <p>At the south gateway of <placeName key="db01578"
+                                    >Risingham</placeName>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                            <p>Formerly in the <placeName key="db01944">Black Gate</placeName>.</p>
+                        </provenance>
+                        <provenance type="observed" resp="bibC00001">
+                            <p>Transferred to the <orgName key="db02021">Museum of Antiquities,
+                                    Newcastle upon Tyne</orgName>.</p>
+                        </provenance>
+                        <provenance type="lastLocation" when="2009" resp="SDV">
+                            <p>Now (<date>2009</date>) in the <orgName key="db02595">Great North
+                                    Museum: Hancock</orgName>.</p>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <xi:include href="../include/include-taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for RIB controlled values</p>
+                </xi:fallback>
+            </xi:include>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <geoDecl xml:id="WGS" datum="WGS84">World Geodetic System</geoDecl>
+            <geoDecl xml:id="OS" datum="OSGB36">Ordnance Survey</geoDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en-uk">U.K. English</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+            <textClass/>
+            <textClass>
+                <keywords scheme="RIB">
+                    <term>
+                        <geogName type="ancientRegion" key="Britannia">Britannia</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="UK">United Kingdom</geogName>
+                    </term>
+                </keywords>
+            </textClass>
+            <creation>
+                <rs type="transcriber">Collingwood, Wright, Tomlin</rs>
+            </creation>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2011-06-11" who="SDV">Encoded print edition (EpiDoc RNG schema v.
+                8)</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <surface>
+            <figure>
+                <note type="credit">Drawn by <rs key="db00140">R. G. C.</rs>, <date when="1927"
+                        >1927</date>.</note>
+                <note type="scale">
+                    <measure type="scale">
+                        <num type="fraction" value="0.0833">&#185;⁄&#8321;&#8322;</num>
+                    </measure>
+                </note>
+                <graphic url="RIB001234.png" width="1223px" height="832px"/>
+            </figure>
+            <figure>
+                <note type="credit">Reproduced from <ref target="bibC00427">Bruce
+                        <title>LS</title></ref>.</note>
+                <graphic url="RIB001234LS.png" width="2420px" height="1647px"/>
+            </figure>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl><ref target="bibA00092"><title>CIL</title> vii</ref>
+                        <biblScope unit="item">1003</biblScope>, <biblScope>addit.</biblScope>
+                        <biblScope unit="pp">p. 311</biblScope></bibl>
+                    <bibl>
+                        <ref target="bibA00146">
+                            <title>ILS</title>
+                        </ref>
+                        <biblScope unit="item">2618</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref target="bibC00427">
+                            <title>LS</title>
+                        </ref>
+                        <biblScope unit="item">626</biblScope>
+                    </bibl>
+                    <bibl><ptr target="bibA00101"/>, <biblScope unit="fasc">1</biblScope>.
+                            <biblScope unit="item">295</biblScope></bibl>
+                    <bibl>
+                        <ptr target="bibC00257"/>
+                        <citedRange unit="pp">20</citedRange>
+                        <biblScope unit="fig">pl. ii 3</biblScope>
+                    </bibl>
+                    <bibl><ptr target="bibC00413"/>
+                        <citedRange unit="pp">230</citedRange> with fig.</bibl>
+                    <bibl>
+                        <ptr target="bibC01250"/>
+                        <biblScope unit="pp">146</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr target="bibC01253"/>
+                        <citedRange unit="pp">315</citedRange>
+                    </bibl>
+                    <bibl>
+                        <ptr target="bibC01255"/>
+                        <citedRange unit="pp">129 n.</citedRange>
+                    </bibl>
+                    <bibl><ptr target="bibC00426"/>
+                        <biblScope unit="pp">336</biblScope> with fig.</bibl>
+                    <bibl><ptr target="bibC01511"/>
+                        <citedRange unit="pp">130</citedRange>
+                        <biblScope>no. 1</biblScope>, <biblScope unit="fig">pl. facing p.
+                            80</biblScope></bibl>
+                    <bibl>
+                        <ref target="bibC00366"><title>Cat.</title> (1920)</ref>
+                        <biblScope unit="item">no. 138</biblScope>
+                    </bibl>
+                    <bibl><ref target="bibC00580"><title>Cat.</title> (1926)</ref>
+                        <biblScope unit="item">no. 89</biblScope> with pl.</bibl>
+                    <bibl><ptr target="bibC00823"/>, <citedRange unit="pp">129</citedRange></bibl>
+                    <bibl>
+                        <ref target="bibC00174"><title>Cat.</title> (1990)</ref>
+                        <biblScope unit="item">no. 27</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr target="bibC00275"/>
+                        <biblScope unit="pp">189</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref target="bibA00263">
+                            <title>Trismegistos</title>
+                        </ref>
+                        <biblScope unit="dbid">155727</biblScope>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="edition" xml:lang="la" xml:space="preserve">
+                <ab type="original">[Imp(eratoribus) Caes(aribus) L(ucio) | Sept(imio) Severo Pio Pertin|aci Arab(ico) Adi]ab(enico) Part(h)[i]co Maxi(mo)
+                    | co(n)s(uli) III et M(arco) Aurel(io) Antonino Pio | co(n)s(uli) II Aug(ustis) et P(ublio) Sept(imio) Getae nob(ilissimo) Caes(ari)
+                    | portam cum muris vetustate di|lapsis iussu Alfeni Senecionis v(iri) c(larissimi) | co(n)s(ularis) curante Oclatinio Advento proc(uratore)
+                    | Aug(ustorum) n(ostrorum) coh(ors) I Vangion(um) m(illiaria) eq(uitata) | cum Aem[i]l(io) Salviano trib(uno) | suo a solo restit(uit)</ab>
+                <ab type="markup">
+                    <lb n="1"/><supplied reason="lost"><w lemma="imperator"><expan>Imp<ex>eratoribus</ex></expan></w></supplied> <supplied reason="lost"><w lemma="Caesar"><expan>Caes<ex>aribus</ex></expan></w></supplied> <persName type="emperor"><supplied reason="lost"><name nymRef="#Lucius" type="praenomen"><expan>L<ex>ucio</ex></expan></name></supplied>
+                    <name nymRef="#Septimius"><expan>Sept<ex>imio</ex></expan></name> <name nymRef="#Severus">Severo</name> <name nymRef="#Pius">Pio</name> <name nymRef="#Pertinax">Pertin<lb n="3" break="no"/><supplied reason="lost">aci</supplied></name> <supplied reason="lost"><name nymRef="#Arabicus"><expan>Arab<ex>ico</ex></expan></name></supplied> <name nymRef="#Adiabenicus"><supplied reason="lost">Adi</supplied><expan>ab<ex>enico</ex></expan></name> <name nymRef="#Parthicus"><expan>Part<ex>h</ex></expan><supplied reason="lost">i</supplied>co</name> <w lemma="maximus"><expan>Maxi<ex>mo</ex></expan></w></persName>
+                    <lb n="4"/><w lemma="consul"><expan>co<ex>n</ex>s</expan><expan><ex>uli</ex></expan></w> <hi rend="supraline"><num value="3">III</num></hi> <w lemma="et">et</w> <persName type="emperor"><name nymRef="#Marcus" type="praenomen"><expan>M<ex>arco</ex></expan></name> <name nymRef="#Aurelius" type="gentilicium"><expan>Aurel<ex>io</ex></expan></name> <name nymRef="#Antoninus">Antonino</name> <name nymRef="#Pius">Pio</name></persName>
+                    <lb n="5"/><w lemma="consul"><expan>co<ex>n</ex>s</expan><expan><ex>uli</ex></expan></w> <hi rend="supraline"><num value="2">II</num></hi> <w lemma="Augustus"><expan>Aug<ex>ustis</ex></expan></w> <del rend="erasure"><w lemma="et">et</w> <persName type="emperor"><name nymRef="#Publius" type="praenomen"><expan>P<ex>ublio</ex></expan></name> <name nymRef="#Septimius"><expan>Sept<ex>imio</ex></expan></name> <name nymRef="#Geta">Getae</name> <w lemma="nobilis"><expan>nob<ex>ilissimo</ex></expan></w> <name nymRef="#Caesar"><expan>Caes<ex>ari</ex></expan></name></persName></del>
+                    <lb n="6"/><w lemma="porta">portam</w> <w lemma="cum">cum</w> <w lemma="murus">muris</w> <w lemma="vetustas">vetustate</w> <w lemma="dilabor">di<lb n="7" break="no"/>lapsis</w> <w lemma="iussus">iussu</w> <persName type="roman" role="governor"><name nymRef="#Alfenus" type="gentilicium">Alfeni</name> <name nymRef="#Senecio" type="cognomen">Senecionis</name></persName> <w lemma="vir"><expan>v<ex>iri</ex></expan></w> <w lemma="clarus"><expan>c<ex>larissimi</ex></expan></w>
+                    <lb n="8"/><w lemma="consularis"><expan>co<ex>n</ex>s</expan><expan><ex>ularis</ex></expan></w> <w lemma="curo">curante</w> <persName type="roman" role="procurator"><name nymRef="#Oclatinius" type="gentilicium">Oclatinio</name> <name nymRef="#Adventus" type="cognomen">Advento</name></persName> <w lemma="procurator"><expan>proc<ex>uratore</ex></expan></w>
+                    <lb n="9"/><w lemma="Augustus"><expan><abbr>Aug</abbr><ex>ustorum</ex></expan></w> <w lemma="noster"><expan><abbr>n<am>n</am></abbr><ex>ostrorum</ex></expan></w> <orgName type="auxiliary"><w lemma="cohors"><expan>coh<ex>ors</ex></expan></w> <hi rend="supraline"><num value="1">I</num></hi> <name nymRef="#Vangiones"><expan>Vangion<ex>um</ex></expan></name> <w lemma="milliarius"><g type="milliaria"/></w> <w lemma="equito"><expan>eq<ex>uitata</ex></expan></w></orgName>
+                    <lb n="10"/><w lemma="cum">cum</w> <persName type="roman" role="tribune"><name nymRef="#Aemilius" type="gentilicium">Aem<supplied reason="lost">i</supplied><expan>l<ex>io</ex></expan></name> <name nymRef="#Salvianus" type="cognomen">Salviano</name></persName> <w lemma="tribunus"><expan>trib<ex>uno</ex></expan></w>
+                    <lb n="11"/><w lemma="suus">suo</w> <w lemma="a">a</w> <w lemma="solum">solo</w> <w lemma="restituo"><expan>restit<ex>uit</ex></expan></w>
+                </ab>
+            </div>
+            <div type="translation" xml:lang="en" xml:space="preserve">
+                <ab>For the Emperor-Caesars <persName type="emperor">Lucius Septimius Severus Pius Pertinax</persName>, conqueror of <region>Arabia</region>,
+                    conqueror of <region>Adiabene</region>, Most Great Conqueror of <region>Parthia</region>, thrice consul, Augustus, and
+                    <persName type="emperor">Marcus Aurelius Antoninus Pius</persName>, twice consul, Augustus, and for <persName type="emperor">Publius Septimius Geta</persName>,
+                    most noble Caesar, the <orgName key="db02262" type="auxiliary">First Cohort of Vangiones</orgName>, one thousand strong, part-mounted, restored from ground-level
+                    this gate with its walls, which had fallen in through age, at the command of <persName key="db02495" type="roman">Alfenus Senecio</persName>,
+                    of senatorial rank and consular governor, under the charge of <persName type="roman">Oclatinius Adventus</persName>, procurator of our Emperors,
+                    together with its own tribune <persName key="db02981" type="roman">Aemilius Salvianus</persName>.</ab>
+            </div>
+            <div type="commentary">
+                <p>
+                    <seg resp="bibC00001">For <persName type="roman">Oclatinius Adventus</persName>,
+                            <term>praetorian prefect</term> in <date when-custom="0217"
+                            datingMethod="#julian">217</date>, see <bibl>Pflaum <ref
+                                target="bibC01451"><title>CP</title></ref>, <biblScope unit="item"
+                                >No. 247 + add</biblScope></bibl>; <bibl>Birley <ref
+                                target="bibC00272"><title>Fasti</title></ref>
+                            <biblScope unit="pp">298-9</biblScope></bibl>; <bibl><ptr
+                                target="bibC01486"/>, <citedRange unit="pp"
+                            >243-9</citedRange></bibl>. For <persName key="db02981" type="roman"
+                            >Salvianus</persName> see <ref type="inscription">RIB 1215</ref>. In
+                        general cf. <ref type="inscription">RIB 1462</ref>.</seg>
+                </p>
+            </div>
+            <div type="apparatus">
+                <p>
+                    <app loc="6">
+                        <rdg resp="db00450">oclatini[o]</rdg>
+                        <note>McCaul;</note>
+                        <rdg resp="db00140">Oclatinio</rdg>
+                        <note>
+                            <rs key="db00140">R. G. C.</rs>
+                        </note>
+                    </app>
+                    <app loc="9">
+                        <rdg resp="db00261" type="transcript">Vang(i)onum</rdg>
+                        <note><ref target="bibC00823">Gordon</ref>.</note>
+                    </app>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

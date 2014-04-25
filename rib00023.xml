@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="RIB00023" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>RIB 23</title>
+                <editor>R. G. Collingwood</editor>
+                <editor>R. P. Wright</editor>
+                <editor role="markup">Scott Vanderbilt</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority/>
+                <idno type="rib">23</idno>
+                <idno type="filename">RIB00023</idno>
+                <idno type="nid">41</idno>
+                <idno type="vid">41</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">Licensed under a Creative Commons-Attribution 3.0 licence.</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>R. G. Collingwood</author> and <author>R. P. Wright</author>, addenda and corrigenda by <author>R. S. O.Tomlin</author>
+                    <ref target="bibC00001"><title level="m">The Roman Inscriptions of Britain</title></ref>, <biblScope unit="vol">i</biblScope>,
+                    <edition>new edition</edition>, <pubPlace>Stroud, Gloucestershire</pubPlace>: <publisher>Alan Sutton Publishing Limited</publisher>, <date>1995</date>.
+                    <biblScope unit="pp" facs="RIBv1pg0011.png">11</biblScope>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <institution key="db02953">(unknown)</institution>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang mainLang="la"/>
+                        <msItem class="#funerary.epitaph">
+                            <p>Funerary inscription for Tullia Numidia</p>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType ana="#stele">Tombstone</objectType>
+                                    <material ana="#stone.unspecified">Stone</material>
+                                    <dimensions unit="m"><width quantity="0.813">0.813</width><height quantity="0.356">0.356</height></dimensions>
+                                    <p>Fragment.</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout/>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote/>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace><placeName key="db01429">London</placeName></origPlace>
+                            <origDate notBefore-custom="0043" notAfter-custom="0410" datingMethod="#julian" source="provisional">a.d. 43-410</origDate>
+                            <placeName type="ribSite" key="site-london">London</placeName>
+                            <placeName type="ribSiteLatin" key="sitelat-londinium">Londinium</placeName>
+                        </origin>
+                        <provenance type="found">
+                            <placeName type="findspot" subtype="pleiades" ref="http://pleiades.stoa.org/places/79574">Londinium</placeName>
+                            <placeName type="findspot" subtype="geonames" ref="http://www.geonames.org/2643743/london.html">London</placeName>
+                            <date type="foundDate" when="1884">1884</date>
+                            <location type="findspot" precision="low" cert="low" source="Pastscape">
+                                <geo decls="#WGS">51.514922 -0.080441</geo>
+                                <geo decls="#OS">TQ 33291 81301</geo>
+                                <bibl>
+                                    <title ref="http://www.pastscape.org/hob.aspx?hob_id=966526">English Heritage Pastscape database monument number <idno>966526</idno></title>
+                                </bibl>
+                            </location>
+                            <p>In <name>Castle Street</name>, now <name>Goring Street</name>, <district>Houndsditch</district>.</p>
+                        </provenance>
+                        <provenance type="observed" notBefore="1889" notAfter="1890">
+                            <p>Seen in <date>1889 or 1890</date> by <rs key="db00300">Haverfield</rs> in <orgName key="db01993">Guildhall Museum</orgName>.</p>
+                        </provenance>
+                        <provenance type="lastLocation" subtype="lost">
+                            <p>Now lost.</p>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <xi:include href="../include/include-taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for RIB controlled values</p>
+                </xi:fallback>
+            </xi:include>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <geoDecl xml:id="WGS" datum="WGS84">World Geodetic System</geoDecl>
+            <geoDecl xml:id="OS" datum="OSGB36">Ordnance Survey</geoDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en-uk">U.K. English</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+            <textClass/>
+            <textClass>
+                <keywords scheme="RIB">
+                    <term><geogName type="ancientRegion" key="Britannia">Britannia</geogName></term>
+                    <term><geogName type="modernCountry" key="UK">United Kingdom</geogName></term>
+                </keywords>
+            </textClass>
+            <creation>
+                <rs type="transcriber">Collingwood, Wright</rs>
+            </creation>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2011-06-11" who="SDV">Encoded print edition (EpiDoc RNG schema v. 8)</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <surface>
+            <figure>
+                <note type="credit">Reproduced from <ref target="bibB00055">Haverfield's sketch</ref>;
+                    block lent by courtesy of the <orgName key="db02048">Royal Commission on Historical Monuments</orgName>.</note>
+                <note type="scale"><measure type="scale"><num type="fraction" value="0.0667">c. ¹⁄₁₅</num></measure></note>
+                <graphic url="RIB000023.png" width="607px" height="202px"/>
+            </figure>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl><ptr target="bibC00914"/> <biblScope unit="item">819</biblScope></bibl>
+                    <bibl><ptr target="bibC01853"/> <citedRange unit="pp">156</citedRange></bibl>
+                    <bibl><ptr target="bibB00055"/> <biblScope unit="vol">i</biblScope> (<date from="1889" to="1890">1890-90</date>) <biblScope unit="folio">f. 49</biblScope></bibl>
+                    <bibl><ptr target="bibC00597"/> <citedRange unit="pp">174</citedRange> <biblScope>no. 19</biblScope> <biblScope unit="fig">fig. 78</biblScope></bibl>
+                    <bibl><ref target="bibA00191"><title>Pastscape</title></ref> <biblScope unit="dbid">966526</biblScope></bibl>
+                    <bibl><ref target="bibA00263"><title>Trismegistos</title></ref> <biblScope unit="dbid">154516</biblScope></bibl>
+                </listBibl>
+            </div>
+            <div type="edition" xml:lang="la" xml:space="preserve">
+                <ab type="original">[D(is) M(anibus)] et memoria[e | T]ulliae Numidi[ae | pie]ntissime femin[e | . . .] is reliqua cau[. . .</ab>
+                <ab type="markup">
+                    <lb n="1"/><supplied reason="lost"><persName key="db04710" type="divine"><w lemma="deus"><expan>D<ex>is</ex></expan></w> <w lemma="manes"><expan>M<ex>anibus</ex></expan></w></persName></supplied> <w lemma="et">et</w> <w lemma="memoria">memoria<supplied reason="lost">e</supplied></w>
+                    <lb n="2"/><persName key="db04550" type="roman" role="decedent"><name nymRef="#Tullia" type="gentilicium"><supplied reason="lost">T</supplied>ulliae</name> <name nymRef="#Numidia" type="cognomen">Numidi<supplied reason="lost">ae</supplied></name></persName>
+                    <lb n="3"/><w lemma="pius"><supplied reason="lost">pie</supplied>ntissime</w> <w lemma="femina">femin<supplied reason="lost">e</supplied></w>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w>is</w> <w>reliqua</w> <w part="I">cau<gap reason="lost" extent="unknown" unit="character"/></w>
+                </ab>
+            </div>
+            <div type="translation" xml:lang="en" xml:space="preserve">
+                <ab>To the spirits of the departed and the memory of <persName key="db04550" type="roman">Tullia Numidia</persName>, most devoted woman [&#8230; .</ab>
+            </div>
+            <div type="commentary">
+                <p><rs key="db00300">Haverfield</rs> noted the late date of this text.</p>
+            </div>
+            <div type="apparatus">
+                <p>
+                    <app loc="2">
+                        <rdg resp="db00701">]eliae</rdg> <note><rs key="db00701">Watk.</rs>;</note>
+                        <rdg resp="db00300">]ulliae</rdg> <note><rs key="db00300">F. H.</rs></note>
+                    </app>
+                    <app loc="3">
+                        <rdg resp="db00701">reliqua cav[&#8230;</rdg> <note><rs key="db00701">Watk.</rs>;</note>
+                        <rdg resp="db00300">is reliqua · cav</rdg> <note><rs key="db00300">F. H.</rs></note>
+                    </app>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

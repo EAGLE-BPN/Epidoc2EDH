@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xml:id="RIB01235" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>RIB 1235</title>
+                <editor>R. G. Collingwood</editor>
+                <editor>R. P. Wright</editor>
+                <editor role="markup">Scott Vanderbilt</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority/>
+                <idno type="rib">1235</idno>
+                <idno type="filename">RIB01235</idno>
+                <idno type="nid">1253</idno>
+                <idno type="vid">1253</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">Licensed under a
+                        Creative Commons-Attribution 3.0 licence.</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>R. G. Collingwood</author> and <author>R. P. Wright</author>, addenda
+                    and corrigenda by <author>R. S. O. Tomlin</author>
+                    <ref target="bibC00001"><title level="m">The Roman Inscriptions of
+                            Britain</title></ref>, <biblScope unit="vol">i</biblScope>, <edition>new
+                        edition</edition>, <pubPlace>Stroud, Gloucestershire</pubPlace>:
+                        <publisher>Alan Sutton Publishing Limited</publisher>, <date>1995</date>.
+                        <biblScope unit="pp" facs="RIBv1pg0407.png">407</biblScope>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Newcastle upon Tyne</settlement>
+                        <institution key="db02595" ref="inst-great-north-museum-hancock">Great North
+                            Museum: Hancock</institution>
+                        <repository/>
+                        <idno type="accession">1849.15-21</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang mainLang="la"/>
+                        <msItem class="#building">
+                            <p n="provisional">Building inscription with dedication to Caracalla and
+                                Julia Domna</p>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType ana="#slab.dedication">Dedication-slab</objectType>
+                                    <material ana="#stone.sandstone.buff">Buff sandstone</material>
+                                    <dimensions unit="m">
+                                        <width quantity="5.715">5.715 m.</width>
+                                        <height quantity="0.8382">0.8382</height>
+                                    </dimensions>
+                                    <p>Fragments. It was originally composed of five slabs joining
+                                        vertically; portions survive of all but the right-hand slab.
+                                        Dimensisons are of original slabs taken together.</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout/>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote/>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>
+                                <placeName key="db01578">Risingham</placeName>
+                            </origPlace>
+                            <origDate when-custom="0213" datingMethod="#julian"
+                                evidence="prosopography">a.d. 213</origDate>
+                            <placeName type="ribSite" key="site-risingham">Risingham</placeName>
+                            <placeName type="ribSiteLatin" key="sitelat-habitancum"
+                                >Habitancum</placeName>
+                        </origin>
+                        <provenance type="found">
+                            <placeName type="findspot" subtype="pleiades"
+                                ref="http://pleiades.stoa.org/places/89196">Habitancum</placeName>
+                            <!-- Risingham not in GeoNames as of Feb. 2013 -->
+                            <date type="foundDate" when="1849">1849 (mostly)</date>
+                            <location type="findspot" precision="low" cert="low"
+                                source="Provisional">
+                                <geo decls="#WGS">55.170121 -2.17376</geo>
+                                <geo decls="#OS">NY 89030 86215</geo>
+                            </location>
+                            <p>In the <rs>Headquarters Building</rs> at <placeName key="db01578"
+                                    >Risingham</placeName>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                            <p>Formerly in the <placeName key="db01944">Black Gate</placeName>.</p>
+                        </provenance>
+                        <provenance type="observed" resp="bibC00001">
+                            <p>Transferred to the <orgName key="db02021">Museum of Antiquities,
+                                    Newcastle upon Tyne</orgName>.</p>
+                        </provenance>
+                        <provenance type="lastLocation" when="2009" resp="SDV">
+                            <p>Now (<date>2009</date>) in the <orgName key="db02595">Great North
+                                    Museum: Hancock</orgName>.</p>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <xi:include href="../include/include-taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for RIB controlled values</p>
+                </xi:fallback>
+            </xi:include>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <geoDecl xml:id="WGS" datum="WGS84">World Geodetic System</geoDecl>
+            <geoDecl xml:id="OS" datum="OSGB36">Ordnance Survey</geoDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en-uk">U.K. English</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+            <textClass/>
+            <textClass>
+                <keywords scheme="RIB">
+                    <term>
+                        <geogName type="ancientRegion" key="Britannia">Britannia</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="UK">United Kingdom</geogName>
+                    </term>
+                </keywords>
+            </textClass>
+            <creation>
+                <rs type="transcriber">Collingwood, Wright</rs>
+            </creation>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2011-06-11" who="SDV">Encoded print edition (EpiDoc RNG schema v.
+                8)</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <surface>
+            <figure>
+                <note type="credit">Drawn by <rs key="db00747">R. P. W.</rs> in <date when="1942"
+                        >1942</date>, with reconstruction based on <rs key="db00553">I. A.
+                        Richmond's</rs> plate.</note>
+                <note type="scale">
+                    <measure type="scale">
+                        <num type="fraction" value="0.0333">¹⁄₃₀</num>
+                    </measure>
+                </note>
+                <graphic url="RIB001235.png" width="1495px" height="215px"/>
+            </figure>
+            <figure>
+                <note type="credit">Reproduced from <ref target="bibC00427">Bruce
+                        <title>LS</title></ref>.</note>
+                <graphic url="RIB001235LS.png" width="2192px" height="647px"/>
+            </figure>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl><ref target="bibA00092"><title>CIL</title> vii</ref>
+                        <biblScope unit="item">1002</biblScope>, <biblScope>addit.</biblScope>
+                        <biblScope unit="pp">p. 311</biblScope></bibl>
+                    <bibl>
+                        <ref target="bibC00978"><title>EE</title> ix</ref>
+                        <biblScope unit="pp">p. 612</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref target="bibC00427">
+                            <title>LS</title>
+                        </ref>
+                        <biblScope unit="item">628</biblScope>
+                    </bibl>
+                    <bibl><ptr target="bibC00413"/>
+                        <citedRange unit="pp">235</citedRange>
+                        <biblScope>nos. 31-37</biblScope> with figs.</bibl>
+                    <bibl>
+                        <ptr target="bibC00286"/>
+                        <citedRange unit="pp">129</citedRange>
+                    </bibl>
+                    <bibl><ptr target="bibC01511"/>
+                        <citedRange unit="pp">135</citedRange>
+                        <biblScope>no. 19</biblScope>, with pl.</bibl>
+                    <bibl>
+                        <ptr target="bibC00275"/>
+                        <biblScope unit="pp">205 f.</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref target="bibC00580"><title>Cat.</title> (1926)</ref>
+                        <biblScope unit="item">no. 90</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref target="bibC00174"><title>Cat.</title> (1990)</ref>
+                        <biblScope unit="item">no. 28</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref target="bibA00263">
+                            <title>Trismegistos</title>
+                        </ref>
+                        <biblScope unit="dbid">155728</biblScope>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="edition" xml:lang="la" xml:space="preserve">
+                <ab type="original">[Imp(eratori) Caes(ari) di]vi Sept(imi) [Severi Pii Arabici Adi]abenic[i Parthici Maxi]mi Bri[tannici Maxi]mi filio di[vi Antonini Pii
+                    | Germanici] Sarmati[ci nepoti divi Anton]ini Pii pro[nepoti divi H]adriani a[bnep(oti) divi Traian]i Partichi et [ divi Nervae adnep(oti)
+                    | M(arco) Aurelio] Anton[ino Pio Fel(ici) Aug(usto) Parth]ico Maxim[o Britannico Maximo Germanico Maximo] trib(unicia) potesta[te XVI imperatori II
+                    | patri pat]ri(a)e proconsuli pro [pietate ac dev]otione com[muni e]t Iu[liae Domnae Piae Fel(ici) Aug(ustae) Ma]tri August[i nostri item
+                    | castroru]m senatus <surplus>h</surplus>ac patri(a)e pro [pi]etate <surplus>h</surplus>ac d[evoti]one [communi curante <del rend="erasure"><gap reason="lost" quantity="11" unit="character"/></del> leg(ato) Aug(ustorum) pr(o) pr(aetore)
+                    | coh(ors) I Van]gionum item Raeti Gae[sa]ti et Expl[oratores Habitancenses] posuerun[t d(evoti) n(umini) m(aiestati) q(ue) eorum</ab>
+                <ab type="markup">
+                    <lb n="1"/><supplied reason="lost"><w lemma="imperator"><expan>Imp<ex>eratori</ex></expan></w></supplied> <persName type="emperor"><supplied reason="lost"><name nymRef="#Caesar"><expan>Caes<ex>ari</ex></expan></name></supplied> <w lemma="divus"><supplied reason="lost">di</supplied>vi</w> <persName type="emperor"><name nymRef="#Septimius"><expan>Sept<ex>imi</ex></expan></name> <supplied reason="lost"><name nymRef="#Severus">Severi</name></supplied> <supplied reason="lost"><name nymRef="#Pius">Pii</name></supplied> <supplied reason="lost"><name nymRef="#Arabicus">Arabici</name></supplied> <name nymRef="#Adiabenicus"><supplied reason="lost">Adi</supplied>abenic<supplied reason="lost">i</supplied></name> <supplied reason="lost"><name nymRef="#Parthicus">Parthici</name></supplied> <w lemma="maximus"><supplied reason="lost">Maxi</supplied>mi</w> <name nymRef="#Britannicus">Bri<supplied reason="lost">tannici</supplied></name> <w lemma="maximus"><supplied reason="lost">Maxi</supplied>mi</w></persName> <w lemma="filius">filio</w> <w lemma="divus">di<supplied reason="lost">vi</supplied></w> <persName type="emperor"><supplied reason="lost"><name nymRef="#Antoninus">Antonini</name></supplied> <w lemma="pius"><supplied reason="lost">Pii</supplied></w>
+                    <lb n="2"/><supplied reason="lost"><name nymRef="#Germanicus">Germanici</name></supplied> <name nymRef="#Sarmaticus">Sarmati<supplied reason="lost">ci</supplied></name></persName> <w lemma="nepos"><supplied reason="lost">nepoti</supplied></w> <supplied reason="lost"><w lemma="divus">divi</w></supplied> <persName type="emperor"><name nymRef="#Antoninus"><supplied reason="lost">Anton</supplied>ini</name> <name nymRef="#Pius">Pii</name></persName> <w lemma="pronepos">pro<supplied reason="lost">nepoti</supplied></w> <supplied reason="lost"><w lemma="divus">divi</w></supplied> <persName type="emperor"><name nymRef="#Hadrianus"><supplied reason="lost">H</supplied>adriani</name></persName> <w lemma="abnepos">a<supplied reason="lost"><expan>bnep<ex>oti</ex></expan></supplied></w> <supplied reason="lost"><w lemma="divus">divi</w></supplied> <persName type="emperor"><name nymRef="#Traianus"><supplied reason="lost">Traian</supplied>i</name> <name nymRef="#Parthicus">Partichi</name></persName> <w lemma="et">et</w> <supplied reason="lost"><w lemma="divus">divi</w></supplied> <persName type="emperor"><supplied reason="lost"><name nymRef="#Nerva">Nervae</name></supplied></persName> <supplied reason="lost"><w lemma="adnepos"><expan>adnep<ex>oti</ex></expan></w></supplied>
+                    <lb n="3"/><supplied reason="lost"><name nymRef="#Marcus" type="praenomen"><expan>M<ex>arco</ex></expan></name></supplied> <supplied reason="lost"><name nymRef="#Aurelius" type="gentilicium">Aurelio</name></supplied> <name nymRef="#Antoninus">Anton<supplied reason="lost">ino</supplied></name> <supplied reason="lost"><name nymRef="#Pius">Pio</name></supplied> <supplied reason="lost"><name nymRef="#Felix"><expan>Fel<ex>ici</ex></expan></name></supplied> <supplied reason="lost"><name nymRef="#Augustus"><expan>Aug<ex>usto</ex></expan></name></supplied> <name nymRef="#Parthicus"><supplied reason="lost">Parth</supplied>ico</name> <w lemma="maximus">Maxim<supplied reason="lost">o</supplied></w> <supplied reason="lost"><name nymRef="#Britannicus">Britannico</name></supplied> <supplied reason="lost"><w lemma="maximus">Maximo</w></supplied> <supplied reason="lost"><name nymRef="#Germanicus">Germanico</name></supplied> <supplied reason="lost"><w lemma="maximus">Maximo</w></supplied></persName> <w lemma="tribunicius"><expan>trib<ex>unicia</ex></expan></w> <w lemma="potestas">potesta<supplied reason="lost">te</supplied></w> <supplied reason="lost"><hi rend="supraline"><num value="16">XVI</num></hi> <w lemma="imperator">imperatori</w> <hi rend="supraline"><num value="2">II</num></hi></supplied>
+                    <lb n="4"/><supplied reason="lost"><w lemma="pater">patri</w></supplied> <w lemma="patria"><supplied reason="lost">pat</supplied><expan>ri<ex>a</ex>e</expan></w> <w lemma="proconsularis">proconsuli</w> <w lemma="pro">pro</w> <supplied reason="lost"><w lemma="pietas">pietate</w></supplied> <supplied reason="lost"><w lemma="ac">ac</w></supplied> <w lemma="devotio"><supplied reason="lost">dev</supplied>otione</w> <w lemma="communis">com<supplied reason="lost">muni</supplied></w> <w lemma="et"><supplied reason="lost">e</supplied>t</w> <persName type="emperor"><name nymRef="#Iulia">Iu<supplied reason="lost">liae</supplied></name> <supplied reason="lost"><name nymRef="#Domna">Domnae</name></supplied> <supplied reason="lost"><name nymRef="#Pius">Piae</name></supplied> <supplied reason="lost"><name nymRef="#Felix"><expan>Fel<ex>ici</ex></expan></name></supplied> <supplied reason="lost"><name nymRef="#Augusta"><expan>Aug<ex>ustae</ex></expan></name></supplied></persName> <w lemma="mater"><supplied reason="lost">Ma</supplied>tri</w> <w lemma="Augustus">August<supplied reason="lost">i</supplied></w> <supplied reason="lost"><w lemma="noster">nostri</w></supplied> <supplied reason="lost"><w lemma="item">item</w></supplied>
+                    <lb n="5"/><w lemma="castrum"><supplied reason="lost">castroru</supplied>m</w> <w lemma="senatus">senatus</w> <w lemma="hic"><surplus>h</surplus>ac</w> <w lemma="patria"><expan>patri<ex>a</ex>e</expan></w> <w lemma="pro">pro</w> <w lemma="pietas"><supplied reason="lost">pi</supplied>etate</w> <w lemma="hic"><surplus>h</surplus>ac</w> <w lemma="devotio">d<supplied reason="lost">evoti</supplied>one</w> <supplied reason="lost"><w lemma="communis">communi</w></supplied> <supplied reason="lost"><w lemma="curo">curante</w></supplied> <supplied reason="lost"><del rend="erasure"><gap reason="lost" quantity="11" unit="character"/></del></supplied> <supplied reason="lost"><w lemma="legatus"><expan>leg<ex>ato</ex></expan></w></supplied> <w lemma="Augustus"><expan><abbr>Aug<am>g</am></abbr><ex>ustorum</ex></expan></w> <w lemma="pro"><supplied reason="lost"><expan>pr<ex>o</ex></expan></supplied></w> <w lemma="praetor"><supplied reason="lost"><expan>pr<ex>aetore</ex></expan></supplied></w>
+                    <lb n="6"/><orgName type="auxiliary" role="dedicator"><supplied reason="lost"><w lemma="cohors"><expan>coh<ex>ors</ex></expan></w> <hi rend="supraline"><num value="1">I</num></hi></supplied> <name nymRef="#Vangiones"><supplied reason="lost">Van</supplied>gionum</name></orgName> <w lemma="item">item</w> <orgName type="auxiliary" role="dedicator"><name nymRef="#Raeti">Raeti</name> <w lemma="gaesum">Gae<supplied reason="lost">sa</supplied>ti</w></orgName> <w lemma="et">et</w> <orgName type="auxiliary" role="dedicator"><w lemma="explorator">Expl<supplied reason="lost">oratores</supplied></w> <supplied reason="lost"><name nymRef="#Habitancum">Habitancenses</name></supplied></orgName> <w lemma="pono">posuerun<supplied reason="lost">t</supplied></w> <supplied reason="lost"><w lemma="devotus"><expan>d<ex>evoti</ex></expan></w></supplied> <w lemma="numen"><supplied reason="lost"><expan>n<ex>umini</ex></expan></supplied></w> <w lemma="maiestas"><supplied reason="lost"><expan>m<ex>aiestati</ex></expan></supplied></w> <w lemma="queo"><supplied reason="lost"><expan>q<ex>ue</ex></expan></supplied></w> <supplied reason="lost"><w lemma="is">eorum</w></supplied>
+                </ab>
+            </div>
+            <div type="translation" xml:lang="en" xml:space="preserve">
+                <ab>For the Emperor Caesar,
+                    son of the deified <persName type="emperor">Septimius Severus Pius</persName>, conqueror of Arabia, conqueror of Adiabene, Most Great Conqueror of Parthia,
+                    Most Great Conqueror of Britain, grandson of the deified <persName type="emperor">Antoninus Pius</persName>, conqueror of Germany, conqueror of Sarmatia,
+                    great-grandson of the deified <persName type="emperor">Antoninus Pius</persName>,
+                    great-great-grandson of the deified <persName type="emperor">Hadrian</persName>,
+                    great-great-great-grandson of the deified <persName type="emperor">Trajan</persName>, conqueror of Parthia,
+                    and of the deified <persName type="emperor">Nerva</persName>,
+                    <persName type="emperor">Marcus Aurelius Antoninus Pius Felix Augustus</persName>, Most Great Conqueror of Parthia, Most Great Conqueror of
+                    <region type="province">Britain</region>, Most Great Conqueror of Germany, in his sixteenth year of tribunician power, twice
+                    acclaimed Imperator, father of his country, proconsul, out of their joint duty and devotion,
+                    and for <persName type="emperor">Julia Domna Pia Felix Augusta</persName>, mother of our Emperor, likewise of the army, Senate and country,
+                    out of their joint duty and devotion, under the charge of &#8230;, imperial propraetorian legate, the
+                    <orgName key="db02262" type="auxiliary">First Cohort of Vangiones</orgName>, likewise the <orgName key="db02988" type="auxiliary">Raetian Spearmen</orgName>
+                    and the <orgName type="auxiliary">Scouts of Habitancum</orgName>, devoted to their divinity and majesty, set this up.</ab>
+            </div>
+            <div type="commentary">
+                <p>3. <seg xml:lang="la" rend="diplo">imperatori <hi rend="supraline">ii</hi></seg>:
+                        <seg xml:lang="la" rend="diplo">consuli <hi rend="supraline">iiii</hi></seg>
+                    has been omitted on the analogy of <ref type="inscription">RIB 1278</ref>
+                        (<placeName key="db01310">High Rochester</placeName>). It would also be
+                    possible to follow the analogy of <ref type="inscription">RIB 1705</ref>
+                        (<placeName key="db01702">Vindolanda</placeName>) and read <seg
+                        xml:lang="la" rend="diplo">cos <hi rend="supraline">iiii</hi> imp <hi
+                            rend="supraline">ii</hi></seg>, but this would make it necessary to
+                    abbreviate both titles, which is not the practice elsewhere on this stone <rs
+                        key="db00747">R. P. W.</rs></p>
+                <p>5. The names of the <term>governor</term>, <persName key="db02833" xml:lang="la"
+                        type="roman">C. Iulio Marco</persName>, have been deleted.</p>
+                <p>6. <seg xml:lang="la" rend="diplo">posuerunt</seg>
+                    <quote>seems to be spaced as if it were in fact the last (word), though it might
+                        be followed by some such phrase as <seg xml:lang="la" rend="diplo">d n m q
+                            eorum</seg></quote>
+                    <rs key="db00553">Richm.</rs>; this restoration is adopted here and represented
+                    in dotted letters <rs key="db00747">R. P. W.</rs></p>
+                <p>Of the three fragments which <rs key="db00346">Huebner</rs> quotes as unplaced,
+                    (i) is extant (<ref type="inscription">RIB 1232</ref>), and does not belong to
+                    this inscription; (h) fits in l. 5; (k) fits in l. 1.</p>
+                <p>For similar dedications in <date when-custom="0213" datingMethod="#julian">a.d.
+                        213</date> see note to <ref type="inscription">RIB 1202</ref>.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

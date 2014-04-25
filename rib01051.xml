@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xml:id="RIB01051" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>RIB 1051</title>
+                <editor>R. G. Collingwood</editor>
+                <editor>R. P. Wright</editor>
+                <editor role="addenda">R. S. O. Tomlin</editor>
+                <editor role="markup">Scott Vanderbilt</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Roman Inscriptions of Britain</authority>
+                <idno type="rib">1051</idno>
+                <idno type="filename">RIB01051</idno>
+                <idno type="nid">1069</idno>
+                <idno type="vid">1069</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">Licensed under a
+                        Creative Commons-Attribution 3.0 licence.</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>R. G. Collingwood</author> and <author>R. P. Wright</author>, addenda
+                    and corrigenda by <author>R. S. O. Tomlin</author>
+                    <ref target="bibC00001"><title level="m">The Roman Inscriptions of
+                            Britain</title></ref>, <biblScope unit="vol">i</biblScope>, <edition>new
+                        edition</edition>, <pubPlace>Stroud, Gloucestershire</pubPlace>:
+                        <publisher>Alan Sutton Publishing Limited</publisher>, <date>1995</date>.
+                        <biblScope unit="pp"
+                        facs="RIBv1pg0349.png RIBv1pg0350.png RIBv1pg0351.png RIBv1pg0778.png"
+                        >349-351, 778</biblScope>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Newcastle upon Tyne</settlement>
+                        <institution key="db02595">Great North Museum: Hancock</institution>
+                        <repository/>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang mainLang="la"/>
+                        <msItem class="#">
+                            <p n="provisional">Imperial dedication</p>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType ana="#panel.dedication">Dedication</objectType>
+                                    <material ana="#stone.sandstone.buff">Buff sandstone</material>
+                                    <p>Two fragments of buff sandstone from a large dedication. The
+                                        Saxon builders, in reusing (a), placed it face downwards and
+                                        carved the arms of a cross bordered by a cable mould on its
+                                        lower edge.</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout/>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote/>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>
+                                <district>Tyneside</district>
+                            </origPlace>
+                            <origDate/>
+                            <placeName type="ribSite" key="site-jarrow">Jarrow</placeName>
+                        </origin>
+                        <provenance type="found">
+                            <placeName type="findspot" subtype="pleiades"
+                                ref="http://pleiades.stoa.org/places/XXXXX">XXXXX</placeName>
+                            <placeName type="findspot" subtype="geonames"
+                                ref="http://www.geonames.org/7932559/st-paul-s-church-jarrow.html"
+                                >St. Paul's Church Jarrow</placeName>
+                            <date type="foundDate" when="1782">1782</date>
+                            <location type="findspot" precision="low" cert="low" source="Pastscape">
+                                <geo decls="#WGS">54.980363 -1.472181</geo>
+                                <geo decls="#OS">NZ 3388 6523</geo>
+                                <bibl>
+                                    <title ref="http://www.pastscape.org/hob.aspx?hob_id=955160"
+                                        >English Heritage Pastscape database monument number
+                                            <idno>955160</idno></title>
+                                </bibl>
+                            </location>
+                            <p>In restoring <placeName>Jarrow Church</placeName>.</p>
+                        </provenance>
+                        <provenance type="observed" resp="bibC00001" when="1965">
+                            <p>Both fragments transferred in <date when="1965">1965</date> to the
+                                    <orgName key="db02021">Museum of Antiquities</orgName>,
+                                    <placeName key="db01506">Newcastle upon Tyne</placeName> (<ptr
+                                    target="bibC02000"/>, 225).</p>
+                        </provenance>
+                        <provenance type="lastLocation" resp="SDV">
+                            <p>Now (<date when="2009">2009</date>) in the <orgName key="db02595"
+                                    >Great North Museum: Hancock</orgName>.</p>
+                        </provenance>
+                    </history>
+                    <msPart n="a">
+                        <msIdentifier/>
+                        <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <dimensions unit="m">
+                                            <width quantity="0.5588">0.5588</width>
+                                            <height quantity="0.5588">0.5588</height>
+                                        </dimensions>
+                                    </support>
+                                </supportDesc>
+                            </objectDesc>
+                        </physDesc>
+                        <history>
+                            <provenance type="observed">
+                                <p>Formerly in the <placeName key="db01944">Black
+                                    Gate</placeName>.</p>
+                            </provenance>
+                            <!--                            <provenance type="observed" resp="bibC00001">
+                                <p>Transferred to the <orgName key="db02021">Museum of Antiquities, Newcastle upon Tyne</orgName>.</p>
+                            </provenance>-->
+                        </history>
+                    </msPart>
+                    <msPart n="b">
+                        <msIdentifier/>
+                        <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <dimensions unit="m">
+                                            <width quantity="0.5842">0.5842</width>
+                                            <height quantity="0.5334">0.5334</height>
+                                        </dimensions>
+                                    </support>
+                                </supportDesc>
+                            </objectDesc>
+                        </physDesc>
+                        <history>
+                            <provenance type="observed">
+                                <p>Formerly at the <orgName key="db02053">Society of Antiquaries,
+                                        London</orgName>.</p>
+                            </provenance>
+                            <!--                            <provenance type="observed" resp="bibC00001" when="1965">
+                                <p>Transferred in <date when="1965">1965</date> to the <orgName key="db02021">Museum of Antiquities</orgName>,
+                                    <placeName key="db01506">Newcastle upon Tyne</placeName> (<ptr target="bibC02000"/>, 225).</p>
+                            </provenance>-->
+                        </history>
+                    </msPart>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!--<xi:include href="../include/include-taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for RIB controlled values</p>
+                </xi:fallback>
+            </xi:include>-->
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <geoDecl xml:id="WGS" datum="WGS84">World Geodetic System</geoDecl>
+            <geoDecl xml:id="OS" datum="OSGB36">Ordnance Survey</geoDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en-uk">U.K. English</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+            <textClass/>
+            <textClass>
+                <keywords scheme="RIB">
+                    <term>
+                        <geogName type="ancientRegion" key="Britannia">Britannia</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="UK">United Kingdom</geogName>
+                    </term>
+                </keywords>
+            </textClass>
+            <creation>
+                <rs type="transcriber">Collingwood, Wright, Tomlin</rs>
+            </creation>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2011-06-11" who="SDV">Encoded print edition (EpiDoc RNG schema v.
+                8)</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <surface>
+            <figure n="a">
+                <note type="credit">Drawn by <rs key="db00747">R. P. W.</rs>, <date when="1942"
+                        >1942</date>.</note>
+                <note type="scale">
+                    <measure type="scale">
+                        <num type="fraction" value="0.125">⅛</num>
+                    </measure>
+                </note>
+                <graphic url="RIB001051a.png" width="538px" height="559px"/>
+            </figure>
+            <figure n="b">
+                <note type="credit">Drawn by <rs key="db00747">R. P. W.</rs>, <date when="1942"
+                        >1942</date>.</note>
+                <note type="scale">
+                    <measure type="scale">
+                        <num type="fraction" value="0.125">⅛</num>
+                    </measure>
+                </note>
+                <graphic url="RIB001051b.png" width="599px" height="525px"/>
+            </figure>
+            <figure>
+                <note type="credit">Reconstruction-drawing by <persName key="db00553">I. A.
+                        Richmond</persName>, <date when="1942">1942</date>.</note>
+                <note type="scale">
+                    <measure type="scale">
+                        <num type="fraction" value="0.0833">&#185;⁄&#8321;&#8322;</num>
+                    </measure>
+                </note>
+                <graphic url="RIB001051.png" width="1071px" height="1200px"/>
+            </figure>
+            <figure n="a">
+                <note type="credit">Reproduced from <ref target="bibC00427">Bruce
+                        <title>LS</title></ref>.</note>
+                <graphic url="RIB001051LSaFront.png" width="1076px" height="1135px"/>
+            </figure>
+            <figure n="a">
+                <note type="credit">Reproduced from <ref target="bibC00427">Bruce
+                        <title>LS</title></ref>.</note>
+                <graphic url="RIB001051LSaEdge.png" width="382px" height="1134px"/>
+            </figure>
+            <figure n="b">
+                <note type="credit">Reproduced from <ref target="bibC00427">Bruce
+                        <title>LS</title></ref>.</note>
+                <graphic url="RIB001051LSb.png" width="1213px" height="1195px"/>
+            </figure>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl>
+                        <ref target="bibA00092"><title>CIL</title> vii</ref>
+                        <biblScope unit="item">498b, a</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr target="bibC01969"/>
+                        <citedRange unit="pp">78</citedRange>
+                        <biblScope unit="fig">fig. 16</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref target="bibC00427">
+                            <title>LS</title>
+                        </ref>
+                        <biblScope unit="item">539, 538</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr target="bibC00398"/>
+                        <biblScope unit="vol">ii</biblScope>
+                        <biblScope unit="pp">63, 590</biblScope>
+                    </bibl>
+                    <bibl><ptr target="bibC01038"/>, <biblScope unit="vol">iii</biblScope>
+                        <biblScope unit="pp">231</biblScope></bibl>
+                    <bibl>
+                        <ptr target="bibC01724"/>
+                        <biblScope unit="vol">ii</biblScope>
+                        <biblScope unit="pp">68</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr target="bibC01255"/>
+                        <citedRange unit="pp">112</citedRange>
+                    </bibl>
+                    <bibl>
+                        <ptr target="bibC01447"/>
+                        <citedRange unit="pp">17</citedRange>
+                    </bibl>
+                    <bibl><ptr target="bibC01536"/>
+                        <citedRange unit="pp">93</citedRange>, <biblScope unit="fig">figs. 1-3 pl.
+                            iii</biblScope></bibl>
+                    <bibl><ptr target="bibC00340"/>, <biblScope unit="pp">159</biblScope></bibl>
+                    <bibl><ptr target="bibC00272"/>, <biblScope unit="pp">205-6</biblScope></bibl>
+                    <bibl><ptr target="bibC02000"/>, <citedRange unit="pp">225</citedRange></bibl>
+                    <bibl>
+                        <ref target="bibA00118">
+                            <title>EDH</title>
+                        </ref>
+                        <biblScope unit="dbid">HD019553</biblScope>
+                    </bibl>
+                </listBibl>
+                <listBibl n="a">
+                    <bibl>
+                        <ptr target="bibC01039"/>
+                        <biblScope unit="pp">50</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr target="bibC00366"/>
+                        <citedRange unit="pp">4</citedRange>
+                        <biblScope unit="item">no. 1</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr target="bibC00580"/>
+                        <citedRange unit="pp">77</citedRange>
+                        <biblScope unit="item">no. 81</biblScope>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="edition" xml:lang="la" xml:space="preserve">
+                <ab type="original">[Divorum] omnium fil[ius
+                    | imp(erator) Caesar Traianus] Hadr[ianus
+                    | Augustus imposit]a necessitate imperii
+                    | intra fines conser]vati [div]ino pr[aecepto
+                    | . . . c]o(n)s(ul) II[I . . .
+                    | (about seven lines lost)
+                    | diffusis [barbaris et]
+                      | provinc[ia reciperata]
+                      | Britannia ad[didit limitem inter]
+                      | utrumque O[ceani litus per m(ilia) p(assuum) LXXX]
+                      | exercitus pr[ovinciae opus valli fecit]
+                      | sub cur[a A(uli) Platori Nepotis leg(ati) Aug(usti) pr(o) pr(aetore)]</ab>
+                <ab type="markup">
+                    <lb n="1"/><supplied reason="lost"><w lemma="divus">Divorum</w></supplied> <w lemma="omnis">omnium</w> <w lemma="filius">fil<supplied reason="lost">ius</supplied></w>
+                    <supplied reason="lost"><w lemma="imperator"><expan>im<lb n="2" break="no"/>p<ex>erator</ex></expan></w></supplied> <persName type="emperor"><supplied reason="lost"><name nymRef="Caesar">Caesar</name> <name nymRef="Traianus">Traianus</name></supplied> <name nymRef="Hadrianus">Hadr<supplied reason="lost">ianus</supplied></name>
+                    <lb n="3"/><supplied reason="lost"><name nymRef="Augustus">Augustus</name></supplied></persName> <w lemma="impono"><supplied reason="lost">imposit</supplied>a</w> <w lemma="necessitas">necessitat<supplied reason="lost">e</supplied></w> <supplied reason="lost"><w lemma="imperium">imperii</w></supplied>
+                    <lb n="4"/><supplied reason="lost"><w lemma="intro">intra</w> <w lemma="finis">fines</w></supplied> <w lemma="conservo"><supplied reason="lost">conser</supplied>vati</w> <w lemma="divinus"><supplied reason="lost">div</supplied>ino</w> <w lemma="praeceptum">pr<supplied reason="lost">aecepto</supplied></w>
+                    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="consul"><supplied reason="lost">c</supplied><expan>o<ex>n</ex>s</expan><expan><ex>ul</ex></expan></w> <num value="3">II<supplied reason="lost">I</supplied></num> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="6"/><gap reason="lost" quantity="7" unit="line" precision="low"/>
+                    <lb n="7"/><w lemma="diffusus">diffusis</w> <supplied reason="lost"><w lemma="barbarus">barbaris</w> <w lemma="et">et</w></supplied>
+                    <lb n="8"/><w lemma="provincia">provinc<supplied reason="lost">ia</supplied></w> <supplied reason="lost"><w lemma="recipero">reciperata</w></supplied>
+                    <lb n="9"/><region><name nymRef="Britannia">Britannia</name></region> <w lemma="addo">ad<supplied reason="lost">didit</supplied></w> <supplied reason="lost"><w lemma="limes">limitem</w> <w lemma="inter">inter</w></supplied>
+                    <lb n="10"/><w lemma="uter que">utrumque</w> <w lemma="Oceanus">O<supplied reason="lost">ceani</supplied></w> <supplied reason="lost"><w lemma="litus">litus</w> <w lemma="per">per</w> <w lemma="mille"><expan>m<ex>ilia</ex></expan></w> <w lemma="passus"><expan>p<ex>assuum</ex></expan></w> <num value="80">LXXX</num></supplied>
+                    <lb n="11"/><w lemma="exercitus">exercitus</w> <w lemma="provincia"><unclear>pr</unclear><supplied reason="lost">ovinciae</supplied></w> <supplied reason="lost"><w lemma="opus">opus</w> <w lemma="vallum">valli</w> <w lemma="facio">fecit</w></supplied>
+                    <lb n="12"/><w lemma="sub">sub</w> <w lemma="cura">cur<supplied reason="lost">a</supplied></w> <supplied reason="lost"><persName type="roman"><name nymRef="Aulus" type="praenomen"><expan>A<ex>uli</ex></expan></name> <name nymRef="Platorius" type="gentilicium">Platori</name> <name nymRef="Nepos" type="cognomen">Nepotis</name></persName> <w lemma="legatus"><expan>leg<ex>ati</ex></expan></w> <w lemma="Augustus"><expan>Aug<ex>usti</ex></expan></w> <w lemma="pro"><expan>pr<ex>o</ex></expan></w> <w lemma="praetor"><expan>pr<ex>aetore</ex></expan></w></supplied>
+                </ab>
+            </div>
+            <div type="translation" xml:lang="en" xml:space="preserve">
+                <ab>Son of all the deified emperors, the <persName>Emperor Caesar Trajan Hadrian Augustus</persName>, after the necessity of keeping
+                    the empire within its limits had been laid upon him by divine precept . . . thrice consul . . . : after the barbarians had been
+                    dispersed and the province of <region type="province">Britain</region> had been recovered, he added a frontier-line between
+                    either shore of the Ocean for 80 miles. The army of the province built this defence-work under the charge of
+                    <persName key="db02489">Aulus Platorius Nepos</persName>, emperor's pro-praetorian legate.</ab>
+            </div>
+            <div type="commentary">
+                <p>5. <persName key="db00782">Hadrian</persName> was <term>consul III</term> from
+                        <date from-custom="0119" datingMethod="#julian">a.d. 119 onwards</date>.</p>
+                <p>Derived from some prominent site on <district>Tyneside</district>.</p>
+                <p><ref target="bibC01038">Hodgson ii</ref>, iii 230 and <ref target="bibC01447"
+                        >Petch loc. cit.</ref> incline to regard <ref target="site-jarrow"
+                            ><placeName key="db01354">Jarrow</placeName></ref> as the site of a
+                    Roman fort. Limited excavations in <date when="1935">1935</date> produced no
+                    evidence to support this view (<ptr target="bibC01959"/> 343).</p>
+                <p>For a full discussion of this narrative-inscription which comprised at least 12
+                    lines and probably 18 and commemorated the policy of the <persName key="db00782"
+                            ><term>Emperor</term> Hadrian</persName> in <region type="province"
+                        >Britain</region>, the re-establishment of the frontier, and the building of
+                        <rs key="db01770">the Wall</rs> see <ref target="bibC01536"><rs
+                            key="db00553">Richmond</rs> and <rs key="db00747">Wright</rs> loc.
+                        cit.</ref></p>
+                <p>It presumably formed part of a <term xml:lang="la">tropaeum</term>, or
+                    war-memorial, which would be situated on high ground somewhere near the eastern
+                    end of <placeName key="db01770">Hadrian's Wall</placeName>
+                    <rs key="db00747">R. P. W.</rs></p>
+                <p>
+                    <seg resp="bibC00001">Note that <ref type="inscription">1051</ref>(a) retains
+                        part of the top margin, and that <ref type="inscription">1051</ref>(b) is
+                        obviously cut by a different mason. <ptr target="bibC00340"/>, 159, by
+                        implication took the ligatures of <w xml:lang="la" rend="diplo"
+                            >exercitus</w> in b5 to be <date notBefore-custom="0201"
+                            notAfter-custom="0300" datingMethod="#julian">third-century</date>; but
+                            <ref type="inscription">RIB 1340</ref> provides a <date period="db02499"
+                            >Hadrianic</date> parallel, and cf. <ref type="inscription">RIB
+                            1743</ref> (with note below). <rs key="db00063">Birley</rs> also
+                        observed that <seg xml:lang="la" rend="diplo">hadr</seg> in a2 is cut in
+                        smaller letters than <quote>any of the others</quote> [in fact a4 is
+                        slightly smaller], and suggested that this was a <date period="db02501"
+                            >Severan</date> inscription which referred to <persName key="db00782"
+                            >Hadrian</persName> as the original builder. (<ptr target="bibC00272"/>,
+                        205-6, notes a possible echo of <ref type="inscription">RIB 1051(b)</ref> in
+                            <date notBefore-custom="0301" notAfter-custom="0400"
+                            datingMethod="#julian">fourth-century</date> literary references to the
+                            <date period="db02501">Severan</date> wall.) <rs key="db00747">R. P.
+                            W.</rs> and <persName key="db00553">Richmond</persName> (<date
+                            when="1963-07-17">17 July 1963</date>) still maintained that both
+                        fragments belonged to a single <date period="db02499">Hadrianic</date>
+                        monument cut by two masons: they stressed the difficulty of restoring
+                            <persName key="db00799">Septimius Severus'</persName> name and titles in
+                        a1, the top of the inscription, without however addressing the problem that
+                            <quote>Hadrian</quote> in a2 is cut in smaller letters than b1-5. While
+                        nothing better than their reconstruction has yet been offered, it must be
+                        regarded as far from certain.</seg>
+                </p>
+            </div>
+            <div type="apparatus">
+                <p>
+                    <app loc="a 1">
+                        <rdg resp="db00082 db00553 db00747">. fil</rdg>
+                        <note><ref target="bibC00398">Brand</ref>, <ref target="bibC01536">Richm.
+                                and Wright</ref>;</note>
+                        <rdg resp="db00346">fid[em]</rdg>
+                        <note>
+                            <ref target="bibA00092">Hueb.</ref>
+                        </note>
+                    </app>
+                    <app loc="a 3">
+                        <rdg resp="db00346">a · necessitat</rdg>
+                        <note>
+                            <ref target="bibA00092">Hueb.</ref>
+                        </note>
+                    </app>
+                    <app loc="a 4">
+                        <rdg resp="db00082">vatis . . . ii</rdg>
+                        <note><ref target="bibC00398">Brand</ref>;</note>
+                        <rdg resp="db00092">vatisv . . incrr</rdg>
+                        <note><ref target="bibC00427">Bruce</ref>;</note>
+                        <rdg resp="db00346">vatisevnorp</rdg>
+                        <note><ref target="bibA00092">Hueb.</ref>;</note>
+                        <rdg resp="db00140">vatis · inopr</rdg>
+                        <note>R. G. C.;</note>
+                        <rdg resp="db00553 db00747">vati [div]ino pr</rdg>
+                        <note><ref target="bibC01536">Richm. and Wright</ref>.</note>
+                    </app>
+                    <app loc="a 5">
+                        <rdg resp="db00082">sitf . . . ii</rdg>
+                        <note><ref target="bibC00398">Brand</ref>;</note>
+                        <rdg resp="db00092">ii . p . . . ininc</rdg>
+                        <note><ref target="bibC00427">Bruce</ref>;</note>
+                        <rdg resp="db00346">. . fv . . . inc</rdg>
+                        <note><ref target="bibA00092">Hueb.</ref>;</note>
+                        <rdg resp="db00140">p · ii · f · icipatiic</rdg>
+                        <note>R. G. C.;</note>
+                        <rdg resp="db00553 db00747">c]osii . . . . iii . iii</rdg>
+                        <note><ref target="bibC01536">Richm. and Wright</ref>.</note>
+                    </app>
+                    <app loc="a 6">
+                        <rdg resp="db00092">ii . . .</rdg>
+                        <note><ref target="bibC00427">Bruce</ref>;</note>
+                        <rdg resp="db00346">. . p . . .</rdg>
+                        <note><ref target="bibA00092">Hueb.</ref>;</note>
+                        <rdg resp="db00140">iii . is . ic ia</rdg>
+                        <note><rs key="db00140">R. G. C.</rs>;</note>
+                        <rdg resp="db00553 db00747">. . ii[i . . .</rdg>
+                        <note><ref target="bibC01536">Richm. and Wright</ref>.</note>
+                    </app>
+                    <app loc="b 4">
+                        <rdg resp="db00082">o[stium]</rdg>
+                        <note><ref target="bibC00398">Brand</ref>;</note>
+                        <rdg resp="db00324">o[ceanum]</rdg>
+                        <note><ref target="bibC01038">Hodg.</ref>;</note>
+                        <rdg resp="db00346 db00553 db00747">o[ceani litus]</rdg>
+                        <note><ref target="bibA00092">Hueb.</ref>, <ref target="bibC01536">Richm.
+                                and Wright</ref>.</note>
+                    </app>
+                    <app loc="b 5">
+                        <rdg resp="db00092 db00346">exercitus m[</rdg>
+                        <note><ref target="bibC00427">Bruce</ref>, <ref target="bibA00092"
+                                >Hueb.</ref>;</note>
+                        <rdg resp="db00140 db00553 db00747">exercitus pr[</rdg>
+                        <note>R. G. C., <ref target="bibC01536">Richm. and Wright</ref>.</note>
+                    </app>
+                    <app loc="b 6">
+                        <rdg resp="db00092">. . iv</rdg>
+                        <note><ref target="bibC00427">Bruce</ref>;</note>
+                        <rdg resp="db00346">. . icvv</rdg>
+                        <note><ref target="bibA00092">Hueb.</ref>;</note>
+                        <rdg resp="db00140 db00553 db00747">sub cur[a</rdg>
+                        <note><rs key="db00140">R. G. C.</rs>, <ref target="bibC01536">Richm. and
+                                Wright</ref>.</note>
+                    </app>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>
