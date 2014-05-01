@@ -1,0 +1,680 @@
+<EDH xmlns:xi="http://www.w3.org/2001/XInclude">
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/1051">
+      <tmid>www.trismegistos.org/text/</tmid>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades=""/>
+      <fo_modern>Jarrow</fo_modern>
+      <fundjahr>1782</fundjahr>
+      <fundstelle geonames="http://www.geonames.org/7932559/st-paul-s-church-jarrow.html">St. Paul's Church Jarrow</fundstelle>
+      <aufbewahrung>Great North Museum: Hancock</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp ref="">Dedication</denkmaltyp>
+      <material ref="">Buff sandstone</material>
+      <frg n="1">
+         <hoehe>0.5588</hoehe>
+         <breite>0.5588</breite>
+         <tiefe/>
+      </frg>
+      <frg n="2">
+         <hoehe>0.5334</hoehe>
+         <breite>0.5842</breite>
+         <tiefe/>
+      </frg>
+      <bh/>
+      <metrik/>
+      <nl_text/>
+      <date_von/>
+      <dat_bis/>
+      <soziales/>
+      <religion/>
+      <geographie/>
+      <militaer/>
+      <beleg/>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line>R. G. Collingwood and R. P. Wright, addenda
+                    and corrigenda by R. S. O. Tomlin
+                    The Roman Inscriptions of
+                            Britain, i, new
+                        edition, Stroud, Gloucestershire:
+                        Alan Sutton Publishing Limited, 1995.
+                        349-351, 778
+                </lit_line>
+         <lit_line>
+                                    English Heritage Pastscape database monument number
+                                            955160
+                                </lit_line>
+         <lit_line>
+                        CIL vii
+                        498b, a
+                    </lit_line>
+         <lit_line>
+                        
+                        78
+                        fig. 16
+                    </lit_line>
+         <lit_line>
+                        
+                            LS
+                        
+                        539, 538
+                    </lit_line>
+         <lit_line>
+                        
+                        ii
+                        63, 590
+                    </lit_line>
+         <lit_line>, iii
+                        231</lit_line>
+         <lit_line>
+                        
+                        ii
+                        68
+                    </lit_line>
+         <lit_line>
+                        
+                        112
+                    </lit_line>
+         <lit_line>
+                        
+                        17
+                    </lit_line>
+         <lit_line>
+                        93, figs. 1-3 pl.
+                            iii</lit_line>
+         <lit_line>, 159</lit_line>
+         <lit_line>, 205-6</lit_line>
+         <lit_line>, 225</lit_line>
+         <lit_line>
+                        
+                            EDH
+                        
+                        HD019553
+                    </lit_line>
+         <lit_line>
+                        
+                        50
+                    </lit_line>
+         <lit_line>
+                        
+                        4
+                        no. 1
+                    </lit_line>
+         <lit_line>
+                        
+                        77
+                        no. 81
+                    </lit_line>
+      </lit>
+      <kommentar>
+         <komm_line>5. Hadrian was consul III from
+                        a.d. 119 onwards. Derived from some prominent site on Tyneside. Hodgson ii, iii 230 and Petch loc. cit. incline to regard Jarrow as the site of a
+                    Roman fort. Limited excavations in 1935 produced no
+                    evidence to support this view ( 343). For a full discussion of this narrative-inscription which comprised at least 12
+                    lines and probably 18 and commemorated the policy of the Emperor Hadrian in Britain, the re-establishment of the frontier, and the building of
+                        the Wall see Richmond and Wright loc.
+                        cit. It presumably formed part of a tropaeum, or
+                    war-memorial, which would be situated on high ground somewhere near the eastern
+                    end of Hadrian's Wall
+                    R. P. W. 
+                    Note that 1051(a) retains
+                        part of the top margin, and that 1051(b) is
+                        obviously cut by a different mason. , 159, by
+                        implication took the ligatures of exercitus in b5 to be third-century; but
+                            RIB 1340 provides a Hadrianic parallel, and cf. RIB
+                            1743 (with note below). Birley also
+                        observed that hadr in a2 is cut in
+                        smaller letters than any of the others [in fact a4 is
+                        slightly smaller], and suggested that this was a Severan inscription which referred to Hadrian as the original builder. (,
+                        205-6, notes a possible echo of RIB 1051(b) in
+                            fourth-century literary references to the
+                            Severan wall.) R. P.
+                            W. and Richmond (17 July 1963) still maintained that both
+                        fragments belonged to a single Hadrianic
+                        monument cut by two masons: they stressed the difficulty of restoring
+                            Septimius Severus' name and titles in
+                        a1, the top of the inscription, without however addressing the problem that
+                            Hadrian in a2 is cut in smaller letters than b1-5. While
+                        nothing better than their reconstruction has yet been offered, it must be
+                        regarded as far from certain.
+                </komm_line>
+      </kommentar>
+      <Namen n="1">
+         <name>[Caesar Traianus] Hadr[ianus] [Augustus]</name>
+         <praenomen/>
+         <nomen/>
+         <cognomen/>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <Namen n="2">
+         <name>A. Platori Nepotis</name>
+         <praenomen/>
+         <nomen>Platorius</nomen>
+         <cognomen>Nepos</cognomen>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <origo/>
+      <geschlecht/>
+      <status/>
+      <beruf/>
+      <l_jahre/>
+      <l_monate/>
+      <l_tage/>
+      <l_stunden/>
+      <textus>[Divorum] omnium fil[ius] [im-/ p(erator)] [Caesar Traianus] Hadr[ianus] / [Augustus] [imposit]a necessitat[e] [imperii] / [intra fines] [conser]vati [div]ino pr[aecepto] / [3] [c]o(n)s(ul) II[I] [3] / [6] / 7 diffusis [barbaris et] / provinc[ia] [reciperata] / Britannia ad[didit] [limitem inter] / utrumque O[ceani] [litus per m(ilia) p(assuum) LXXX] / exercitus pr[ovinciae] [opus valli fecit] / sub cur[a] [A(uli) Platori Nepotis leg(ati) Aug(usti) pr(o) pr(aetore)]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/1148">
+      <tmid>www.trismegistos.org/text/154495</tmid>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/89152">Coriosopitum/Coria</fo_antik>
+      <fo_modern>Corbridge</fo_modern>
+      <fundjahr>1907</fundjahr>
+      <fundstelle geonames="http://www.geonames.org/2652382/corbridge.html">Corbridge</fundstelle>
+      <aufbewahrung>Corbridge Museum</aufbewahrung>
+      <dekor ref="http://www.eagle-network.eu/voc/decor/lod/155">J</dekor>
+      <i_gattung/>
+      <denkmaltyp ref="">Dedication-slab</denkmaltyp>
+      <material ref="http://www.eagle-network.eu/voc/material/lod/75">sandstone</material>
+      <hoehe>0.8636</hoehe>
+      <breite>1.0922 (incomplete)</breite>
+      <tiefe/>
+      <bh/>
+      <metrik/>
+      <nl_text/>
+      <date_von>a.d. 140</date_von>
+      <dat_bis>a.d. 140</dat_bis>
+      <soziales/>
+      <religion/>
+      <geographie/>
+      <militaer/>
+      <beleg/>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line>R. G. Collingwood and R. P. Wright, addenda
+                    and corrigenda by R. S. O. Tomlin
+                    The Roman Inscriptions of
+                            Britain, i, new
+                        edition, Stroud, Gloucestershire:
+                        Alan Sutton Publishing Limited, 1995.
+                        378-379, 780
+                </lit_line>
+         <lit_line>
+                        EE ix
+                        1146
+                    </lit_line>
+         <lit_line>Haverfield in 
+                        99</lit_line>
+         <lit_line>
+                        
+                        262
+                        fig. 8
+                    </lit_line>
+         <lit_line>
+                        
+                        269
+                    </lit_line>
+         <lit_line>
+                        
+                        500
+                        no. 14
+                    </lit_line>
+         <lit_line>
+                        
+                        123
+                        pl. iii
+                    </lit_line>
+         <lit_line>
+                        
+                        136 f.
+                    </lit_line>
+         <lit_line>
+                        
+                            Trismegistos
+                        
+                        155641
+                    </lit_line>
+      </lit>
+      <kommentar>
+         <komm_line>
+                    The drawing enlarges the final letters of 4 and 6 (I and T) to balance the enlarged
+                        initial letters (S and L). This is
+                        unlikely (cf. RIB 1147, where it does not
+                        occur); the enlarged initial letters, like the leftward setting, simply mark
+                            paragraphs, a convention found in Roman manuscript
+                        documents.
+                </komm_line>
+      </kommentar>
+      <Namen n="1">
+         <name>Caes. [T.] Ael[io] Antonino A[ug.] Pi[o]</name>
+         <praenomen>T.+</praenomen>
+         <nomen>Aelius+</nomen>
+         <cognomen/>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <Namen n="2">
+         <name>Q. [Lolli] [Urbici]</name>
+         <praenomen>Q.</praenomen>
+         <nomen>Lollius+</nomen>
+         <cognomen>Urbicus+</cognomen>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <origo/>
+      <geschlecht/>
+      <status/>
+      <beruf/>
+      <l_jahre/>
+      <l_monate/>
+      <l_tage/>
+      <l_stunden/>
+      <textus>Imp(eratori) Caes(ari) [T(ito)] Ael[io] / Antonino A[ug(usto)] Pi[o] / III co(n)[s(uli)] [p(atri)] [p(atriae)] / sub cura Q(uinti) [Lolli] [Urbici] / leg(ati) Au[g(usti)] [pr(o)] [pr(aetore)] / leg(io) II A[ug(usta)] [fecit]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/1234">
+      <tmid>www.trismegistos.org/text/154496</tmid>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/89196">Habitancum</fo_antik>
+      <fo_modern>Risingham</fo_modern>
+      <fundjahr>1844</fundjahr>
+      <fundstelle geonames=""/>
+      <aufbewahrung>Great North
+                                    Museum: Hancock</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp ref="">Dedication-slab</denkmaltyp>
+      <material ref="">Buff sandstone</material>
+      <hoehe>1.245 1.35 0.1778</hoehe>
+      <breite>1.803 1.803</breite>
+      <tiefe>0.1778</tiefe>
+      <bh/>
+      <metrik/>
+      <nl_text/>
+      <date_von>0205</date_von>
+      <dat_bis>0208</dat_bis>
+      <soziales/>
+      <religion/>
+      <geographie/>
+      <militaer/>
+      <beleg/>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line>R. G. Collingwood and R. P. Wright, addenda
+                    and corrigenda by R. S. O. Tomlin
+                    The Roman Inscriptions of
+                            Britain, i, new
+                        edition, Stroud, Gloucestershire:
+                        Alan Sutton Publishing Limited, 1995.
+                        406-407, 781
+                </lit_line>
+         <lit_line>CIL vii
+                        1003, addit.
+                        p. 311</lit_line>
+         <lit_line>
+                        
+                            ILS
+                        
+                        2618
+                    </lit_line>
+         <lit_line>
+                        
+                            LS
+                        
+                        626
+                    </lit_line>
+         <lit_line>, 1.
+                            295</lit_line>
+         <lit_line>
+                        
+                        20
+                        pl. ii 3
+                    </lit_line>
+         <lit_line>
+                        230 with fig.</lit_line>
+         <lit_line>
+                        
+                        146
+                    </lit_line>
+         <lit_line>
+                        
+                        315
+                    </lit_line>
+         <lit_line>
+                        
+                        129 n.
+                    </lit_line>
+         <lit_line>
+                        336 with fig.</lit_line>
+         <lit_line>
+                        130
+                        no. 1, pl. facing p.
+                            80</lit_line>
+         <lit_line>
+                        Cat. (1920)
+                        no. 138
+                    </lit_line>
+         <lit_line>Cat. (1926)
+                        no. 89 with pl.</lit_line>
+         <lit_line>, 129</lit_line>
+         <lit_line>
+                        Cat. (1990)
+                        no. 27
+                    </lit_line>
+         <lit_line>
+                        
+                        189
+                    </lit_line>
+         <lit_line>
+                        
+                            Trismegistos
+                        
+                        155727
+                    </lit_line>
+         <lit_line>Pflaum CP, No. 247 + add</lit_line>
+         <lit_line>Birley Fasti
+                            298-9</lit_line>
+         <lit_line>, 243-9</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line>
+                    For Oclatinius Adventus,
+                            praetorian prefect in 217, see Pflaum CP, No. 247 + add; Birley Fasti
+                            298-9; , 243-9. For Salvianus see RIB 1215. In
+                        general cf. RIB 1462.
+                </komm_line>
+      </kommentar>
+      <Namen n="1">
+         <name>[L.] Sept. Severo Pio Pertin- [aci] [Arab.] [Adi]ab. Part.[i]co Maxi.</name>
+         <praenomen>L.+</praenomen>
+         <nomen/>
+         <cognomen/>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <Namen n="2">
+         <name>M. Aurel. Antonino Pio</name>
+         <praenomen>M.</praenomen>
+         <nomen>Aurelius*</nomen>
+         <cognomen/>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <Namen n="3">
+         <name>P. Sept. Getae nob. Caes.</name>
+         <praenomen>P.</praenomen>
+         <nomen/>
+         <cognomen/>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <Namen n="4">
+         <name>Alfeni Senecionis</name>
+         <praenomen/>
+         <nomen>Alfenus</nomen>
+         <cognomen>Senecio</cognomen>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <Namen n="5">
+         <name>Oclatinio Advento</name>
+         <praenomen/>
+         <nomen>Oclatinius</nomen>
+         <cognomen>Adventus</cognomen>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <Namen n="6">
+         <name>Aem[i]l. Salviano</name>
+         <praenomen/>
+         <nomen>Aemilius*+</nomen>
+         <cognomen>Salvianus</cognomen>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <origo/>
+      <geschlecht/>
+      <status/>
+      <beruf/>
+      <l_jahre/>
+      <l_monate/>
+      <l_tage/>
+      <l_stunden/>
+      <textus>[Imp(eratoribus)] [Caes(aribus)] [L(ucio)] Sept(imio) Severo Pio Pertin-/ [aci] [Arab(ico)] [Adi]ab(enico) Part(h)[i]co Maxi(mo) / co(n)s(uli) III et M(arco) Aurel(io) Antonino Pio / co(n)s(uli) II Aug(ustis) [[et P(ublio) Sept(imio) Getae nob(ilissimo) Caes(ari)]] / portam cum muris vetustate di-/ lapsis iussu Alfeni Senecionis v(iri) c(larissimi) / co(n)s(ularis) curante Oclatinio Advento proc(uratore) / Aug(ustorum) n(ostrorum) coh(ors) I Vangion(um) eq(uitata) / cum Aem[i]l(io) Salviano trib(uno) / suo a solo restit(uit)</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/1235">
+      <tmid>www.trismegistos.org/text/</tmid>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/89196">Habitancum</fo_antik>
+      <fo_modern>Risingham</fo_modern>
+      <fundjahr>1849</fundjahr>
+      <fundstelle geonames=""/>
+      <aufbewahrung>Great North
+                                    Museum: Hancock</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp ref="">Dedication-slab</denkmaltyp>
+      <material ref="">Buff sandstone</material>
+      <hoehe>0.8382</hoehe>
+      <breite>5.715 m.</breite>
+      <tiefe/>
+      <bh/>
+      <metrik/>
+      <nl_text/>
+      <date_von>a.d. 213</date_von>
+      <dat_bis>a.d. 213</dat_bis>
+      <soziales/>
+      <religion/>
+      <geographie/>
+      <militaer/>
+      <beleg/>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line>R. G. Collingwood and R. P. Wright, addenda
+                    and corrigenda by R. S. O. Tomlin
+                    The Roman Inscriptions of
+                            Britain, i, new
+                        edition, Stroud, Gloucestershire:
+                        Alan Sutton Publishing Limited, 1995.
+                        407
+                </lit_line>
+         <lit_line>CIL vii
+                        1002, addit.
+                        p. 311</lit_line>
+         <lit_line>
+                        EE ix
+                        p. 612
+                    </lit_line>
+         <lit_line>
+                        
+                            LS
+                        
+                        628
+                    </lit_line>
+         <lit_line>
+                        235
+                        nos. 31-37 with figs.</lit_line>
+         <lit_line>
+                        
+                        129
+                    </lit_line>
+         <lit_line>
+                        135
+                        no. 19, with pl.</lit_line>
+         <lit_line>
+                        
+                        205 f.
+                    </lit_line>
+         <lit_line>
+                        Cat. (1926)
+                        no. 90
+                    </lit_line>
+         <lit_line>
+                        Cat. (1990)
+                        no. 28
+                    </lit_line>
+         <lit_line>
+                        
+                            Trismegistos
+                        
+                        155728
+                    </lit_line>
+      </lit>
+      <kommentar>
+         <komm_line>3. imperatori ii:
+                        consuli iiii
+                    has been omitted on the analogy of RIB 1278
+                        (High Rochester). It would also be
+                    possible to follow the analogy of RIB 1705
+                        (Vindolanda) and read cos iiii imp ii, but this would make it necessary to
+                    abbreviate both titles, which is not the practice elsewhere on this stone R. P. W. 5. The names of the governor, C. Iulio Marco, have been deleted. 6. posuerunt
+                    seems to be spaced as if it were in fact the last (word), though it might
+                        be followed by some such phrase as d n m q
+                            eorum
+                    Richm.; this restoration is adopted here and represented
+                    in dotted letters R. P. W. Of the three fragments which Huebner quotes as unplaced,
+                    (i) is extant (RIB 1232), and does not belong to
+                    this inscription; (h) fits in l. 5; (k) fits in l. 1. For similar dedications in a.d.
+                        213 see note to RIB 1202.</komm_line>
+      </kommentar>
+      <Namen n="1">
+         <name>[Caes.] [di]vi Sept. [Severi] [Pii] [Arabici] [Adi]abenic[i] [Parthici] [Maxi]mi Bri[tannici] [Maxi]mifilio di[vi] [Antonini] [Pii] [Germanici] Sarmati[ci] [nepoti] [divi] [Anton]ini Pii pro[nepoti] [divi] [H]adriani a[bnep.] [divi] [Traian]i Partichi et [divi] [Nervae] [adnep.] / [M.] [Aurelio] Anton[ino] [Pio] [Fel.] [Aug.] [Parth]ico Maxim[o] [Britannico] [Maximo] [Germanico] [Maximo]</name>
+         <praenomen>M.+</praenomen>
+         <nomen>Aurelius+</nomen>
+         <cognomen/>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <Namen n="2">
+         <name>[Antonini] [Pii] / [Germanici] Sarmati[ci]</name>
+         <praenomen/>
+         <nomen/>
+         <cognomen/>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <Namen n="3">
+         <name>[Anton]ini Pii</name>
+         <praenomen/>
+         <nomen/>
+         <cognomen/>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <Namen n="4">
+         <name>[H]adriani</name>
+         <praenomen/>
+         <nomen/>
+         <cognomen/>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <Namen n="5">
+         <name>[Traian]i Partichi</name>
+         <praenomen/>
+         <nomen/>
+         <cognomen/>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <Namen n="6">
+         <name>[Nervae]</name>
+         <praenomen/>
+         <nomen/>
+         <cognomen/>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <Namen n="7">
+         <name>Iu[liae] [Domnae] [Piae] [Fel.] [Aug.]</name>
+         <praenomen/>
+         <nomen/>
+         <cognomen/>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <origo/>
+      <geschlecht/>
+      <status/>
+      <beruf/>
+      <l_jahre/>
+      <l_monate/>
+      <l_tage/>
+      <l_stunden/>
+      <textus>[Imp(eratori)] [Caes(ari)] [di]vi Sept(imi) [Severi] [Pii] [Arabici] [Adi]abenic[i] [Parthici] [Maxi]mi Bri[tannici] [Maxi]mi filio di[vi] [Antonini] [Pii] / [Germanici] Sarmati[ci] [nepoti] [divi] [Anton]ini Pii pro[nepoti] [divi] [H]adriani a[bnep(oti)] [divi] [Traian]i Partichi et [divi] [Nervae] [adnep(oti)] / [M(arco)] [Aurelio] Anton[ino] [Pio] [Fel(ici)] [Aug(usto)] [Parth]ico Maxim[o] [Britannico] [Maximo] [Germanico] [Maximo] trib(unicia) potesta[te] [XVI imperatori II] / [patri] [pat]ri(a)e proconsuli pro [pietate] [ac] [dev]otione com[muni] [e]t Iu[liae] [Domnae] [Piae] [Fel(ici)] [Aug(ustae)] [Ma]tri August[i] [nostri] [item] / [castroru]m senatus {h}ac patri(a)e pro [pi]etate {h}ac d[evoti]one [communi] [curante] [[[[3]]]] [leg(ato)] Aug(ustorum) [pr(o)] [pr(aetore)] / [coh(ors) I] [Van]gionum item Raeti Gae[sa]ti et Expl[oratores] [Habitancenses] posuerun[t] [d(evoti)] [n(umini)] [m(aiestati)] [q(ue)] [eorum]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/23">
+      <tmid>www.trismegistos.org/text/154516</tmid>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern>London</fo_modern>
+      <fundjahr>1884</fundjahr>
+      <fundstelle geonames="http://www.geonames.org/2643743/london.html">London</fundstelle>
+      <aufbewahrung>Findspot</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp ref="">Tombstone</denkmaltyp>
+      <material ref="http://www.eagle-network.eu/voc/material/lod/2">Stone</material>
+      <hoehe>0.356</hoehe>
+      <breite>0.813</breite>
+      <tiefe/>
+      <bh/>
+      <metrik/>
+      <nl_text/>
+      <date_von>0043</date_von>
+      <dat_bis>0410</dat_bis>
+      <soziales/>
+      <religion/>
+      <geographie/>
+      <militaer/>
+      <beleg/>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line>R. G. Collingwood and R. P. Wright, addenda and corrigenda by R. S. O.Tomlin
+                    The Roman Inscriptions of Britain, i,
+                    new edition, Stroud, Gloucestershire: Alan Sutton Publishing Limited, 1995.
+                    11
+                </lit_line>
+         <lit_line>
+                                    English Heritage Pastscape database monument number 966526
+                                </lit_line>
+         <lit_line> 819</lit_line>
+         <lit_line> 156</lit_line>
+         <lit_line> i (1890-90) f. 49</lit_line>
+         <lit_line> 174 no. 19 fig. 78</lit_line>
+         <lit_line>Pastscape 966526</lit_line>
+         <lit_line>Trismegistos 154516</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line>Haverfield noted the late date of this text.</komm_line>
+      </kommentar>
+      <Namen n="1">
+         <name>[T]ulliae Numidi[ae]</name>
+         <praenomen/>
+         <nomen>Tullia+</nomen>
+         <cognomen>Numidia+</cognomen>
+         <supernomen/>
+         <tribus/>
+      </Namen>
+      <origo/>
+      <geschlecht/>
+      <status/>
+      <beruf/>
+      <l_jahre/>
+      <l_monate/>
+      <l_tage/>
+      <l_stunden/>
+      <textus>[D(is) M(anibus)] et memoria[e] / [T]ulliae Numidi[ae] / [pie]ntissime femin[e] / [3] is reliqua cau[3]</textus>
+   </record>
+</EDH>

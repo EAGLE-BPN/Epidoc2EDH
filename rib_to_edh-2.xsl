@@ -4,7 +4,8 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
     xmlns:tei="http://www.tei-c.org/ns/1.0"
-    exclude-result-prefixes="xs tei" version="2.0">
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    exclude-result-prefixes="xs tei skos rdf xs" version="2.0">
 
 <!-- 
      IRT - generate table for EDH
@@ -13,10 +14,12 @@
 
      RIB xml to EDH flat file (one xsl transformation)
      updates: 2014-03-10 PML
-     updates: 2014-03-18 Scott Vanderbilt, PML
+     updates: 2014-03-18 SV, PML
      updates: 2014-04-02 PML
      updates 2014-04-04 GB and PML
     updates 2014-04-09 JC, FG, PML 
+    updates 2014-04-25 SV, PML
+    
     
      to be run on RIB files list
     
@@ -24,7 +27,7 @@
 -->
  
     
-    <xsl:import href="../../../EPIDOC-XSLT/start-txt.xsl"/>
+    <xsl:import href="../../EPIDOC-XSLT/start-txt.xsl"/>
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
     <xsl:strip-space elements="w name"/>
