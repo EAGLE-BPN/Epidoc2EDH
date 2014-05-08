@@ -5,7 +5,7 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:xi="http://www.w3.org/2001/XInclude"
-    exclude-result-prefixes="xs tei skos rdf xs" version="2.0">
+    exclude-result-prefixes="xs tei skos rdf xi" version="2.0">
 
 <!-- 
      IRT - generate table for EDH
@@ -19,6 +19,7 @@
      updates 2014-04-04 GB and PML
     updates 2014-04-09 JC, FG, PML 
     updates 2014-04-25 SV, PML
+    updates 2014-05-08 PML (some changes for validation of results to xml2edh prepared by FG)
     
     
      to be run on RIB files list
@@ -38,27 +39,48 @@
                 <xsl:if test="not(contains(preceding-sibling::td[2],'HD'))">
                 <xsl:variable name="currentinscription">
                     <!--  path to be modified according to XML files directory -->
-                    <xsl:sequence select="document(concat('rib',format-number(.,'00000'),'.xml'))"/>
+                    <xsl:sequence select="document(concat('../../../../../../../../../../Users/pietro/ribrepo/rib/trunk/project/inscriptions/rib',format-number(.,'00000'),'.xml'))"/>
                 </xsl:variable>
                     <record><xsl:attribute name="ref"><xsl:value-of select=" concat('http://romaninscriptionsofbritain.org/rib/inscriptions/', $currentinscription//tei:idno[@type='rib'])"/></xsl:attribute>
-                        <tmid><xsl:value-of select="concat('www.trismegistos.org/text/',preceding-sibling::td[1])"/></tmid>
-                    <provinz><xsl:value-of select="$currentinscription//tei:geogName[@type='ancientRegion']"/></provinz>
+                        <xsl:if test="number(preceding-sibling::td[1])">
+                            <tmUri><xsl:value-of select="concat('http://www.trismegistos.org/text/',preceding-sibling::td[1])"/></tmUri>
+                        </xsl:if>
+                   <provinz><xsl:value-of select="$currentinscription//tei:geogName[@type='ancientRegion']"/></provinz>
                             <land>
                                 <xsl:value-of select="$currentinscription//tei:geogName[@type='modernCountry']"/>
                             </land>
-                            <fo_antik 
-                                pleiades="{$currentinscription//tei:provenance[@type='found']/tei:placeName[@subtype='pleiades']/@ref[not(contains(.,'XXXXX'))]}">
-                                <xsl:value-of select="$currentinscription//tei:provenance[@type='found']/tei:placeName[@subtype='pleiades'][not(contains(.,'XXXXX'))]"/>
-                            </fo_antik>
-                    <fo_modern>
+                        <fo_antik>
+                                <xsl:if test="$currentinscription//tei:provenance[@type='found']/tei:placeName[@subtype='pleiades']/@ref[not(contains(.,'XXXXX'))]">
+                                <xsl:attribute name="pleiades">
+                            <xsl:value-of select="$currentinscription//tei:provenance[@type='found']/tei:placeName[@subtype='pleiades']/@ref"/>
+                        </xsl:attribute>
+                            </xsl:if>
+                            <xsl:value-of select="$currentinscription//tei:provenance[@type='found']/tei:placeName[@subtype='pleiades'][not(contains(.,'XXXXX'))]"/>
+                        </fo_antik>
+                        <fo_modern>
+                            <xsl:if test="$currentinscription//tei:provenance[@type='found']/tei:placeName[@subtype='geonames']/@ref[not(contains(.,'XXXXX'))]">
+                                <xsl:attribute name="geonames">
+                                    <xsl:value-of select="$currentinscription//tei:provenance[@type='found']/tei:placeName[@subtype='geonames']/@ref"/>
+                                </xsl:attribute>
+                            </xsl:if>
                         <xsl:value-of select="$currentinscription//tei:origin/tei:placeName[1]"/>
                             </fo_modern>
-                            <fundjahr>
-                                <!-- Some RIB documents have more than one provenance, and thus more than one date, which made the original code fail -->
-                                <xsl:value-of select="$currentinscription//tei:provenance/tei:date[1][@type='foundDate']/@when"/>
-                            </fundjahr>
-                        <fundstelle
-                            geonames="{$currentinscription//tei:provenance[@type='found']/tei:placeName[@subtype='geonames']/@ref}">
+                        <xsl:if test="$currentinscription//tei:date[@type='foundDate'][@when]">
+                           
+                                <!-- Some RIB documents have more than one provenance, and thus more than one date, which made the original code fail 
+                                now it selects the maximum value among those available
+                                -->
+                                
+                                <xsl:for-each select="$currentinscription//tei:date[@type='foundDate']/@when">
+     <xsl:sort select="." data-type="number" order="descending"/>
+<xsl:if test="position() = 1">
+    <fundjahr>  
+    <xsl:value-of select="."/>
+    </fundjahr>
+</xsl:if>
+ </xsl:for-each>
+                            </xsl:if>
+                        <fundstelle>
                             <xsl:value-of select="$currentinscription//tei:provenance[@type='found']/tei:placeName[@subtype='geonames']"/>
                                </fundstelle>
                     <aufbewahrung><xsl:choose>
@@ -69,190 +91,820 @@
                         <xsl:otherwise><xsl:text>Findspot</xsl:text></xsl:otherwise>
                     </xsl:choose></aufbewahrung>
                             <dekor>
-                                <xsl:if test="$currentinscription//tei:rs[@type='decoration']">
-                                    
-                                <xsl:attribute name="ref">
-                                    <xsl:variable name="noquestion">
-                                        <xsl:analyze-string select="$currentinscription//tei:rs[@type='decoration']" regex="(\w+)\?">
-                                            <xsl:matching-substring>
-                                                <xsl:value-of select="regex-group(1)"/>
-                                            </xsl:matching-substring>            
-                                            <xsl:non-matching-substring>
-                                                <xsl:analyze-string select="." regex="(\w+),\s(\w*)">
-                                                    <xsl:matching-substring> 
-                                                        <xsl:value-of select="regex-group(1)"/>                     
-                                                    </xsl:matching-substring>            
-                                                    <xsl:non-matching-substring>
-                                                        <xsl:value-of select="."/>
-                                                    </xsl:non-matching-substring>
-                                                </xsl:analyze-string>
-                                            </xsl:non-matching-substring>
-                                        </xsl:analyze-string>
-                                    </xsl:variable>    
-                                    <xsl:copy>
-                                        <xsl:copy-of select="@*[not(local-name()='ref')]"/>
-                                        <xsl:if test="text()">
-                                            <xsl:variable name="voc_term">         
-                                                <xsl:value-of select="document('https://raw.github.com/PietroLiuzzo/epidocupconversion/master/allinone/eagle-vocabulary-decoration.rdf')//skos:prefLabel[lower-case(.)=lower-case($noquestion)]/parent::skos:Concept/@rdf:about"/>
-                                                <xsl:value-of select="document('https://raw.github.com/PietroLiuzzo/epidocupconversion/master/allinone/eagle-vocabulary-decoration.rdf')//skos:altLabel[lower-case(.)=lower-case($noquestion)]/parent::skos:Concept/@rdf:about"/>
-                                            </xsl:variable>
-                                            <xsl:if test="$voc_term!=''">
-                                                <xsl:value-of select="$voc_term"/>
-                                            </xsl:if>
-                                        </xsl:if>
-                                    </xsl:copy>
-                                </xsl:attribute>
+                                <xsl:if test="contains($currentinscription, 'decoration')">
                                               <xsl:text>J</xsl:text>
                                 </xsl:if>
                             </dekor>
                             <i_gattung>
-                             <!--   <xsl:if test="$currentinscription//tei:term[1]">
-                                <xsl:attribute name="ref">
-                                    <xsl:variable name="noquestion">
-                                        <xsl:analyze-string select="$currentinscription//tei:term[1]" regex="(\w+)\?">
-                                            <xsl:matching-substring>
-                                                <xsl:value-of select="regex-group(1)"/>
-                                            </xsl:matching-substring>            
-                                            <xsl:non-matching-substring>
-                                                <xsl:analyze-string select="." regex="(\w+),\s(\w*)">
-                                                    <xsl:matching-substring> 
-                                                        <xsl:value-of select="regex-group(1)"/>                     
-                                                    </xsl:matching-substring>            
-                                                    <xsl:non-matching-substring>
-                                                        <xsl:value-of select="."/>
-                                                    </xsl:non-matching-substring>
-                                                </xsl:analyze-string>
-                                            </xsl:non-matching-substring>
-                                        </xsl:analyze-string>
-                                    </xsl:variable>
-                                    
-                                    <xsl:copy>
-                                        <xsl:copy-of select="@*[not(local-name()='ref')]"/>
-                                        <xsl:if test="text()">
-                                            <xsl:variable name="voc_term">         
-                                                <xsl:value-of select="document('https://raw.github.com/PietroLiuzzo/epidocupconversion/master/allinone/eagle-vocabulary-type-of-inscription.rdf')//skos:prefLabel[lower-case(.)=lower-case($noquestion)]/parent::skos:Concept/@rdf:about"/>
-                                                <xsl:value-of select="document('https://raw.github.com/PietroLiuzzo/epidocupconversion/master/allinone/eagle-vocabulary-type-of-inscription.rdf')//skos:altLabel[lower-case(.)=lower-case($noquestion)]/parent::skos:Concept/@rdf:about"/>
-                                            </xsl:variable>
-                                            <xsl:if test="$voc_term!=''">
-                                                <xsl:value-of select="$voc_term"/>
-                                            </xsl:if>
-                                        </xsl:if>
-                                    </xsl:copy>
-                                </xsl:attribute>
-                                <xsl:value-of select="//tei:term[1]"/>
-</xsl:if>                           -->
-                              
+<xsl:variable name="igattung">
+    <xsl:if test="$currentinscription//tei:msItem[@class]">
+                                   <xsl:sequence select="substring-after($currentinscription//tei:msItem/@class, '#')"/>
+                                </xsl:if></xsl:variable>
+<!-- values not comparable:   text_unknown, graffito, tbd, magic.other, fragment-->
+                                <xsl:choose>
+                                    <xsl:when test="$igattung='dedicatory'">
+                                        <xsl:text>Building/dedicatory inscription</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$igattung='building'">
+                                        <xsl:text>Building/dedicatory inscription</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$igattung='building.century'">
+                                        <xsl:text>Building/dedicatory inscription</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$igattung='Building/dedicatory inscription'">
+                                        <xsl:text>Building/dedicatory inscription</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$igattung='funerary.epitaph'">
+                                        <xsl:text>Epitaph</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$igattung='place_marker.milestone'">
+                                        <xsl:text>Mile-/Leaguestone</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$igattung='place_marker.boundary'">
+                                        <xsl:text>Boundary inscription</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$igattung='magic.defixio'">
+                                        <xsl:text>Defixio</xsl:text>
+                                    </xsl:when>
+<!--                              values not used this time
+                                        - Acclamation
+                                    - Adnuntiatio
+                                    - Assignation inscription
+                                    - Calendar
+                                    - Elogium
+                                    - Honorific inscription
+                                    - Identification inscription
+                                    - Label
+                                    - List
+                                    - Military diploma
+                                    - Owner/artist inscription
+                                    - Prayer
+                                    - Private legal inscription
+                                    - Public legal inscription
+                                    - Seat inscription
+                                    - Votive inscription-->
+                                </xsl:choose>
                             </i_gattung>
                             <denkmaltyp>
-                                <xsl:attribute name="ref">
-                                    <xsl:variable name="noquestion">
-                                        <xsl:analyze-string select="$currentinscription//tei:objectType" regex="(\w+)\?">
-                                            <xsl:matching-substring>
-                                                <xsl:value-of select="regex-group(1)"/>
-                                            </xsl:matching-substring>            
-                                            <xsl:non-matching-substring>
-                                                <xsl:analyze-string select="." regex="(\w+),\s(\w*)">
-                                                    <xsl:matching-substring> 
-                                                        <xsl:value-of select="regex-group(1)"/>                     
-                                                    </xsl:matching-substring>            
-                                                    <xsl:non-matching-substring>
-                                                        <xsl:value-of select="."/>
-                                                    </xsl:non-matching-substring>
-                                                </xsl:analyze-string>
-                                            </xsl:non-matching-substring>
-                                        </xsl:analyze-string>
-                                    </xsl:variable>
+                                <!-- values not comparable:   object_unknown, fragment, intrumentum.letter, rock.quarry -->
+<!--                                values which might rather belong to type of inscription (need to change encoding in source files: letter)-->
+                                <xsl:variable name="denkmaltyp">    
+                                <xsl:if test="$currentinscription//tei:objectType[1]">
+                                    <xsl:sequence select="substring-after($currentinscription//tei:objectType[1]/@ana, '#')"/> 
+                                </xsl:if>
+                                </xsl:variable>
+                                <xsl:choose>
                                     
-                                    <xsl:copy>
-                                        <xsl:copy-of select="@*[not(local-name()='ref')]"/>
-                                        <xsl:if test="text()">
-                                            <xsl:variable name="voc_term">         
-                                                <xsl:value-of select="document('https://raw.github.com/PietroLiuzzo/epidocupconversion/master/allinone/eagle-vocabulary-object-type.rdf')//skos:prefLabel[lower-case(.)=lower-case($noquestion)]/parent::skos:Concept/@rdf:about"/>
-                                                <xsl:value-of select="document('https://raw.github.com/PietroLiuzzo/epidocupconversion/master/allinone/eagle-vocabulary-object-type.rdf')//skos:altLabel[lower-case(.)=lower-case($noquestion)]/parent::skos:Concept/@rdf:about"/>
-                                            </xsl:variable>
-                                            <xsl:if test="$voc_term!=''">
-                                                <xsl:value-of select="$voc_term"/>
-                                            </xsl:if>
-                                        </xsl:if>
-                                    </xsl:copy>
-                                </xsl:attribute>
-                                <xsl:value-of select="$currentinscription//tei:objectType"/>
-<!--                                here something more should be done to insert values compatible with EDH. Using the SKOS and matching the value of lang="de" ?-->
+                                    <xsl:when test="$denkmaltyp='altar'">
+                                        <xsl:text>Altar</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='column'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='column.commemorative'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='column.votive'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='column.shaft'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+
+                                    <xsl:when test="$denkmaltyp='arch_element.casing'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element.frieze'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element.jamb'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element.pediment'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element.plinth'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element.cornice'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element.pilaster'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element.arch-head'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element.frame'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element.finial'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element.strip'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element.voussoir-stone'">
+                                        <xsl:text>Architectural member</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element.unknown'">
+                                        <xsl:text>Architectural member?</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='base'">
+                                        <xsl:text>Base</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='base.tombstone'">
+                                        <xsl:text>Base</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='base.column'">
+                                        <xsl:text>Base?</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='arch_element.plinth'">
+                                        <xsl:text>Base</xsl:text>
+                                    </xsl:when>
+
+                                    <xsl:when test="$denkmaltyp='base.altar'">
+                                        <xsl:text>Base?</xsl:text>
+                                    </xsl:when>
+
+                                    <xsl:when test="$denkmaltyp='base.sculpture'">
+                                        <xsl:text>Base?</xsl:text>
+                                    </xsl:when>
+                                
+                                    <xsl:when test="$denkmaltyp='block'">
+                                        <xsl:text>Block</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='block.dedication'">
+                                        <xsl:text>Block</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='block.building'">
+                                        <xsl:text>Block</xsl:text>
+                                    </xsl:when>
+                                
+                                    <xsl:when test="$denkmaltyp='cippus.boundary-stone'">
+                                        <xsl:text>Cippus</xsl:text>
+                                    </xsl:when>
+                                
+                                    <xsl:when test="$denkmaltyp='stele'">
+                                        <xsl:text>Grave monument</xsl:text>
+                                    </xsl:when>
+<!--                                    all #stele are applied to Tombstone: which one of the the two possible values in EDH do we want?-->
+                               
+                                    <xsl:when test="$denkmaltyp='tomb'">
+                                        <xsl:text>Grave monument</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='instrumentum.incense-burner'">
+                                        <xsl:text>Instrumentum sacrum</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='instrumentum.amulet'">
+                                        <xsl:text>Instrumentum sacrum</xsl:text>
+                                    </xsl:when>
+                                
+                                    <xsl:when test="$denkmaltyp='milestone'">
+                                        <xsl:text>Mile-/Leaguestone</xsl:text>
+                                    </xsl:when>
+                                
+                                    <xsl:when test="$denkmaltyp='relief'">
+                                        <xsl:text>Relief</xsl:text>
+                                    </xsl:when>
+                                
+                                    <xsl:when test="$denkmaltyp='sarcophagus'">
+                                        <xsl:text>Sarcophagus</xsl:text>
+                                    </xsl:when>
+                                
+                                    <xsl:when test="$denkmaltyp='sculpture'">
+                                        <xsl:text>Sculpture</xsl:text>
+                                    </xsl:when>
+                               
+                                    <xsl:when test="$denkmaltyp='slab'">
+                                        <xsl:text>Slab</xsl:text>
+                                    </xsl:when>
+
+                                    <xsl:when test="$denkmaltyp='slab.building'">
+                                        <xsl:text>Slab</xsl:text>
+                                    </xsl:when>
+
+                                    <xsl:when test="$denkmaltyp='slab.dedication'">
+                                        <xsl:text>Slab</xsl:text>
+                                    </xsl:when>
+
+                                    <xsl:when test="$denkmaltyp='panel'">
+                                        <xsl:text>Slab</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='panel.dedication'">
+                                        <xsl:text>Slab</xsl:text>
+                                    </xsl:when>
+
+                                    <xsl:when test="$denkmaltyp='panel.slate'">
+                                        <xsl:text>Slab?</xsl:text>
+                                    </xsl:when>
+
+                                    <xsl:when test="$denkmaltyp='plate'">
+                                        <xsl:text>Slab</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='slab.altar'">
+                                        <xsl:text>Slab?</xsl:text>
+                                    </xsl:when>
+
+                                    <xsl:when test="$denkmaltyp='statue'">
+                                        <xsl:text>Statue</xsl:text>
+                                    </xsl:when>
+                                
+                                    <xsl:when test="$denkmaltyp='base.statue'">
+                                        <xsl:text>Statue base</xsl:text>
+                                    </xsl:when>
+                                
+                                
+                                    <xsl:when test="$denkmaltyp='plaque'">
+                                        <xsl:text>Table</xsl:text>
+                                    </xsl:when>
+                                
+                                    <xsl:when test="$denkmaltyp='tablet'">
+                                        <xsl:text>Tabula</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$denkmaltyp='tablet.commemorative'">
+                                        <xsl:text>Tabula</xsl:text>
+                                    </xsl:when>
+
+                                    <xsl:when test="$denkmaltyp='tablet.dedication'">
+                                        <xsl:text>Tabula?</xsl:text>
+                                    </xsl:when>
+
+                                    <xsl:when test="$denkmaltyp='instrumentum.tessera'">
+                                        <xsl:text>Tessera</xsl:text>
+                                    </xsl:when>
+                                
+                                    <xsl:when test="$denkmaltyp='Plank'">
+                                        <xsl:text>Tile</xsl:text>
+                                    </xsl:when>
+                                
+                                    <xsl:when test="$denkmaltyp='urn'">
+                                        <xsl:text>Urn</xsl:text>
+                                    </xsl:when>
+                                    
+                                    
+                                    <!-- EDH values not in use for this crosswalk
+                                        
+                                        <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Olla</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Paving stone</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Stele</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Shield</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Weapon</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Jewellery</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Herm</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Honorific/votive arch</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Honorific/votive column</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Instrumentum domesticum</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Instrumentum militare</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Cliff</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Cupa</xsl:text>
+                                    </xsl:when> 
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Diptych</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Fortification</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Fountain</xsl:text>
+                                    </xsl:when>         
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Bar</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Bench</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="$denkmaltyp=''">
+                                        <xsl:text>Bust</xsl:text>
+                                    </xsl:when>
+                                    -->
+                                </xsl:choose>
                             </denkmaltyp>
                             <material>
-                                <xsl:attribute name="ref">
-                                    <xsl:variable name="noquestion">
-                                        <xsl:analyze-string select="$currentinscription//tei:material" regex="(\w+)\?">
-                                            <xsl:matching-substring>
-                                                <xsl:value-of select="regex-group(1)"/>
-                                            </xsl:matching-substring>            
-                                            <xsl:non-matching-substring>
-                                                <xsl:analyze-string select="." regex="(\w+),\s(\w*)">
-                                                    <xsl:matching-substring> 
-                                                        <xsl:value-of select="regex-group(1)"/>                     
-                                                    </xsl:matching-substring>            
-                                                    <xsl:non-matching-substring>
-                                                        <xsl:value-of select="."/>
-                                                    </xsl:non-matching-substring>
-                                                </xsl:analyze-string>
-                                            </xsl:non-matching-substring>
-                                        </xsl:analyze-string>
-                                    </xsl:variable>
-                                   
-                                    <xsl:copy>
-                                        <xsl:copy-of select="@*[not(local-name()='ref')]"/>
-                                        <xsl:if test="text()">
-                                            <xsl:variable name="voc_term">         
-                                                <xsl:value-of select="document('https://raw.github.com/PietroLiuzzo/epidocupconversion/master/allinone/eagle-vocabulary-material.rdf')//skos:prefLabel[lower-case(.)=lower-case($noquestion)]/parent::skos:Concept/@rdf:about"/>
-                                                <xsl:value-of select="document('https://raw.github.com/PietroLiuzzo/epidocupconversion/master/allinone/eagle-vocabulary-material.rdf')//skos:altLabel[lower-case(.)=lower-case($noquestion)]/parent::skos:Concept/@rdf:about"/>
-                                            </xsl:variable>
-                                            <xsl:if test="$voc_term!=''">
-                                                    <xsl:value-of select="$voc_term"/>
-                                            </xsl:if>
-                                        </xsl:if>
-                                    </xsl:copy>
-                                </xsl:attribute>
-                                <xsl:value-of select="$currentinscription//tei:material"/>
+                                <xsl:variable name="material">
+                                    <xsl:if test="$currentinscription//tei:material">
+                                        <xsl:sequence select="substring-after($currentinscription//tei:material/@ana, '#')"/>
+                                    </xsl:if></xsl:variable>
+                                <xsl:choose>
+                                    <xsl:when test="$material='clay'">
+                                        <xsl:text>Clay</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='clay.pipeclay'">
+                                        <xsl:text>Clay</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='material_unknown'">
+                                        <xsl:text>indefinite</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='metal.bronze'">
+                                        <xsl:text>Bronze</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='metal.bronze.gilt'">
+                                        <xsl:text>Bronze</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='metal.copper'">
+                                        <xsl:text>Copper</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='metal.gold'">
+                                        <xsl:text>Gold</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='metal.lead'">
+                                        <xsl:text>Lead</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='metal.silver'">
+                                        <xsl:text>Silver</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='metal.silver.gilt'">
+                                    <xsl:text>Silver</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone'">
+                                        <xsl:text>Rocks</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.conglomerate'">
+                                        <xsl:text>Conglomerate</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.dolerite'">
+                                        <xsl:text>Basalt</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.freestone'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.granite'">
+                                        <xsl:text>Granite</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.greensand'">
+                                        <xsl:text>Rocks</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.grit'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.grit.Millstone'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.grit.buff'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.grit.red'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.grit.reddish'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.igneous.fine-grained'">
+                                        <xsl:text>Magmatic Rocks</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.lias.white'">
+                                        <xsl:text>Rocks</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.limestone'">
+                                        <xsl:text>Limestone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.limestone.buff.magnesian'">
+                                        <xsl:text>Limestone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.marble'">
+                                        <xsl:text>Marble (colour indefinite)</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.marble.Luna'">
+                                        <xsl:text>Marble, veined / coloured</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.marble.Purbeck'">
+                                        <xsl:text>Marble, veined / coloured</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.marble.black'">
+                                        <xsl:text>Marble, veined / coloured</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.marble.coloured'">
+                                        <xsl:text>Marble, veined / coloured</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.marble.green'">
+                                        <xsl:text>Marble, veined / coloured</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.marble.white'">
+                                        <xsl:text>Marble, white</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.metamorphic'">
+                                        <xsl:text>Metamorphic Rocks</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.mudstone'">
+                                        <xsl:text>Limestone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.oolite'">
+                                        <xsl:text>Oolite</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.oolite.Bath'">
+                                        <xsl:text>Oolite</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.other'">
+                                        <xsl:text>Rocks</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.other.reddish'">
+                                        <xsl:text>Rocks</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.Pennant'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.Rhaetic'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.buff'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.buff-or-lighter'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.calcareous'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.cream-coloured'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.cream-coloured.Manley'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.cream.Leuper'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.green'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.grey'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.greyish'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.light-coloured'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.micaceous'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.red'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.reddish'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.white'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.whitish'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.withish-buff'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.yellow'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.yellow-buff'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sandstone.yellowish-buff'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.sarsen'">
+                                        <xsl:text>Sandstone</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.schist.gray'">
+                                        <xsl:text>Metamorphic Rocks</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.slate'">
+                                        <xsl:text>Slate</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.unknown'">
+                                        <xsl:text>Rocks</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.unspecified'">
+                                        <xsl:text>Rocks</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='stone.whinstone'">
+                                        <xsl:text>Rocks</xsl:text>
+                                    </xsl:when>
+                                    
+                                    <xsl:when test="$material='wood.oak'">
+                                        <xsl:text>Wood</xsl:text>
+                                    </xsl:when>
+                                </xsl:choose>
+                                <!-- EDH values not used for this crosswalk as they do not have corresponding values
+                                    
+                 - Andesite
+                 - Aplit
+                 - Basalt
+                 - Porphyry
+                 - Syenite
+            - Metamorphic Rocks
+                 - Gneiss
+                 - Marble (colour indefinite)
+                 - Marble, white
+                 - Marble, veined / coloured
+                 - Quartzite
+                 - Soapstone
+            - Biological Sediments
+                 - Carbonaceous Limestone
+                 - Shell limestone
+            - Chemical Sediments
+                                  - Travertine
+            - Clastic Sediments
+                 - Breccia
+                 - Calc-Sinter / Alabaster
+                 - Calcareous Tuff
+                 - Lime marl / marl
+                - Molasse
+            - Pyroclastic Sediments
+                 - Nenfro
+                 - Peperino
+                 - Trachytes
+                 - Volcanic Tuff
+            - Minerals
+                 - Agate
+                 - Carnelian
+                 - Haematite
+                 - Heliotrope
+                 - Jasper
+                 - Lapislazuli
+                 - Magnetite
+                 - Onyx
+                 - Opal
+                 - Sardonyx
+                 - Volcanic Tuff
+        - Metals
+            - indefinite
+            - Brass
+            - Iron
+            - Tin
+        - other materials / substances
+            - Amber
+            - Bone
+            - Enamel
+            - Glass
+            - Ivory
+            - Leather
+            - Plaster
+            - Stucco
+            - Wax
+        -->
                             </material>
- <xsl:choose>                      
+<!--dimensions-->
+                        <xsl:choose>                      
      <xsl:when test="$currentinscription//tei:msPart">
-         <xsl:for-each select="$currentinscription//tei:msPart">
+        
+            <xsl:for-each select="$currentinscription//tei:msPart">
 <!--             needs to choose the higher area and insert those in cm with one decimal only for values up to 99cm-->
-                                <frg n="{position()}">
-                                    <hoehe>
-                                <xsl:value-of select="current()//tei:height"/>
-                            </hoehe>
-                            <breite>
-                                <xsl:value-of select="current()//tei:width"/>
+
+             <!--             TEST IF FRAGMENT IS PRESENT TO ADD - in front of values                   -->
+             <frg n="{position()}">
+                 <xsl:if test="current()//tei:support/tei:dimensions[not(@n|@source)]//tei:height">
+                                        <hoehe>
+                                        <xsl:choose>
+                                            <xsl:when test="current()//tei:support/tei:dimensions[not(@n|@source)]//tei:height/@quantity">
+                                                <xsl:value-of select="format-number(xs:decimal(current()//tei:support/tei:dimensions[not(@n|@source)]//tei:height/@quantity) * 100, '-#.0')"/>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:value-of select="format-number(xs:decimal(current()//tei:support/tei:dimensions[not(@n|@source)]//tei:height/@atMost) * 100, '-#.0')"/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </hoehe>
+                                    </xsl:if>
+                  <xsl:if test="current()//tei:support/tei:dimensions[not(@n|@source)]//tei:width">               
+                                    <breite>
+                                    <xsl:choose>
+                                        <xsl:when test="current()//tei:support/tei:dimensions[not(@n|@source)]//tei:width/@quantity">
+                                              <xsl:value-of select="format-number(xs:decimal(current()//tei:support/tei:dimensions[not(@n|@source)]//tei:width/@quantity) * 100, '-#.0')"/>
+                                        </xsl:when>
+                                         <xsl:otherwise>
+                                            <xsl:value-of select="format-number(xs:decimal(current()//tei:support/tei:dimensions[not(@n|@source)]//tei:width/@atMost) * 100, '-#.0')"/>
+                                       </xsl:otherwise>
+                                    </xsl:choose>
                             </breite>
-                            <tiefe>
-                                <xsl:value-of select="current()//tei:depth"/>
+                    </xsl:if>
+                 <xsl:if test="current()//tei:support/tei:dimensions[not(@n|@source)]//tei:depth/@quantity">  
+                                     <tiefe>
+                                    <xsl:choose>
+                                        <xsl:when test="current()//tei:support/tei:dimensions[not(@n|@source)]//tei:depth/@quantity">
+                                            <xsl:value-of select="format-number(xs:decimal(current()//tei:support/tei:dimensions[not(@n|@source)]//tei:depth/@quantity) * 100, '-#.0')"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="format-number(xs:decimal(current()//tei:support/tei:dimensions[not(@n|@source)]//tei:depth/@atMost) * 100, '-#.0')"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </tiefe>
+                </xsl:if>
                                 </frg>
                             </xsl:for-each>
 </xsl:when>
-     <xsl:otherwise><hoehe>
-         <xsl:value-of select="$currentinscription//tei:support//tei:dimensions/tei:height"/>
+     <xsl:otherwise>
+         <xsl:if test="$currentinscription//tei:support/tei:dimensions[not(@n|@source)]//tei:height">
+            <hoehe>
+         <xsl:choose>
+             <xsl:when test="$currentinscription//tei:support/tei:dimensions[not(@n|@source)]//tei:height/@quantity">
+                 <xsl:value-of select="format-number(xs:decimal($currentinscription//tei:support/tei:dimensions[not(@n|@source)]//tei:height/@quantity) * 100, '#.0')"/>
+             </xsl:when>
+         <xsl:otherwise>
+             <xsl:value-of select="format-number(xs:decimal($currentinscription//tei:support/tei:dimensions[not(@n|@source)]//tei:height/@atMost) * 100, '#.0')"/>
+         </xsl:otherwise>
+         </xsl:choose>
      </hoehe>
-         <breite>
-             <xsl:value-of select="$currentinscription//tei:support//tei:dimensions/tei:width"/>
+        </xsl:if>
+         <xsl:if test="$currentinscription//tei:support/tei:dimensions[not(@n|@source)]//tei:width">        
+    <breite>
+             <xsl:choose>
+                 <xsl:when test="$currentinscription//tei:support/tei:dimensions[not(@n|@source)]//tei:width/@quantity">
+                     <xsl:value-of select="format-number(xs:decimal($currentinscription//tei:support/tei:dimensions[not(@n|@source)]//tei:width/@quantity) * 100, '#.0')"/>
+                 </xsl:when>
+                 <xsl:otherwise>
+                     <xsl:value-of select="format-number(xs:decimal($currentinscription//tei:support/tei:dimensions[not(@n|@source)]//tei:width/@atMost) * 100, '#.0')"/>
+                 </xsl:otherwise>
+             </xsl:choose>
          </breite>
-         <tiefe>
-             <xsl:value-of select="$currentinscription//tei:support//tei:dimensions/tei:depth"/>
+         </xsl:if>
+         
+         <xsl:if test="$currentinscription//tei:support/tei:dimensions[not(@n|@source)]//tei:depth/@quantity">
+             <tiefe>
+                 <xsl:choose>
+                 <xsl:when test="$currentinscription//tei:support/tei:dimensions[not(@n|@source)]//tei:depth/@quantity">
+                     <xsl:value-of select="format-number(xs:decimal($currentinscription//tei:support/tei:dimensions[not(@n|@source)]//tei:depth/@quantity) * 100, '#.0')"/>
+                 </xsl:when>
+                 <xsl:otherwise>
+                     <xsl:value-of select="format-number(xs:decimal($currentinscription//tei:support/tei:dimensions[not(@n|@source)]//tei:depth/@atMost) * 100, '#.0')"/>
+                 </xsl:otherwise>
+             </xsl:choose>
          </tiefe>
+                </xsl:if>
      </xsl:otherwise></xsl:choose>
-                               <bh>
-                                   <xsl:value-of select="$currentinscription//tei:layout/tei:dimensions/tei:hight"/>
+                        <xsl:if test="$currentinscription//tei:layout/tei:dimensions/tei:hight">
+                            <bh>
+                                   <xsl:choose>
+                                       <xsl:when test="$currentinscription//tei:layout/tei:dimensions/tei:hight">
+                                           <xsl:value-of select="format-number(xs:decimal($currentinscription//tei:layout/tei:dimensions/tei:hight/@quantity) * 100, '-#.0')"/>
+                                       </xsl:when>
+                                       <xsl:otherwise>
+                                           <xsl:value-of select="format-number(xs:decimal($currentinscription//tei:layout/tei:dimensions/tei:hight/@atMost) * 100, '-#.0')"/>
+                                       </xsl:otherwise>
+                                   </xsl:choose>
                             </bh>
+                        </xsl:if>
                             <metrik>
                                 <xsl:value-of select="$currentinscription//tei:rs[@type='metre']"/>
                             </metrik>
-                            <nl_text><!--non latin text-->
-                                <xsl:if
-                                    test="$currentinscription//tei:div[@type='edition']/descendant-or-self::*[@xml:lang='grc']">
-                                    <xsl:text>A</xsl:text>
-                                </xsl:if>
-                            </nl_text>
+                               <sprache>
+                                <xsl:choose>
+                                    <xsl:when
+                                        test="$currentinscription//tei:div[@type='edition']/descendant-or-self::*[@xml:lang='grc']">
+                                        <xsl:text>Greek</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when
+                                    test="$currentinscription//tei:div[@type='edition']/descendant-or-self::*[@xml:lang='la']">
+                                    <xsl:text>Latin</xsl:text>
+                                </xsl:when>
+                                    <xsl:when
+                                        test="$currentinscription//tei:div[@type='edition']/descendant-or-self::*[@xml:lang='amw'][@n='Palmyrene']">
+                                        <xsl:text>Palmyrenic</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when
+                                        test="$currentinscription//tei:div[@type='edition']/descendant-or-self::*[@xml:lang='cop']">
+                                        <xsl:text>Coptic</xsl:text>
+                                    </xsl:when>
+                                    <xsl:when
+                                        test="$currentinscription//tei:div[@type='edition']/descendant-or-self::*[@xml:lang='ang']">
+                                        <xsl:text>Celtic</xsl:text><!--REALLY??-->
+                                    </xsl:when>
+                                    
+                                    
+                                    <xsl:otherwise>
+                                        <xsl:text>Latin</xsl:text>
+                                    </xsl:otherwise>
+                                
+                                </xsl:choose>
+                            </sprache>
 
                             <xsl:variable name="dates">
                                 <xsl:for-each select="$currentinscription//tei:origDate">
@@ -260,49 +912,58 @@
                                 </xsl:for-each>
                             </xsl:variable>
                             
-                            <date_von>
-                                <xsl:choose><xsl:when test="$currentinscription//tei:origDate/@notBefore-custom"><xsl:value-of
-                                        select="$currentinscription//tei:origDate/@notBefore-custom"
-                                    /></xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of
-                                        select="$currentinscription//tei:origDate"
-                                    /></xsl:otherwise></xsl:choose>
+                        <xsl:if test="$currentinscription//tei:origDate !=''">
+                            
+                                <xsl:choose>
+                                    <xsl:when test="$currentinscription//tei:origDate/@notBefore-custom">
+                                        <datierung_von>
+                                            <xsl:value-of select="$currentinscription//tei:origDate/@notBefore-custom" />
+                                        </datierung_von>
+                                    </xsl:when>
+                                </xsl:choose>
 <!--  can use in both format-date() to decide the output of the date-->
-                            </date_von>
-                            <dat_bis>
-                                <xsl:choose><xsl:when test="$currentinscription//tei:origDate/@notAfter-custom"><xsl:value-of
-                                    select="$currentinscription//tei:origDate/@notAfter-custom"
-                                /></xsl:when>
-                                    <xsl:otherwise>
-                                        <xsl:value-of
-                                            select="$currentinscription//tei:origDate"
-                                        /></xsl:otherwise></xsl:choose>
-                            </dat_bis>
+                            
+                                <xsl:choose>
+                                    <xsl:when test="$currentinscription//tei:origDate/@notAfter-custom">
+                                        
+                                        <datierung_bis>
+                                        <xsl:value-of select="$currentinscription//tei:origDate/@notAfter-custom"/>
+                                        </datierung_bis>
+                                    </xsl:when>
+                                </xsl:choose>
+                            
+                        </xsl:if>
+                           
+                        <xsl:if test="$currentinscription//tei:rs[@type='socecon']">
                             <soziales>
-                                <xsl:if test="$currentinscription//tei:rs[@type='socecon']">
-                                    <xsl:text>J</xsl:text>
-                                </xsl:if>
+                                 <xsl:text>J</xsl:text>
                             </soziales>
-                            <religion>
+                        </xsl:if>
+                        
+                        <xsl:if test="$currentinscription//tei:rs[@type='religion']">
+                               <religion>
                                 <xsl:if test="$currentinscription//tei:rs[@type='religion']=('Jewish', 'Christian')">
                                     <xsl:text>2</xsl:text>
                                 </xsl:if>
                                 <xsl:if test="$currentinscription//tei:rs[@type='religion'][@nymRef='priesthood']">
                                     <xsl:text>3</xsl:text>
                                 </xsl:if>
-                            </religion>
-                            <geographie>
+                            </religion></xsl:if>
+                           
                                 <xsl:if test="$currentinscription//tei:div[@type='edition']//tei:placeName">
-                                    <xsl:text>J</xsl:text>
+                                    <geographie>
+                                        <xsl:text>J</xsl:text>
+                                    </geographie>
                                 </xsl:if>
-                            </geographie>
-                            <militaer>
+                            
+                            
                                 <xsl:if test="$currentinscription//tei:div[@type='edition']//tei:rs[@type='military']">
+                                    <militaer>
                                     <xsl:text>J</xsl:text>
+                                    </militaer>
                                 </xsl:if>
-                            </militaer>
-                            <beleg/>
+                            
+                        <beleg>provisional</beleg>
                             <bearbeiter>
                                 <xsl:value-of select="$currentinscription//tei:change[1]/@who"/>
                             </bearbeiter>
@@ -310,34 +971,78 @@
                                 <xsl:value-of select="$currentinscription//tei:change[1]/@when"/>  
                             </datum>
                 <lit> 
-                    <xsl:for-each select="$currentinscription//tei:bibl">
-                        <lit_line><xsl:value-of select="."/></lit_line>
-<!--                        CONCAT WITH VALUE of REFERENCE IN PTR -->
+                    <lit_line>
+                        <xsl:value-of select="concat('RIB 01, ', format-number(., '00000'), '.')"/>
+                    </lit_line>
+               <!--     <xsl:choose>
+                        <xsl:when test="$currentinscription//tei:div[@type='bibliography'][contains(., 'No bibliography')]">
+                            <xsl:text>No Bibliography</xsl:text>
+                    </xsl:when>
+                      <xsl:otherwise>-->
+                          <xsl:for-each select="$currentinscription//tei:div[@type='bibliography']//tei:bibl[not(tei:ref[@target='bibA00118']|tei:ref[@target='bibA00263'])]">
+<!--                        excludes EDH and Trismegistos from biblio-->
+                       
+                              <xsl:if test="tei:ref[@target='bibA00091']"> <!--CIL-->
+                                <xsl:variable name="item">
+                                    <xsl:variable name="number">
+                                        <xsl:analyze-string select="/tei:biblScope[@unit='item']" regex="\d+">
+                                            <xsl:matching-substring>
+                                                <xsl:value-of select="regex-group(1)"/>
+                                            </xsl:matching-substring>
+                                            <xsl:non-matching-substring>
+                                                <xsl:value-of select="."/>
+                                            </xsl:non-matching-substring>
+                                        </xsl:analyze-string>
+                                    </xsl:variable>
+                                    <xsl:variable name="letter">
+                                        <xsl:analyze-string select="/tei:biblScope[@unit='item']" regex="\w+">
+                                            <xsl:matching-substring>
+                                                <xsl:value-of select="regex-group(1)"/>
+                                            </xsl:matching-substring>
+                                        </xsl:analyze-string>
+                                    </xsl:variable>
+                                    <xsl:value-of select="concat(format-number($number, '00000'), $letter)"/>
+                                </xsl:variable>
+                                <lit_line> <xsl:value-of select="concat('CIL ', '07, ', $item,'.')"/></lit_line>
+                            </xsl:if>
+                                <xsl:if test="tei:ref[@target='bibA00017']"> <!--AE-->
+                                   <xsl:variable name="year">
+                                        <xsl:value-of select="tei:date/@when"/>
+                                    </xsl:variable>
+                                    <lit_line><xsl:value-of select="concat('AE ', $year, ', ', format-number(xs:integer(substring-after(tei:biblScope[@unit='item'],'no. ')), '0000'),'.')"/></lit_line>
+                                </xsl:if>
+                              
+<!--                              WHAT TO DO WITH OTHER BIBLIOGRAPHY?  do we want it already? in IRT it was not imported
+                                    -->
                     </xsl:for-each>
+                      <!--</xsl:otherwise>
+                    </xsl:choose>-->
                 </lit>
                 
                         <kommentar>
                             <komm_line>
-                                <xsl:value-of select="$currentinscription//tei:div[@type='commentary']/tei:p"/>
+<!--                                <xsl:value-of select="$currentinscription//tei:div[@type='commentary']/tei:p"/>-->
                             </komm_line>
                         </kommentar>
-                            <xsl:variable name="names">
-                                <xsl:for-each select="$currentinscription//tei:div[@type='edition']//tei:persName[not(@type='divine')]">
-                                    <xsl:variable name="me" select="generate-id()"/>
-                                    <xsl:if test="not(child::tei:w[@lemma='diuus'][generate-id(ancestor::tei:persName[1]) = $me]
-                                        or descendant::tei:w[@lemma='diuus'][generate-id(ancestor::tei:persName[1]) = $me])">
-                                        <xsl:if test="not(following-sibling::*[1][local-name()='w'][@lemma='filius' or @lemma='libertus' or @lemma='filia' or @lemma='liberta'] 
-                                            and not(descendant::tei:name[@type='gentilicium' or @type='cognomen']))">
-                                    <xsl:sequence select="."/>
-                                        </xsl:if></xsl:if>
-                                </xsl:for-each>
-                            </xsl:variable>
-
+                       
+                        <xsl:variable name="names">
+                            <xsl:for-each select="$currentinscription//tei:div[@type='edition']//tei:persName[not(@type='divine')]">
+                                <xsl:variable name="me" select="generate-id()"/>
+                                <xsl:if test="not(child::tei:w[@lemma='diuus'][generate-id(ancestor::tei:persName[1]) = $me]
+                                    or descendant::tei:w[@lemma='diuus'][generate-id(ancestor::tei:persName[1]) = $me])">
+                                    <xsl:if test="not(following-sibling::*[1][local-name()='w'][@lemma='filius' or @lemma='libertus' or @lemma='filia' or @lemma='liberta'] 
+                                        and not(descendant::tei:name[@type='gentilicium' or @type='cognomen']))">
+                                        <xsl:sequence select="."/>
+                                    </xsl:if></xsl:if>
+                            </xsl:for-each>
+                        </xsl:variable>
+                      <xsl:if test="$names !=''">  
+                     <personen>    
                             <xsl:for-each select="$names/tei:persName[not(@type='divine')][descendant::tei:name]">
                                 <xsl:variable name="namepos">
                                     <xsl:value-of select="position()"/>
                                 </xsl:variable>
-                                <Namen n="{position()}">
+                                <person n="{position()}">
                                     <name>
                                         <xsl:variable name="namewithspaces"><xsl:apply-templates select=".">
                                             <xsl:with-param name="parm-leiden-style" tunnel="yes">edh-names</xsl:with-param>
@@ -480,23 +1185,54 @@
                                             </xsl:if>
                                         </xsl:for-each>
                                     </tribus>
-                                </Namen>
+                                    <origo/>
+                                    <geschlecht/>
+                                    <status/>
+                                    <beruf/>
+                                    <l_jahre/>
+                                    <l_monate/>
+                                    <l_tage/>
+                                    <l_stunden/>
+                                </person>
                             </xsl:for-each>
-                            <origo/>
-                            <geschlecht/>
-                            <status/>
-                            <beruf/>
-                            <l_jahre/>
-                            <l_monate/>
-                            <l_tage/>
-                            <l_stunden/>
+                     </personen></xsl:if>
                             <textus>
-                                <xsl:variable name="text"><xsl:for-each select="$currentinscription//tei:div[@type='edition'][not(@subtype)]/tei:ab[@type='markup']">      
+                                <!--textparts-->
+<xsl:variable name="text">                       
+    <xsl:choose>
+        <xsl:when test="$currentinscription//tei:div[@type='edition'][contains(., 'No text recorded')]">
+            <xsl:text>No text recorded</xsl:text>
+        </xsl:when>      
+        <xsl:when test="$currentinscription//tei:div[@type='edition'][not(descendant::tei:ab[@type='markup'])]">
+            <xsl:for-each select="$currentinscription//tei:div[@type='edition']/tei:ab[@type]">      
+                <xsl:apply-templates select=".">
+                    <xsl:with-param name="parm-leiden-style" tunnel="yes">edh-itx</xsl:with-param>
+                    <xsl:with-param name="parm-line-inc" select="$line-inc" tunnel="yes" as="xs:double"/>
+                </xsl:apply-templates>
+            </xsl:for-each>
+        </xsl:when>                      
+        <xsl:when test="$currentinscription//tei:div[@type='edition']/tei:div[@type='textpart']/tei:ab[@type='markup']">
+                                      
+                                        <xsl:for-each select="$currentinscription//tei:div[@type='edition']/tei:div[@type='textpart']/tei:ab[@type='markup']">      
+                                            <xsl:apply-templates select=".">
+                                                <xsl:with-param name="parm-leiden-style" tunnel="yes">edh-itx</xsl:with-param>
+                                                <xsl:with-param name="parm-line-inc" select="$line-inc" tunnel="yes" as="xs:double"/>
+                                            </xsl:apply-templates>
+                                            <xsl:if test="not(position() = last())"><xsl:text> // </xsl:text></xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:when>
+        
+                                    <xsl:otherwise>
+                                            <xsl:for-each select="$currentinscription//tei:div[@type='edition']/tei:ab[@type='markup']">      
                                     <xsl:apply-templates select=".">
                                         <xsl:with-param name="parm-leiden-style" tunnel="yes">edh-itx</xsl:with-param>
                                        <xsl:with-param name="parm-line-inc" select="$line-inc" tunnel="yes" as="xs:double"/>
                                     </xsl:apply-templates>
-                                </xsl:for-each></xsl:variable>
+                                </xsl:for-each>
+                                
+                                </xsl:otherwise>
+                                </xsl:choose>
+</xsl:variable>
                                 <xsl:value-of select="normalize-space($text)"/>
                             </textus>
                         </record>
