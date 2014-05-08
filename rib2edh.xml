@@ -62,7 +62,7 @@
       </kommentar>
       <personen>
          <person n="1">
-            <name>Ulpi- us / Silva-/ nus</name>
+            <name>Ulpi us / Silva/ nus</name>
             <praenomen/>
             <nomen>Ulpius</nomen>
             <cognomen>Silvanus</cognomen>
@@ -78,7 +78,8 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>Ulpi-/ us / Silva-/ nus / (miles) fac-/ tus / Arau-/ sione / emeri-/ tus leg(ionis) / II Aug(ustae) / votum / solvit</textus>
+      <textus>Ulpi/ us / Silva/ nus / (miles) fac/ tus / Arau/ sione / emeri/ tus leg(ionis) / II
+         Aug(ustae) / votum / solvit</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/5">
       <tmUri>http://www.trismegistos.org/text/154498</tmUri>
@@ -157,7 +158,7 @@
             <l_stunden/>
          </person>
          <person n="2">
-            <name>Aur. Euc-/ arpia</name>
+            <name>Aur. Euc/ arpia</name>
             <praenomen/>
             <nomen>Aurelia*</nomen>
             <cognomen>Eucarpia</cognomen>
@@ -173,7 +174,8 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>M(arco) / Aur(elio) Eucarpo / fil(io) pientissimo / vixit ann(os) XV / m(enses) VI Aur(elia) Euc-/ arpia ma(ter) possuit</textus>
+      <textus>M(arco) / Aur(elio) Eucarpo / fil(io) pientissimo / vixit ann(os) XV / m(enses) VI
+         Aur(elia) Euc/ arpia ma(ter) possuit</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/11">
       <tmUri>http://www.trismegistos.org/text/154504</tmUri>
@@ -183,9 +185,7 @@
       <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
       <fundjahr>1787</fundjahr>
       <fundstelle>London</fundstelle>
-      <aufbewahrung>Museum of
-                                    London Society
-                                    of Antiquaries</aufbewahrung>
+      <aufbewahrung>Museum of London Society of Antiquaries</aufbewahrung>
       <dekor/>
       <i_gattung>Epitaph</i_gattung>
       <denkmaltyp>Slab</denkmaltyp>
@@ -240,7 +240,9 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>D(is) M(anibus) / Fl(avius) Agricola mil(es) / leg(ionis) VI Vict(ricis) v(ixit) an(nos) / XLII d(ies) X Albia / Faustina coniugi / inconparabili / f(aciendum) c(uravit)</textus>
+      <textus>D(is) M(anibus) / Fl(avius) Agricola mil(es) / leg(ionis) VI Vict(ricis) v(ixit)
+         an(nos) / XLII d(ies) X Albia / Faustina coniugi / inconparabili / f(aciendum)
+         c(uravit)</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/13">
       <tmUri>http://www.trismegistos.org/text/154506</tmUri>
@@ -303,7 +305,8 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>D(is) M(anibus) / Iul(ius) Valens / mil(es) leg(ionis) XX V(aleriae) V(ictricis) / an(norum) XL h(ic) s(itus) e(st) c(uram) a(gente) Flavio / Attio her(ede)</textus>
+      <textus>D(is) M(anibus) / Iul(ius) Valens / mil(es) leg(ionis) XX V(aleriae) V(ictricis) /
+         an(norum) XL h(ic) s(itus) e(st) c(uram) a(gente) Flavio / Attio her(ede)</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/14">
       <tmUri>http://www.trismegistos.org/text/154507</tmUri>
@@ -360,7 +363,8 @@
       <provinz>Britannia</provinz>
       <land>United Kingdom</land>
       <fo_antik/>
-      <fo_modern geonames="http://www.geonames.org/6618996/westminster-abbey.html">London</fo_modern>
+      <fo_modern geonames="http://www.geonames.org/6618996/westminster-abbey.html"
+         >London</fo_modern>
       <fundjahr>1869</fundjahr>
       <fundstelle>Westminster Abbey</fundstelle>
       <aufbewahrung>Findspot</aufbewahrung>
@@ -387,7 +391,7 @@
       </kommentar>
       <personen>
          <person n="1">
-            <name>Valeri Aman- dini</name>
+            <name>Valeri Aman dini</name>
             <praenomen/>
             <nomen>Valerius</nomen>
             <cognomen>Amandinus</cognomen>
@@ -403,7 +407,7 @@
             <l_stunden/>
          </person>
          <person n="2">
-            <name>Valeri Superven-/ tor</name>
+            <name>Valeri Superven/ tor</name>
             <praenomen/>
             <nomen>Valerius</nomen>
             <cognomen>Superventor</cognomen>
@@ -435,7 +439,8 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>Memoriae Valeri Aman-/ dini Valeri Superven-/ tor et (Valerius) Marcellus patri fecer(unt)</textus>
+      <textus>Memoriae Valeri Aman/ dini Valeri Superven/ tor et (Valerius) Marcellus patri
+         fecer(unt)</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/17">
       <tmUri>http://www.trismegistos.org/text/154510</tmUri>
@@ -469,7 +474,7 @@
       </kommentar>
       <personen>
          <person n="1">
-            <name>Vivio Marci- ano</name>
+            <name>Vivio Marci ano</name>
             <praenomen/>
             <nomen>Vivius</nomen>
             <cognomen>Marcianus</cognomen>
@@ -501,7 +506,8 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>D(is) M(anibus) / Vivio Marci-/ ano leg(ionis) II / Aug(ustae) Ianuaria / Martina coniunx / pientissima posu-/ it memoriam</textus>
+      <textus>D(is) M(anibus) / Vivio Marci/ ano leg(ionis) II / Aug(ustae) Ianuaria / Martina
+         coniunx / pientissima posu/ it memoriam</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/18">
       <tmUri>http://www.trismegistos.org/text/154511</tmUri>
@@ -549,7 +555,8 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>[3] / urni[n] [3] / leg(ionis) XX [V(aleriae)] [V(ictricis)] / G(aius) Aci[lius] / M[3]</textus>
+      <textus>[3] / urni[n] [3] / leg(ionis) XX [V(aleriae)] [V(ictricis)] / G(aius) Aci[lius] /
+         M[3]</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/19">
       <tmUri>http://www.trismegistos.org/text/154512</tmUri>
@@ -598,7 +605,7 @@
             <l_stunden/>
          </person>
          <person n="2">
-            <name>An- [to]n. Dardanus Cu[r-]/ [sor]</name>
+            <name>An [to]n. Dardanus Cu[r-]/ [sor]</name>
             <praenomen/>
             <nomen>Antonius*+</nomen>
             <cognomen>Dardanus Cursor+</cognomen>
@@ -646,7 +653,9 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>[Dis] [Mani]bus / [3]r L(uci) f(ilius) C[l(audia)] (tribu) Celsu[s] / [3] [s]pec(ulator) leg(ionis) [II] [A]ug(ustae) An-/ [to]n(ius) Dardanus Cu[r-]/ [sor] [Val]erius Pudens / [3]s Probus sp[e]c(ulatores) l[eg(ionis)]</textus>
+      <textus>[Dis] [Mani]bus / [3]r L(uci) f(ilius) C[l(audia)] (tribu) Celsu[s] / [3]
+         [s]pec(ulator) leg(ionis) [II] [A]ug(ustae) An/ [to]n(ius) Dardanus Cu[r-]/ [sor]
+         [Val]erius Pudens / [3]s Probus sp[e]c(ulatores) l[eg(ionis)]</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/20">
       <tmUri>http://www.trismegistos.org/text/154513</tmUri>
@@ -776,7 +785,8 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>Iuliae Aug(ustae) / matri se-/ natus et / castror(um) / M(arcus) Sabinius / Victor ob / [3]</textus>
+      <textus>Iuliae Aug(ustae) / matri se/ natus et / castror(um) / M(arcus) Sabinius / Victor ob /
+         [3]</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/108">
       <tmUri>http://www.trismegistos.org/text/154601</tmUri>
@@ -873,7 +883,9 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>Dannicus eq(u)es alae / Indian(ae) tur(ma) Albani / stip(endiorum) XVI cives Raur(icus) / cur(averunt) Fulvius Natalis it / Fl[av]ius Bitucus ex testame(nto) / h(ic) s(itus) e(st)</textus>
+      <textus>Dannicus eq(u)es alae / Indian(ae) tur(ma) Albani / stip(endiorum) XVI cives
+         Raur(icus) / cur(averunt) Fulvius Natalis it / Fl[av]ius Bitucus ex testame(nto) / h(ic)
+         s(itus) e(st)</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/109">
       <tmUri>http://www.trismegistos.org/text/154602</tmUri>
@@ -906,7 +918,7 @@
       </kommentar>
       <personen>
          <person n="1">
-            <name>Sextus Vale- rius Genialis</name>
+            <name>Sextus Vale rius Genialis</name>
             <praenomen>Sextus</praenomen>
             <nomen>Valerius</nomen>
             <cognomen>Genialis</cognomen>
@@ -938,7 +950,9 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>Sextus Vale-/ rius Genialis / eq(u)es alae Trhaec(um) / civis Frisia(v)us tur(ma) / Genialis an(norum) XXXX st(ipendiorum) XX / h(ic) s(itus) e(st) (h)e(res) f(aciendum) c(uravit)</textus>
+      <textus>Sextus Vale/ rius Genialis / eq(u)es alae Trhaec(um) / civis Frisia(v)us tur(ma) /
+         Genialis an(norum) XXXX st(ipendiorum) XX / h(ic) s(itus) e(st) (h)e(res) f(aciendum)
+         c(uravit)</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/146">
       <tmUri>http://www.trismegistos.org/text/154639</tmUri>
@@ -987,7 +1001,8 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>Deae Su-/ li Min(ervae) et Nu-/ min(ibus) Aug(ustorum) G(aius) / Curiatius / Saturninus / leg(ionis) II Aug(ustae) / pro se su-/ isque / v(otum) s(olvit) l(ibens) m(erito)</textus>
+      <textus>Deae Su/ li Min(ervae) et Nu/ min(ibus) Aug(ustorum) G(aius) / Curiatius / Saturninus
+         / leg(ionis) II Aug(ustae) / pro se su/ isque / v(otum) s(olvit) l(ibens) m(erito)</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/328">
       <tmUri>http://www.trismegistos.org/text/154821</tmUri>
@@ -1051,6 +1066,7 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>Dedicat[um] / VIIII a(nte) d(iem) K[al(endas)] / Oc[tobr]es / [P]u[pie]nio / Maximo II / et Urbano / co(n)s(ulibus)</textus>
+      <textus>Dedicat[um] / VIIII a(nte) d(iem) K[al(endas)] / Oc[tobr]es / [P]u[pie]nio / Maximo II
+         / et Urbano / co(n)s(ulibus)</textus>
    </record>
 </EDH>
