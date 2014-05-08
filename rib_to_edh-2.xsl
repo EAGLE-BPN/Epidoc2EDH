@@ -982,10 +982,10 @@
                           <xsl:for-each select="$currentinscription//tei:div[@type='bibliography']//tei:bibl[not(tei:ref[@target='bibA00118']|tei:ref[@target='bibA00263'])]">
 <!--                        excludes EDH and Trismegistos from biblio-->
                        
-                              <xsl:if test="tei:ref[@target='bibA00091']"> <!--CIL-->
+                              <xsl:if test="contains(.,'CIL')"> <!--CIL-->
                                 <xsl:variable name="item">
-                                    <xsl:variable name="number">
-                                        <xsl:analyze-string select="/tei:biblScope[@unit='item']" regex="\d+">
+   <!--                                 <xsl:variable name="number">
+                                        <xsl:analyze-string select="" regex="\d+">
                                             <xsl:matching-substring>
                                                 <xsl:value-of select="regex-group(1)"/>
                                             </xsl:matching-substring>
@@ -1000,8 +1000,8 @@
                                                 <xsl:value-of select="regex-group(1)"/>
                                             </xsl:matching-substring>
                                         </xsl:analyze-string>
-                                    </xsl:variable>
-                                    <xsl:value-of select="concat(format-number($number, '00000'), $letter)"/>
+                                    </xsl:variable>-->
+                                    <xsl:value-of select="format-number(tei:biblScope[@unit='item'], '00000')"/>
                                 </xsl:variable>
                                 <lit_line> <xsl:value-of select="concat('CIL ', '07, ', $item,'.')"/></lit_line>
                             </xsl:if>
@@ -1178,17 +1178,95 @@
                                         </xsl:for-each>
                                     </supernomen>
                                     <tribus>
-                                        <xsl:for-each select=".//tei:name[@type='tribe'][@nymRef]">
-                                            <xsl:value-of select="@nymRef"/>
-                                            <xsl:if test="not(position()=last())">
+                                        <xsl:for-each select=".//tei:orgName[@type='tribus']/tei:name[@nymRef]">
+                                            <xsl:value-of select="substring-after(@nymRef, '#')"/>
+                                            <!--<xsl:if test="not(position()=last())">
                                                 <xsl:text> </xsl:text>
-                                            </xsl:if>
+                                            </xsl:if>-->
                                         </xsl:for-each>
                                     </tribus>
                                     <origo/>
-                                    <geschlecht/>
-                                    <status/>
-                                    <beruf/>
+                                    <geschlecht>
+                                        <xsl:choose>
+                                            <xsl:when test="ends-with(.//tei:name[@type='praenomen']/@nymRef, 'us') or ends-with(.//tei:name[@type='gentilicium']/@nymRef, 'us') or ends-with(.//tei:name[@type='cognomen']/@nymRef, 'us')">
+                                            <xsl:text>M</xsl:text>
+                                        </xsl:when>
+                                            <xsl:when test="ends-with(.//tei:name[@type='praenomen']/@nymRef, 'a') or ends-with(.//tei:name[@type='gentilicium']/@nymRef, 'a') or ends-with(.//tei:name[@type='cognomen']/@nymRef, 'a')">
+                                            <xsl:text>W</xsl:text>
+                                        </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:text></xsl:text>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </geschlecht>
+                                    <status>
+                                        <xsl:choose>
+                                            <xsl:when test="@type='imperial'">
+                                                <xsl:text>0</xsl:text>
+                                            </xsl:when>
+                                            <xsl:when test="
+                                                contains(@role, 'legatus') or 
+                                                contains(@role, 'legate') or 
+                                                contains(@role, 'governor') or 
+                                                contains(@role, 'consul')">
+                                                <xsl:text>1</xsl:text>
+                                            </xsl:when>
+                                            <xsl:when test="
+                                                contains(@role, 'eques') 
+                                                or contains(@role, 'aedile') 
+                                                or contains(@role, 'procurator')">
+                                                <xsl:text>2</xsl:text>
+                                            </xsl:when>
+                                            <xsl:when test="
+                                                contains(@role, 'patronus') or 
+                                                contains(@role, 'decurio') or 
+                                                contains(@role, 'tribune')">
+                                                <xsl:text>3</xsl:text>
+                                            </xsl:when>
+                                            <xsl:when test="
+                                                contains(@role, 'medicus') or 
+                                                contains(@role, 'magister') or 
+                                                contains(@role, 'aerarius')">
+                                                <xsl:text>4</xsl:text>
+                                            </xsl:when>
+                                            <xsl:when test="@role='sevir'">
+                                                <xsl:text>5</xsl:text>
+                                            </xsl:when>
+                                            <xsl:when test="
+                                                contains(@role, 'freedwoman') or 
+                                                contains(@role, 'freedman') or 
+                                                contains(@role, 'libertus')">
+                                                <xsl:text>6</xsl:text>
+                                            </xsl:when> 
+                                            <xsl:when test="
+                                                contains(@role, 'beneficiarius') or 
+                                                contains(@role, 'strator') or 
+                                                contains(@role, 'miles') or 
+                                                contains(@role, 'princeps-prior') or 
+                                                contains(@role, 'veteranus') or 
+                                                contains(@role, 'signifer') or 
+                                                contains(@role, 'emeritus') or 
+                                                contains(@role, 'vexillarius') or 
+                                                contains(@role, 'imaginifer') or 
+                                                contains(@role, 'tesserarius') or 
+                                                contains(@role, 'actarius') or 
+                                                contains(@role, 'armatura') or 
+                                                contains(@role, 'optio') or 
+                                                contains(@role, 'princeps') or 
+                                                contains(@role, 'centurion')">
+                                                <xsl:text>9</xsl:text>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:text></xsl:text>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </status>
+                                    <beruf>
+                                        <xsl:if test="
+                                            contains(@role, 'magister')">
+                                            <xsl:text>J</xsl:text>
+                                        </xsl:if>
+                                    </beruf>
                                     <l_jahre/>
                                     <l_monate/>
                                     <l_tage/>
