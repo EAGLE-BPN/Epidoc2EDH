@@ -85,10 +85,15 @@
                                </fundstelle>
                     <aufbewahrung><xsl:choose>
                         <!-- Some RIB documents have more than one msIdentifier/settlement, which made the original code fail -->
-                        <xsl:when test="$currentinscription//tei:provenance[@type='lastLocation']//tei:orgName">
-                            <xsl:value-of select="$currentinscription//tei:provenance[@type='lastLocation']//tei:orgName"/>
+                        <xsl:when test="$currentinscription//tei:provenance[@type='lastLocation']//tei:orgName[1]">
+                            <xsl:variable name="institutionlist">
+                                <xsl:value-of select="$currentinscription//tei:provenance[@type='lastLocation']//tei:orgName[1]/@key"/>
+                            </xsl:variable>
+                            <xsl:if test="document('../../../../../../../../../../Users/pietro/ribrepo/rib/trunk/project/institution-groups/inst-index-name.xml')//tei:name[@key = $institutionlist]"><xsl:value-of select="document('../../../../../../../../../../Users/pietro/ribrepo/rib/trunk/project/institution-groups/inst-index-name.xml')//tei:name[@key = $institutionlist]/ancestor::tei:ref/following-sibling::tei:settlement"/></xsl:if>
+                            <xsl:text>: </xsl:text>
+                            <xsl:value-of select="$currentinscription//tei:provenance[@type='lastLocation']//tei:orgName[1]"/>
                         </xsl:when>
-                        <xsl:otherwise><xsl:text>Findspot</xsl:text></xsl:otherwise>
+                        <xsl:otherwise><xsl:text></xsl:text></xsl:otherwise>
                     </xsl:choose></aufbewahrung>
                             <dekor>
                                 <xsl:if test="contains($currentinscription, 'decoration')">
@@ -984,23 +989,6 @@
                        
                               <xsl:if test="contains(.,'CIL')"> <!--CIL-->
                                 <xsl:variable name="item">
-   <!--                                 <xsl:variable name="number">
-                                        <xsl:analyze-string select="" regex="\d+">
-                                            <xsl:matching-substring>
-                                                <xsl:value-of select="regex-group(1)"/>
-                                            </xsl:matching-substring>
-                                            <xsl:non-matching-substring>
-                                                <xsl:value-of select="."/>
-                                            </xsl:non-matching-substring>
-                                        </xsl:analyze-string>
-                                    </xsl:variable>
-                                    <xsl:variable name="letter">
-                                        <xsl:analyze-string select="/tei:biblScope[@unit='item']" regex="\w+">
-                                            <xsl:matching-substring>
-                                                <xsl:value-of select="regex-group(1)"/>
-                                            </xsl:matching-substring>
-                                        </xsl:analyze-string>
-                                    </xsl:variable>-->
                                     <xsl:value-of select="format-number(tei:biblScope[@unit='item'], '00000')"/>
                                 </xsl:variable>
                                 <lit_line> <xsl:value-of select="concat('CIL ', '07, ', $item,'.')"/></lit_line>
