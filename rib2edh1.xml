@@ -23,7 +23,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00002.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/2">RIB 01,
+            00002.</lit_line>
          <lit_line>CIL 07, 00020.</lit_line>
       </lit>
       <kommentar>
@@ -55,14 +56,15 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00003.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/3">RIB 01,
+            00003.</lit_line>
       </lit>
       <kommentar>
          <komm_line/>
       </kommentar>
       <personen>
          <person n="1">
-            <name>Ulpi us / Silva/ nus</name>
+            <name>Ulpi- us / Silva-/ nus</name>
             <praenomen/>
             <nomen>Ulpius</nomen>
             <cognomen>Silvanus</cognomen>
@@ -78,8 +80,8 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>Ulpi/ us / Silva/ nus / (miles) fac/ tus / Arau/ sione / emeri/ tus leg(ionis) / II
-         Aug(ustae) / votum / solvit</textus>
+      <textus>Ulpi-/ us / Silva-/ nus / (miles) fac-/ tus / Arau-/ sione / emeri-/tus leg(ionis) /
+         II Aug(ustae) / votum / solvit</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/5">
       <tmUri>http://www.trismegistos.org/text/154498</tmUri>
@@ -89,7 +91,7 @@
       <fo_modern geonames="http://www.geonames.org/2643741/city-of-london.html">London</fo_modern>
       <fundjahr>1850</fundjahr>
       <fundstelle>London</fundstelle>
-      <aufbewahrung>Findspot</aufbewahrung>
+      <aufbewahrung/>
       <dekor/>
       <i_gattung>Building/dedicatory inscription</i_gattung>
       <denkmaltyp>Slab</denkmaltyp>
@@ -104,7 +106,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00005.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/5">RIB 01,
+            00005.</lit_line>
          <lit_line>CIL 07, 00022.</lit_line>
       </lit>
       <kommentar>
@@ -135,7 +138,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00010.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/10">RIB 01,
+            00010.</lit_line>
       </lit>
       <kommentar>
          <komm_line/>
@@ -158,7 +162,7 @@
             <l_stunden/>
          </person>
          <person n="2">
-            <name>Aur. Euc/ arpia</name>
+            <name>Aur. Euc-/ arpia</name>
             <praenomen/>
             <nomen>Aurelia*</nomen>
             <cognomen>Eucarpia</cognomen>
@@ -175,7 +179,7 @@
          </person>
       </personen>
       <textus>M(arco) / Aur(elio) Eucarpo / fil(io) pientissimo / vixit ann(os) XV / m(enses) VI
-         Aur(elia) Euc/ arpia ma(ter) possuit</textus>
+         Aur(elia) Euc-/ arpia ma(ter) possuit</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/11">
       <tmUri>http://www.trismegistos.org/text/154504</tmUri>
@@ -200,7 +204,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00011.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/11">RIB 01,
+            00011.</lit_line>
          <lit_line>CIL 07, 00025.</lit_line>
       </lit>
       <kommentar>
@@ -252,7 +257,7 @@
       <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
       <fundjahr>1776</fundjahr>
       <fundstelle>London</fundstelle>
-      <aufbewahrung>Findspot</aufbewahrung>
+      <aufbewahrung/>
       <dekor/>
       <i_gattung>Epitaph</i_gattung>
       <denkmaltyp>Grave monument</denkmaltyp>
@@ -265,7 +270,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00013.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/13">RIB 01,
+            00013.</lit_line>
          <lit_line>CIL 07, 00027.</lit_line>
       </lit>
       <kommentar>
@@ -332,7 +338,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00014.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/14">RIB 01,
+            00014.</lit_line>
          <lit_line>CIL 07, 00032.</lit_line>
       </lit>
       <kommentar>
@@ -367,7 +374,7 @@
          >London</fo_modern>
       <fundjahr>1869</fundjahr>
       <fundstelle>Westminster Abbey</fundstelle>
-      <aufbewahrung>Findspot</aufbewahrung>
+      <aufbewahrung/>
       <dekor/>
       <i_gattung>Epitaph</i_gattung>
       <denkmaltyp>Sarcophagus</denkmaltyp>
@@ -383,7 +390,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00016.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/16">RIB 01,
+            00016.</lit_line>
          <lit_line>CIL 07, 00033.</lit_line>
       </lit>
       <kommentar>
@@ -391,7 +399,7 @@
       </kommentar>
       <personen>
          <person n="1">
-            <name>Valeri Aman dini</name>
+            <name>Valeri Aman- dini</name>
             <praenomen/>
             <nomen>Valerius</nomen>
             <cognomen>Amandinus</cognomen>
@@ -407,7 +415,7 @@
             <l_stunden/>
          </person>
          <person n="2">
-            <name>Valeri Superven/ tor</name>
+            <name>Valeri Superven-/ tor</name>
             <praenomen/>
             <nomen>Valerius</nomen>
             <cognomen>Superventor</cognomen>
@@ -439,7 +447,7 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>Memoriae Valeri Aman/ dini Valeri Superven/ tor et (Valerius) Marcellus patri
+      <textus>Memoriae Valeri Aman-/ dini Valeri Superven-/ tor et (Valerius) Marcellus patri
          fecer(unt)</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/17">
@@ -466,7 +474,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00017.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/17">RIB 01,
+            00017.</lit_line>
          <lit_line>CIL 07, 00023.</lit_line>
       </lit>
       <kommentar>
@@ -474,7 +483,7 @@
       </kommentar>
       <personen>
          <person n="1">
-            <name>Vivio Marci ano</name>
+            <name>Vivio Marci- ano</name>
             <praenomen/>
             <nomen>Vivius</nomen>
             <cognomen>Marcianus</cognomen>
@@ -506,8 +515,8 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>D(is) M(anibus) / Vivio Marci/ ano leg(ionis) II / Aug(ustae) Ianuaria / Martina
-         coniunx / pientissima posu/ it memoriam</textus>
+      <textus>D(is) M(anibus) / Vivio Marci-/ ano leg(ionis) II / Aug(ustae) Ianuaria / Martina
+         coniunx / pientissima posu-/ it memoriam</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/18">
       <tmUri>http://www.trismegistos.org/text/154511</tmUri>
@@ -531,7 +540,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00018.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/18">RIB 01,
+            00018.</lit_line>
          <lit_line>CIL 07, 00026.</lit_line>
       </lit>
       <kommentar>
@@ -581,7 +591,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00019.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/19">RIB 01,
+            00019.</lit_line>
          <lit_line>CIL 07, 00024.</lit_line>
       </lit>
       <kommentar>
@@ -605,7 +616,7 @@
             <l_stunden/>
          </person>
          <person n="2">
-            <name>An [to]n. Dardanus Cu[r-]/ [sor]</name>
+            <name>An- [to]n. Dardanus Cu[r-]/[sor]</name>
             <praenomen/>
             <nomen>Antonius*+</nomen>
             <cognomen>Dardanus Cursor+</cognomen>
@@ -654,7 +665,7 @@
          </person>
       </personen>
       <textus>[Dis] [Mani]bus / [3]r L(uci) f(ilius) C[l(audia)] (tribu) Celsu[s] / [3]
-         [s]pec(ulator) leg(ionis) [II] [A]ug(ustae) An/ [to]n(ius) Dardanus Cu[r-]/ [sor]
+         [s]pec(ulator) leg(ionis) [II] [A]ug(ustae) An-/ [to]n(ius) Dardanus Cu[r-]/[sor]
          [Val]erius Pudens / [3]s Probus sp[e]c(ulatores) l[eg(ionis)]</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/20">
@@ -681,7 +692,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00020.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/20">RIB 01,
+            00020.</lit_line>
       </lit>
       <kommentar>
          <komm_line/>
@@ -730,7 +742,7 @@
       <fo_modern geonames="http://www.geonames.org/2637846/silchester.html">Silchester</fo_modern>
       <fundjahr>1732</fundjahr>
       <fundstelle>Silchester</fundstelle>
-      <aufbewahrung>Findspot</aufbewahrung>
+      <aufbewahrung/>
       <dekor/>
       <i_gattung>Building/dedicatory inscription</i_gattung>
       <denkmaltyp/>
@@ -745,7 +757,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00068.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/68">RIB 01,
+            00068.</lit_line>
          <lit_line>CIL 07, 00007.</lit_line>
       </lit>
       <kommentar>
@@ -785,8 +798,8 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>Iuliae Aug(ustae) / matri se/ natus et / castror(um) / M(arcus) Sabinius / Victor ob /
-         [3]</textus>
+      <textus>Iuliae Aug(ustae) / matri se-/ natus et / castror(um) / M(arcus) Sabinius / Victor ob
+         / [3]</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/108">
       <tmUri>http://www.trismegistos.org/text/154601</tmUri>
@@ -811,7 +824,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00108.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/108">RIB 01,
+            00108.</lit_line>
          <lit_line>CIL 07, 00066.</lit_line>
       </lit>
       <kommentar>
@@ -843,7 +857,7 @@
             <tribus/>
             <origo/>
             <geschlecht>M</geschlecht>
-            <status/>
+            <status>3</status>
             <beruf/>
             <l_jahre/>
             <l_monate/>
@@ -910,7 +924,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00109.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/109">RIB 01,
+            00109.</lit_line>
          <lit_line>CIL 07, 00068.</lit_line>
       </lit>
       <kommentar>
@@ -918,7 +933,7 @@
       </kommentar>
       <personen>
          <person n="1">
-            <name>Sextus Vale rius Genialis</name>
+            <name>Sextus Vale- rius Genialis</name>
             <praenomen>Sextus</praenomen>
             <nomen>Valerius</nomen>
             <cognomen>Genialis</cognomen>
@@ -942,7 +957,7 @@
             <tribus/>
             <origo/>
             <geschlecht/>
-            <status/>
+            <status>3</status>
             <beruf/>
             <l_jahre/>
             <l_monate/>
@@ -950,7 +965,7 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>Sextus Vale/ rius Genialis / eq(u)es alae Trhaec(um) / civis Frisia(v)us tur(ma) /
+      <textus>Sextus Vale-/ rius Genialis / eq(u)es alae Trhaec(um) / civis Frisia(v)us tur(ma) /
          Genialis an(norum) XXXX st(ipendiorum) XX / h(ic) s(itus) e(st) (h)e(res) f(aciendum)
          c(uravit)</textus>
    </record>
@@ -977,7 +992,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00146.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/146">RIB 01,
+            00146.</lit_line>
          <lit_line>CIL 07, 00042.</lit_line>
       </lit>
       <kommentar>
@@ -1001,8 +1017,9 @@
             <l_stunden/>
          </person>
       </personen>
-      <textus>Deae Su/ li Min(ervae) et Nu/ min(ibus) Aug(ustorum) G(aius) / Curiatius / Saturninus
-         / leg(ionis) II Aug(ustae) / pro se su/ isque / v(otum) s(olvit) l(ibens) m(erito)</textus>
+      <textus>Deae Su-/ li Min(ervae) et Nu-/ min(ibus) Aug(ustorum) G(aius) / Curiatius /
+         Saturninus / leg(ionis) II Aug(ustae) / pro se su-/ isque / v(otum) s(olvit) l(ibens)
+         m(erito)</textus>
    </record>
    <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/328">
       <tmUri>http://www.trismegistos.org/text/154821</tmUri>
@@ -1026,7 +1043,8 @@
       <bearbeiter>SDV</bearbeiter>
       <datum>2011-06-11</datum>
       <lit>
-         <lit_line>RIB 01, 00328.</lit_line>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/328">RIB 01,
+            00328.</lit_line>
          <lit_line>CIL 07, 00104.</lit_line>
       </lit>
       <kommentar>
