@@ -1095,7 +1095,7 @@
                                     <!--CIL-->
                                     <xsl:variable name="item">
                                         <xsl:value-of
-                                            select="format-number(number(t:biblScope[@unit='item']), '00000')"
+                                            select="format-number(number(t:biblScope[@unit='item'])  , '00000')"
                                         />
                                     </xsl:variable>
                                     <lit_line>
@@ -1320,11 +1320,11 @@
                                         <geschlecht>
                                             <xsl:choose>
                                                 <xsl:when
-                                                    test="ends-with(.//t:name[@type='praenomen']/@nymRef, 'us') or ends-with(.//t:name[@type='gentilicium']/@nymRef, 'us') or ends-with(.//t:name[@type='cognomen']/@nymRef, 'us')">
+                                                    test="ends-with(.//t:name[@type='praenomen'][1]/@nymRef, 'us') or ends-with(.//t:name[1][@type='gentilicium']/@nymRef, 'us') or ends-with(.//t:name[1][@type='cognomen']/@nymRef, 'us')">
                                                   <xsl:text>M</xsl:text>
                                                 </xsl:when>
                                                 <xsl:when
-                                                  test="ends-with(.//t:name[@type='praenomen']/@nymRef, 'a') or ends-with(.//t:name[@type='gentilicium']/@nymRef, 'a') or ends-with(.//t:name[@type='cognomen']/@nymRef, 'a')">
+                                                  test="ends-with(.//t:name[1][@type='praenomen']/@nymRef, 'a') or ends-with(.//t:name[1][@type='gentilicium']/@nymRef, 'a') or ends-with(.//t:name[1][@type='cognomen']/@nymRef, 'a')">
                                                   <xsl:text>W</xsl:text>
                                                 </xsl:when>
                                                 <xsl:otherwise>

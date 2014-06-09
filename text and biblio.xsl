@@ -5,13 +5,13 @@
     version="2.0">
     <xsl:template match="/">
         <html><table><tr>
-            <th>RIB ID</th>
+            <th>TM uri</th>
             <th>Text</th>
             <th>Bibliography</th>
         </tr>
             <xsl:for-each select="//record">
                 <tr>
-                    <td><xsl:value-of select="lit_line[1]"/></td>
+                    <td><a><xsl:attribute name="href"><xsl:value-of select="tmUri"/></xsl:attribute>Link</a></td>
                     <td><xsl:value-of select="textus"/></td>
                     <td><xsl:value-of select="lit"/></td>
                 </tr>

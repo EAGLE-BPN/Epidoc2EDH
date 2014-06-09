@@ -1,0 +1,2680 @@
+<EDH>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/2">
+      <tmUri>http://www.trismegistos.org/text/154495</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643741/city-of-london.html">London</fo_modern>
+      <fundjahr>1854</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: Museum of
+                                    London</aufbewahrung>
+      <dekor/>
+      <i_gattung>Building/dedicatory inscription</i_gattung>
+      <denkmaltyp>Architectural member</denkmaltyp>
+      <material>Marble, white</material>
+      <hoehe>10.8</hoehe>
+      <breite>39.4</breite>
+      <tiefe>7.0</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/2">RIB 01, 00002.</lit_line>
+         <lit_line>CIL 07, 00020.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>Matr[ibus] / vicinia de suo res[tituit 3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/3">
+      <tmUri>http://www.trismegistos.org/text/154496</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/17649950">London
+                                Mithraeum</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643741/city-of-london.html">London</fo_modern>
+      <fundjahr>1889</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: Museum of London</aufbewahrung>
+      <dekor/>
+      <i_gattung>Building/dedicatory inscription</i_gattung>
+      <denkmaltyp>Relief</denkmaltyp>
+      <material>Marble, white</material>
+      <hoehe>43.2</hoehe>
+      <breite>55.9</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0175</datierung_von>
+      <datierung_bis>0225</datierung_bis>
+      <geographie>J</geographie>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/3">RIB 01, 00003.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>Ulpius Silvanus</name>
+            <praenomen/>
+            <nomen>Ulpius</nomen>
+            <cognomen>Silvanus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status>9</status>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>Ulpi/us / Silva/nus / (miles) fac/tus / Arau/sione / emeri/tus leg(ionis) / II Aug(ustae) / votum / solvit</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/5">
+      <tmUri>http://www.trismegistos.org/text/154498</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643741/city-of-london.html">London</fo_modern>
+      <fundjahr>1850</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung/>
+      <dekor/>
+      <i_gattung>Building/dedicatory inscription</i_gattung>
+      <denkmaltyp>Slab</denkmaltyp>
+      <material>Rocks</material>
+      <hoehe>71.1</hoehe>
+      <breite>91.4</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/5">RIB 01, 00005.</lit_line>
+         <lit_line>CIL 07, 00022.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>Num(ini) C[aes(aris) Aug(usti)] / prov[incia] / Brita[nnia]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/10">
+      <tmUri>http://www.trismegistos.org/text/154503</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1911</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: Museum of London</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Slab</denkmaltyp>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>25.4</hoehe>
+      <breite>30.5</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/10">RIB 01, 00010.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>M. Aur. Eucarpo</name>
+            <praenomen>M.</praenomen>
+            <nomen>Aurelius*</nomen>
+            <cognomen>Eucarpus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="2">
+            <name>Aur. Eucarpia</name>
+            <praenomen/>
+            <nomen>Aurelia*</nomen>
+            <cognomen>Eucarpia</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>W</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>M(arco) / Aur(elio) Eucarpo / fil(io) pientissimo / vixit ann(os) XV / m(enses) VI Aur(elia) Euc/arpia ma(ter) possuit</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/11">
+      <tmUri>http://www.trismegistos.org/text/154504</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1787</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: Museum of
+                                    London</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Slab</denkmaltyp>
+      <material>Sandstone</material>
+      <hoehe>30.5</hoehe>
+      <breite>35.6</breite>
+      <tiefe>3.2</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0198</datierung_von>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/11">RIB 01, 00011.</lit_line>
+         <lit_line>CIL 07, 00025.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>Fl. Agricola</name>
+            <praenomen/>
+            <nomen>Flavius*</nomen>
+            <cognomen>Agricola</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status>9</status>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="2">
+            <name>Albia Faustina</name>
+            <praenomen/>
+            <nomen>Albia</nomen>
+            <cognomen>Faustina</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>W</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>D(is) M(anibus) / Fl(avius) Agricola mil(es) / leg(ionis) VI Vict(ricis) v(ixit) an(nos) / XLII d(ies) X Albia / Faustina coniugi / inconparabili / f(aciendum) c(uravit)</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/13">
+      <tmUri>http://www.trismegistos.org/text/154506</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1776</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung/>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Rocks</material>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0067</datierung_von>
+      <datierung_bis>0100</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/13">RIB 01, 00013.</lit_line>
+         <lit_line>CIL 07, 00027.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>Iul. Valens</name>
+            <praenomen/>
+            <nomen>Iulius*</nomen>
+            <cognomen>Valens</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="2">
+            <name>Flavio Attio</name>
+            <praenomen/>
+            <nomen>Flavius</nomen>
+            <cognomen>Attius</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>D(is) M(anibus) / Iul(ius) Valens / mil(es) leg(ionis) XX V(aleriae) V(ictricis) / an(norum) XL h(ic) s(itus) e(st) c(uram) a(gente) Flavio / Attio her(ede)</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/14">
+      <tmUri>http://www.trismegistos.org/text/154507</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1777</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>Clapham, London: Omnibus Clapham</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Statue base</denkmaltyp>
+      <material>Oolite</material>
+      <hoehe>81.3</hoehe>
+      <breite>61.0</breite>
+      <tiefe>43.2</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/14">RIB 01, 00014.</lit_line>
+         <lit_line>CIL 07, 00032.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>T. Licini Ascani</name>
+            <praenomen>T.</praenomen>
+            <nomen>Licinius</nomen>
+            <cognomen>Ascanius</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>Dis / Manib(us) / T(iti) Licini / Ascani / v(ivus) s(ibi) f(ecit)</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/16">
+      <tmUri>http://www.trismegistos.org/text/154509</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik/>
+      <fo_modern geonames="http://www.geonames.org/6618996/westminster-abbey.html">London</fo_modern>
+      <fundjahr>1869</fundjahr>
+      <fundstelle>Westminster Abbey</fundstelle>
+      <aufbewahrung/>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Sarcophagus</denkmaltyp>
+      <material>Oolite</material>
+      <hoehe>45.7</hoehe>
+      <breite>208.3</breite>
+      <tiefe>71.1</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/16">RIB 01, 00016.</lit_line>
+         <lit_line>CIL 07, 00033.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>Valeri Amandini</name>
+            <praenomen/>
+            <nomen>Valerius</nomen>
+            <cognomen>Amandinus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="2">
+            <name>Valeri Superventor</name>
+            <praenomen/>
+            <nomen>Valerius</nomen>
+            <cognomen>Superventor</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="3">
+            <name>(Valerius) Marcellus</name>
+            <praenomen/>
+            <nomen>Valerius</nomen>
+            <cognomen>Marcellus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>Memoriae Valeri Aman/dini Valeri Superven/tor et (Valerius) Marcellus patri fecer(unt)</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/17">
+      <tmUri>http://www.trismegistos.org/text/154510</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1669</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: Museum of London</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Limestone</material>
+      <hoehe>208.3</hoehe>
+      <breite>81.3</breite>
+      <tiefe>27.9</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/17">RIB 01, 00017.</lit_line>
+         <lit_line>CIL 07, 00023.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>Vivio Marciano</name>
+            <praenomen/>
+            <nomen>Vivius</nomen>
+            <cognomen>Marcianus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="2">
+            <name>Ianuaria Martina</name>
+            <praenomen/>
+            <nomen>Ianuaria</nomen>
+            <cognomen>Martina</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>W</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>D(is) M(anibus) / Vivio Marci/ano leg(ionis) II / Aug(ustae) Ianuaria / Martina coniunx / pientissima posu/it memoriam</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/18">
+      <tmUri>http://www.trismegistos.org/text/154511</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/db01429">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: British Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Marble, veined / coloured</material>
+      <hoehe>30.5</hoehe>
+      <breite>35.6</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/18">RIB 01, 00018.</lit_line>
+         <lit_line>CIL 07, 00026.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>G. Aci[lius] M[---]</name>
+            <praenomen>Gaius</praenomen>
+            <nomen>Acilius+</nomen>
+            <cognomen/>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>[3] / urni[n 3] / leg(ionis) XX [V(aleriae) V(ictricis)] / G(aius) Aci[lius] / M[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/19">
+      <tmUri>http://www.trismegistos.org/text/154512</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1843</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: British Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Rocks</material>
+      <hoehe>55.9</hoehe>
+      <breite>35.6</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/19">RIB 01, 00019.</lit_line>
+         <lit_line>CIL 07, 00024.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>[. 4.]r L.f. C[l.] (tribu) Celsu[s]</name>
+            <praenomen/>
+            <nomen/>
+            <cognomen>Celsus+</cognomen>
+            <supernomen/>
+            <tribus>Claudia</tribus>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="2">
+            <name>An[to]n. Dardanus Cu[r][sor]</name>
+            <praenomen/>
+            <nomen>Antonius*+</nomen>
+            <cognomen>Dardanus Cursor+</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="3">
+            <name>[Val]erius Pudens</name>
+            <praenomen/>
+            <nomen>Valerius+</nomen>
+            <cognomen>Pudens</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="4">
+            <name>[. 4.]s Probus</name>
+            <praenomen/>
+            <nomen/>
+            <cognomen>Probus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>[Dis Mani]bus / [3]r L(uci) f(ilius) C[l(audia)] (tribu) Celsu[s] / [3 s]pec(ulator) leg(ionis) [II A]ug(ustae) An/[to]n(ius) Dardanus Cu[r]/[sor Val]erius Pudens / [3]s Probus sp[e]c(ulatores) l[eg(ionis)]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/20">
+      <tmUri>http://www.trismegistos.org/text/154513</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/6691845/lower-clapton.html">London</fo_modern>
+      <fundjahr>1867</fundjahr>
+      <fundstelle>Lower Clapton</fundstelle>
+      <aufbewahrung>London: Museum of London</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Sarcophagus</denkmaltyp>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>50.8</hoehe>
+      <breite>205.7</breite>
+      <tiefe>48.3</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/20">RIB 01, 00020.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>G. Etrus[c]us</name>
+            <praenomen>Gaius</praenomen>
+            <nomen>Etruscus+</nomen>
+            <cognomen/>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="2">
+            <name>Ati[ae]</name>
+            <praenomen/>
+            <nomen>Atia+</nomen>
+            <cognomen/>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>W</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>G(aius) Etrus[c]us Ati[ae] / carissima[e s]uae / meritis eius</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/21">
+      <tmUri>http://www.trismegistos.org/text/154514</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1806</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: Museum of London</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Base</denkmaltyp>
+      <material>Oolite</material>
+      <hoehe>119.4</hoehe>
+      <breite>33.0</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0067</datierung_von>
+      <datierung_bis>0100</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/21">RIB 01, 00021.</lit_line>
+         <lit_line>CIL 07, 00028.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>Cl. Martinae</name>
+            <praenomen/>
+            <nomen>Claudia*</nomen>
+            <cognomen>Martina</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>W</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="2">
+            <name>Anencletus</name>
+            <praenomen/>
+            <nomen/>
+            <cognomen>Anencletus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>D(is) M(anibus) / Cl(audiae) Marti/nae an(norum) XIX / Anencle/tus / provinc(ialis) / coniugi / pientissimae / h(ic) s(ita) e(st)</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/23">
+      <tmUri>http://www.trismegistos.org/text/154516</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1884</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung/>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Rocks</material>
+      <hoehe>35.6</hoehe>
+      <breite>81.3</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/23">RIB 01, 00023.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>[T]ulliae Numidi[ae]</name>
+            <praenomen/>
+            <nomen>Tullia+</nomen>
+            <cognomen>Numidia+</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>W</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>[D(is) M(anibus)] et memoria[e] / [T]ulliae Numidi[ae] / [pie]ntissime femin[e] / [3] is reliqua cau[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/24">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/17649950">London Mithraeum</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1954</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: Museum of London</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>12.7</hoehe>
+      <breite>12.7</breite>
+      <tiefe>1.9</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/24">RIB 01, 00024.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3] COS [3] / [3]OS item[3] / [3]VM[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/25">
+      <tmUri>http://www.trismegistos.org/text/154518</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643741/city-of-london.html">London</fo_modern>
+      <fundjahr>1880</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung/>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Rocks</material>
+      <hoehe>22.9</hoehe>
+      <breite>35.6</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/25">RIB 01, 00025.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]M[3] / [3]LIV[3] / [3]TVS [3] / [3]VI ANL[3] / [3]CA STERT[3] / [3 ] NTINA co[niux]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/26">
+      <tmUri>http://www.trismegistos.org/text/154519</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1863</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: British Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>10.2</hoehe>
+      <breite>12.7</breite>
+      <tiefe>1.6</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/26">RIB 01, 00026.</lit_line>
+         <lit_line>CIL 07, NaN.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>Hellen[ic]</name>
+            <praenomen/>
+            <nomen/>
+            <cognomen/>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht/>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>[3]A[3] / [3] p(lus) m(inus) [3] / [3] Hellen[ic 3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/27">
+      <tmUri>http://www.trismegistos.org/text/154520</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1846</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: British Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Marble, veined / coloured</material>
+      <hoehe>17.8</hoehe>
+      <breite>15.2</breite>
+      <tiefe>4.4</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/27">RIB 01, 00027.</lit_line>
+         <lit_line>CIL 07, NaN.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>Prim[---]</name>
+            <praenomen/>
+            <nomen/>
+            <cognomen/>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht/>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>[Dis] / Ma[nibus] / Prim[3] / vix[it an(nos) 3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/28">
+      <tmUri>http://www.trismegistos.org/text/154521</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1851</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: British Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Limestone</material>
+      <hoehe>17.8</hoehe>
+      <breite>15.2</breite>
+      <tiefe>3.2</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/28">RIB 01, 00028.</lit_line>
+         <lit_line>CIL 07, NaN.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[anno]r(um) X[3] / [3 b]enem[erenti 3] / [3]e fi[li 3] / [3] XVI[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/29">
+      <tmUri>http://www.trismegistos.org/text/154522</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643741/city-of-london.html">London</fo_modern>
+      <fundjahr>1884</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: Museum of London</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Rocks</material>
+      <hoehe>109.2</hoehe>
+      <breite>66.0</breite>
+      <tiefe>61.0</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/29">RIB 01, 00029.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3 F]lavi[3] / [3 A]ntio[ch 3] / [3 anno]r(um) LXX[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/30">
+      <tmUri>http://www.trismegistos.org/text/154523</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1884</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: Museum of London</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp>Block</denkmaltyp>
+      <material>Limestone</material>
+      <hoehe>45.7</hoehe>
+      <breite>45.7</breite>
+      <tiefe>99.1</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/30">RIB 01, 00030.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>Iul [3] / S[3] / D[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/31">
+      <tmUri>http://www.trismegistos.org/text/154524</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/7117383/camomile-street.html">London</fo_modern>
+      <fundjahr>1876</fundjahr>
+      <fundstelle>Camomile Street</fundstelle>
+      <aufbewahrung/>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Oolite</material>
+      <hoehe>33.0</hoehe>
+      <breite>20.3</breite>
+      <tiefe>12.7</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/31">RIB 01, 00031.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>I V[3] / F V[3] / M [3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/32">
+      <tmUri>http://www.trismegistos.org/text/154525</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: Museum of London</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Marble, veined / coloured</material>
+      <hoehe>10.2</hoehe>
+      <breite>10.2</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/32">RIB 01, 00032.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>D(is) [M(anibus)] / [3]ita Cau[3] / [vi]xit [3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/33">
+      <tmUri>http://www.trismegistos.org/text/154526</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundjahr>1845</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: British Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble, veined / coloured</material>
+      <hoehe>8.9</hoehe>
+      <breite>10.2</breite>
+      <tiefe>1.9</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/33">RIB 01, 00033.</lit_line>
+         <lit_line>CIL 07, NaN.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3] ur / [3 a]n(nos) II</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/34">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/17649950">London Mithraeum</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643741/city-of-london.html">London</fo_modern>
+      <fundjahr>1954</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung/>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp>Block</denkmaltyp>
+      <material>Sandstone</material>
+      <hoehe>50.8</hoehe>
+      <breite>38.1</breite>
+      <tiefe>30.5</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/34">RIB 01, 00034.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]bent[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/35">
+      <tmUri>http://www.trismegistos.org/text/154528</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643741/city-of-london.html">London</fo_modern>
+      <fundjahr>1884</fundjahr>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>London: Museum of London</aufbewahrung>
+      <dekor/>
+      <i_gattung>Building/dedicatory inscription</i_gattung>
+      <denkmaltyp>Block</denkmaltyp>
+      <material>Rocks</material>
+      <hoehe>12.7</hoehe>
+      <breite>58.4</breite>
+      <tiefe>48.3</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/35">RIB 01, 00035.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>Candidi</name>
+            <praenomen/>
+            <nomen/>
+            <cognomen>Candidus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>Candidi</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/36">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79574">Londinium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643743/london.html">London</fo_modern>
+      <fundstelle>London</fundstelle>
+      <aufbewahrung>: Roach Smith Collection</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp>Slab</denkmaltyp>
+      <material>Marble, white</material>
+      <hoehe>5.1</hoehe>
+      <breite>17.8</breite>
+      <tiefe>1.9</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/36">RIB 01, 00036.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>INN</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/37">
+      <tmUri>http://www.trismegistos.org/text/154530</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik/>
+      <fo_modern geonames="http://www.geonames.org/7670547/greenwich-park.html">London</fo_modern>
+      <fundjahr>1902</fundjahr>
+      <fundstelle>Greenwich Park</fundstelle>
+      <aufbewahrung>London: British Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Sandstone</material>
+      <hoehe>17.8</hoehe>
+      <breite>15.2</breite>
+      <tiefe>7.6</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/37">RIB 01, 00037.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]CVLAR / [3]NATVS / [3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/38">
+      <tmUri>http://www.trismegistos.org/text/154531</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik/>
+      <fo_modern geonames="http://www.geonames.org/7670547/greenwich-park.html">London</fo_modern>
+      <fundjahr>1902</fundjahr>
+      <fundstelle>Greenwich Park</fundstelle>
+      <aufbewahrung>London: British Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble, white</material>
+      <hoehe>17.8</hoehe>
+      <breite>11.4</breite>
+      <tiefe>1.9</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/38">RIB 01, 00038.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3] / NV[3] / CV[3] / MO[3] / S[3] / [3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/39">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik/>
+      <fo_modern geonames="http://www.geonames.org/7670547/greenwich-park.html">London</fo_modern>
+      <fundjahr>1902</fundjahr>
+      <fundstelle>Greenwich Park</fundstelle>
+      <aufbewahrung>London: British Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble, white</material>
+      <frg n="1">
+         <hoehe>-7.6</hoehe>
+         <breite>-12.7</breite>
+         <tiefe>-1.9</tiefe>
+      </frg>
+      <frg n="2">
+         <hoehe>-5.1</hoehe>
+         <breite>-5.1</breite>
+         <tiefe>-1.9</tiefe>
+      </frg>
+      <frg n="3">
+         <hoehe>-7.6</hoehe>
+         <breite>-7.6</breite>
+         <tiefe>-1.9</tiefe>
+      </frg>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/39">RIB 01, 00039.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]ASS[3] // [3]AI[3] // [3]T</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/40">
+      <tmUri>http://www.trismegistos.org/text/154533</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79729">Vagniacis</fo_antik>
+      <fo_modern>London</fo_modern>
+      <fundjahr>1760</fundjahr>
+      <fundstelle/>
+      <aufbewahrung>Maidstone: Maidstone Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp>Block</denkmaltyp>
+      <material>Limestone</material>
+      <hoehe>61.0</hoehe>
+      <breite>45.7</breite>
+      <tiefe>48.3</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/40">RIB 01, 00040.</lit_line>
+         <lit_line>CIL 07, NaN.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>X</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/41">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79439">Durovernum</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2653877/canterbury.html">Canterbury</fo_modern>
+      <fundjahr>1911</fundjahr>
+      <fundstelle>Canterbury</fundstelle>
+      <aufbewahrung>Canterbury: Canterbury Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>15.2</hoehe>
+      <breite>29.2</breite>
+      <tiefe>4.4</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/41">RIB 01, 00041.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>[U]lpiae</name>
+            <praenomen/>
+            <nomen>Ulpia+</nomen>
+            <cognomen/>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>W</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>[2 U]lpiae fil[iae 3] / [3]a mater[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/42">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79439">Durovernum</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2653877/canterbury.html">Canterbury</fo_modern>
+      <fundjahr>1935</fundjahr>
+      <fundstelle>Canterbury</fundstelle>
+      <aufbewahrung>Canterbury: Canterbury Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>14.0</hoehe>
+      <breite>10.2</breite>
+      <tiefe>2.5</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/42">RIB 01, 00042.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]CTV / [3]VS / [3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/43">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79439">Durovernum</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2653877/canterbury.html">Canterbury</fo_modern>
+      <fundjahr>1922</fundjahr>
+      <fundstelle>Canterbury</fundstelle>
+      <aufbewahrung>Canterbury: St. Augustine's Missionary College, Canterbury</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>11.4</hoehe>
+      <breite>12.1</breite>
+      <tiefe>2.0</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/43">RIB 01, 00043.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>[---]erna</name>
+            <praenomen/>
+            <nomen/>
+            <cognomen/>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht/>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>[D(is)] M(anibus) / [3]erna / [ann(orum)] XIV / [3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/44">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79439">Durovernum</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2653877/canterbury.html">Canterbury</fo_modern>
+      <fundjahr>1952</fundjahr>
+      <fundstelle>Canterbury</fundstelle>
+      <aufbewahrung>Canterbury: Canterbury Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Limestone</material>
+      <hoehe>5.1</hoehe>
+      <breite>12.7</breite>
+      <tiefe>2.5</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/44">RIB 01, 00044.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]I[3] / [3]ISI[2]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/45">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79439">Durovernum</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2653877/canterbury.html">Canterbury</fo_modern>
+      <fundstelle>Canterbury</fundstelle>
+      <aufbewahrung>London: British Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Rocks</material>
+      <hoehe>27.9</hoehe>
+      <breite>20.3</breite>
+      <tiefe>20.3</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/45">RIB 01, 00045.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]GOBAN[3] / [3]OGVLP[3] / [3]ANTIS[3] / [3]VS[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/46">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1926</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp>Slab</denkmaltyp>
+      <material>Marble (colour indefinite)</material>
+      <frg n="1">
+         <hoehe>-12.7</hoehe>
+         <breite>-16.5</breite>
+         <tiefe>-3.2</tiefe>
+      </frg>
+      <frg n="2">
+         <hoehe>-10.2</hoehe>
+         <breite>-14.0</breite>
+         <tiefe>-3.2</tiefe>
+      </frg>
+      <frg n="3">
+         <hoehe>-12.7</hoehe>
+         <breite>-12.7</breite>
+         <tiefe>-3.2</tiefe>
+      </frg>
+      <frg n="4">
+         <hoehe>-18.4</hoehe>
+         <breite>-14.0</breite>
+         <tiefe>-3.2</tiefe>
+      </frg>
+      <frg n="5">
+         <hoehe>-11.4</hoehe>
+         <breite>-8.9</breite>
+         <tiefe>-3.2</tiefe>
+      </frg>
+      <frg n="6">
+         <hoehe>-8.3</hoehe>
+         <breite>-10.2</breite>
+         <tiefe>-3.2</tiefe>
+      </frg>
+      <frg n="7">
+         <hoehe>-17.8</hoehe>
+         <breite>-17.8</breite>
+         <tiefe>-3.2</tiefe>
+      </frg>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/46">RIB 01, 00046.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3] IM[3] / [3] DIV[I 3] // [3]VM[3] // [3]M[3] // [3]A[3] / [3]M I[3] // [3]V[3] / [3]IB[3] // [3]PR[3] // [3]ISVI[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/47">
+      <tmUri>http://www.trismegistos.org/text/154540</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1900</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>12.7</hoehe>
+      <breite>20.3</breite>
+      <tiefe>4.1</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/47">RIB 01, 00047.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]avit</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/48">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1934</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung/>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble (colour indefinite)</material>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/48">RIB 01, 00048.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]EPI[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/49">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>24.1</hoehe>
+      <breite>30.5</breite>
+      <tiefe>4.4</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/49">RIB 01, 00049.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>IMI</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/50">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>12.7</hoehe>
+      <breite>12.7</breite>
+      <tiefe>3.5</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/50">RIB 01, 00050.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]IT[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/51">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>14.0</hoehe>
+      <breite>15.2</breite>
+      <tiefe>4.1</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/51">RIB 01, 00051.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]ND[3] / [3]IOC[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/52">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1925</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>10.2</hoehe>
+      <breite>15.2</breite>
+      <tiefe>3.8</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/52">RIB 01, 00052.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]TISI[3] / [3]V[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/53">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Bronze</material>
+      <hoehe>8.6</hoehe>
+      <breite>7.6</breite>
+      <tiefe>.3</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/53">RIB 01, 00053.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>A</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/54">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1931</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>12.7</hoehe>
+      <breite>7.0</breite>
+      <tiefe>2.5</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/54">RIB 01, 00054.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>L</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/55">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>11.4</hoehe>
+      <breite>15.2</breite>
+      <tiefe>3.2</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/55">RIB 01, 00055.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]P</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/56">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1924</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp>Slab</denkmaltyp>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>25.4</hoehe>
+      <breite>17.8</breite>
+      <tiefe>2.2</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/56">RIB 01, 00056.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>T</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/57">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1931</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>12.7</hoehe>
+      <breite>11.4</breite>
+      <tiefe>2.5</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/57">RIB 01, 00057.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>T</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/58">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1923</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp>Architectural member</denkmaltyp>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>3.8</hoehe>
+      <breite>11.4</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/58">RIB 01, 00058.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>VIII</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/59">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1925</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp>Architectural member</denkmaltyp>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>15.2</hoehe>
+      <breite>11.4</breite>
+      <tiefe>3.8</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/59">RIB 01, 00059.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]XX</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/60">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1926</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp>Architectural member</denkmaltyp>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>19.1</hoehe>
+      <breite>20.3</breite>
+      <tiefe>5.7</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/60">RIB 01, 00060.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>XXVIII // I[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/61">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Richborough</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1923</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp>Slab</denkmaltyp>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>48.3</hoehe>
+      <breite>61.0</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/61">RIB 01, 00061.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>LIIII LIII</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/62">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1925</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp>Architectural member</denkmaltyp>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>7.6</hoehe>
+      <breite>11.4</breite>
+      <tiefe>2.5</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/62">RIB 01, 00062.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>LXIV</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/63">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp>Architectural member</denkmaltyp>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>53.3</hoehe>
+      <breite>45.7</breite>
+      <tiefe>12.7</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/63">RIB 01, 00063.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>XXXC</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/64">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1928</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>21.6</hoehe>
+      <breite>27.9</breite>
+      <tiefe>4.1</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/64">RIB 01, 00064.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>[3]CL</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/65">
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79664">Rutupiae</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2639391/richborough.html">Richborough</fo_modern>
+      <fundjahr>1928</fundjahr>
+      <fundstelle>Richborough</fundstelle>
+      <aufbewahrung>Richborough: Richborough Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp/>
+      <material>Marble (colour indefinite)</material>
+      <hoehe>17.8</hoehe>
+      <breite>20.3</breite>
+      <tiefe>2.5</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0376</datierung_von>
+      <datierung_bis>0400</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/65">RIB 01, 00065.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <textus>DLXX[3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/66">
+      <tmUri>http://www.trismegistos.org/text/154559</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79647">Lympne</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2643308/lympne.html">Lympne</fo_modern>
+      <fundjahr>1850</fundjahr>
+      <fundstelle>Lympne</fundstelle>
+      <aufbewahrung>London: British Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung>Building/dedicatory inscription</i_gattung>
+      <denkmaltyp>Altar</denkmaltyp>
+      <material>Limestone</material>
+      <hoehe>88.9</hoehe>
+      <breite>39.4</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/66">RIB 01, 00066.</lit_line>
+         <lit_line>CIL 07, 00018.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>L. Aufidius Pantera</name>
+            <praenomen>L.</praenomen>
+            <nomen>Aufidius</nomen>
+            <cognomen>Pantera</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>[N]eptu[no] / aram / L(ucius) Aufidius / Pantera / praefect(us) / clas(sis) Brit(annicae)</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/67">
+      <tmUri>http://www.trismegistos.org/text/154560</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79368">Calleva</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2637846/silchester.html">Silchester</fo_modern>
+      <fundjahr>1744</fundjahr>
+      <fundstelle>Silchester</fundstelle>
+      <aufbewahrung/>
+      <dekor/>
+      <i_gattung>Building/dedicatory inscription</i_gattung>
+      <denkmaltyp>Slab</denkmaltyp>
+      <material>Marble, veined / coloured</material>
+      <hoehe>50.8</hoehe>
+      <breite>45.7</breite>
+      <tiefe>4.1</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0100</datierung_von>
+      <datierung_bis>0125</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/67">RIB 01, 00067.</lit_line>
+         <lit_line>CIL 07, 00006.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>T. Tammon[ius] Saeni Tammon[i] [fil.] Vitalis</name>
+            <praenomen>T.</praenomen>
+            <nomen>Tammonius+</nomen>
+            <cognomen>Tammonius+ Vitalis</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="2">
+            <name>Saeni Tammon[i]</name>
+            <praenomen/>
+            <nomen>Saenius</nomen>
+            <cognomen>Tammonius+</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>Deo Her[culi] / Saegon[2] / T(itus) Tammon[ius] / Saeni Tammon[i fil(ius)] / Vitalis ob hono[rem] / [3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/68">
+      <tmUri>http://www.trismegistos.org/text/154561</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79368">Calleva</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2637846/silchester.html">Silchester</fo_modern>
+      <fundjahr>1732</fundjahr>
+      <fundstelle>Silchester</fundstelle>
+      <aufbewahrung/>
+      <dekor/>
+      <i_gattung>Building/dedicatory inscription</i_gattung>
+      <denkmaltyp/>
+      <material>Sandstone</material>
+      <hoehe>50.8</hoehe>
+      <breite>45.7</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/68">RIB 01, 00068.</lit_line>
+         <lit_line>CIL 07, 00007.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>Iuliae Aug.</name>
+            <praenomen/>
+            <nomen>Iulia</nomen>
+            <cognomen>Augusta*</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>W</geschlecht>
+            <status>0</status>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="2">
+            <name>M. Sabinius Victor</name>
+            <praenomen>M.</praenomen>
+            <nomen>Sabinius</nomen>
+            <cognomen>Victor</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>Iuliae Aug(ustae) / matri se/natus et / castror(um) / M(arcus) Sabinius / Victor ob / [3]</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/108">
+      <tmUri>http://www.trismegistos.org/text/154601</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79549">Korinion/Cironium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2652995/cirencester.html">Cirencester</fo_modern>
+      <fundjahr>1835</fundjahr>
+      <fundstelle>Cirencester</fundstelle>
+      <aufbewahrung>Cirencester: Corinium Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Oolite</material>
+      <hoehe>208.3</hoehe>
+      <breite>78.7</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/108">RIB 01, 00108.</lit_line>
+         <lit_line>CIL 07, 00066.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>Dannicus</name>
+            <praenomen/>
+            <nomen/>
+            <cognomen>Dannicus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status>2</status>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="2">
+            <name>Albani</name>
+            <praenomen/>
+            <nomen/>
+            <cognomen>Albanus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status>3</status>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="3">
+            <name>Fulvius Natalis</name>
+            <praenomen/>
+            <nomen>Fulvius</nomen>
+            <cognomen>Natalis</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="4">
+            <name>Fl[av]ius Bitucus</name>
+            <praenomen/>
+            <nomen>Flavius+</nomen>
+            <cognomen>Bitucus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status/>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>Dannicus eq(u)es alae / Indian(ae) tur(ma) Albani / stip(endiorum) XVI cives Raur(icus) / cur(averunt) Fulvius Natalis it / Fl[av]ius Bitucus ex testame(nto) / h(ic) s(itus) e(st)</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/109">
+      <tmUri>http://www.trismegistos.org/text/154602</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79549">Korinion/Cironium</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2652995/cirencester.html">Cirencester</fo_modern>
+      <fundjahr>1836</fundjahr>
+      <fundstelle>Cirencester</fundstelle>
+      <aufbewahrung>Cirencester: Corinium Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung>Epitaph</i_gattung>
+      <denkmaltyp>Grave monument</denkmaltyp>
+      <material>Oolite</material>
+      <hoehe>210.8</hoehe>
+      <breite>81.3</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0076</datierung_von>
+      <datierung_bis>0125</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/109">RIB 01, 00109.</lit_line>
+         <lit_line>CIL 07, 00068.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>Sextus Valerius Genialis</name>
+            <praenomen>Sextus</praenomen>
+            <nomen>Valerius</nomen>
+            <cognomen>Genialis</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status>2</status>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="2">
+            <name>Genialis</name>
+            <praenomen/>
+            <nomen/>
+            <cognomen>Genialis</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht/>
+            <status>3</status>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>Sextus Vale/rius Genialis / eq(u)es alae Trhaec(um) / civis Frisia(v)us tur(ma) / Genialis an(norum) XXXX st(ipendiorum) XX / h(ic) s(itus) e(st) (h)e(res) f(aciendum) c(uravit)</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/146">
+      <tmUri>http://www.trismegistos.org/text/154639</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79299">Aquae Sulis</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2656173/bath.html">Bath</fo_modern>
+      <fundjahr>1809</fundjahr>
+      <fundstelle>Bath</fundstelle>
+      <aufbewahrung>Bath: Roman Baths Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung>Building/dedicatory inscription</i_gattung>
+      <denkmaltyp>Altar</denkmaltyp>
+      <material>Oolite</material>
+      <hoehe>111.8</hoehe>
+      <breite>45.7</breite>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <datierung_von>0043</datierung_von>
+      <datierung_bis>0410</datierung_bis>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/146">RIB 01, 00146.</lit_line>
+         <lit_line>CIL 07, 00042.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>G. Curiatius Saturninus</name>
+            <praenomen>Gaius</praenomen>
+            <nomen>Curiatius</nomen>
+            <cognomen>Saturninus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status>9</status>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>Deae Su/li Min(ervae) et Nu/min(ibus) Aug(ustorum) G(aius) / Curiatius / Saturninus / leg(ionis) II Aug(ustae) / pro se su/isque / v(otum) s(olvit) l(ibens) m(erito)</textus>
+   </record>
+   <record ref="http://romaninscriptionsofbritain.org/rib/inscriptions/328">
+      <tmUri>http://www.trismegistos.org/text/154821</tmUri>
+      <provinz>Britannia</provinz>
+      <land>United Kingdom</land>
+      <fo_antik pleiades="http://pleiades.stoa.org/places/79532">Isca</fo_antik>
+      <fo_modern geonames="http://www.geonames.org/2654093/caerleon.html">Caerleon</fo_modern>
+      <fundjahr>1800</fundjahr>
+      <fundstelle>Caerleon</fundstelle>
+      <aufbewahrung>Caerleon: Caerleon Museum</aufbewahrung>
+      <dekor/>
+      <i_gattung/>
+      <denkmaltyp>Block</denkmaltyp>
+      <material>Rocks</material>
+      <hoehe>106.7</hoehe>
+      <breite>43.2</breite>
+      <tiefe>20.3</tiefe>
+      <metrik/>
+      <sprache>Latin</sprache>
+      <beleg>provisional</beleg>
+      <bearbeiter>SDV</bearbeiter>
+      <datum>2011-06-11</datum>
+      <lit>
+         <lit_line href="http://romaninscriptionsofbritain.org/rib/inscriptions/328">RIB 01, 00328.</lit_line>
+         <lit_line>CIL 07, 00104.</lit_line>
+      </lit>
+      <kommentar>
+         <komm_line/>
+      </kommentar>
+      <personen>
+         <person n="1">
+            <name>[P]u[pie]nio Maximo</name>
+            <praenomen/>
+            <nomen>Pupienius+</nomen>
+            <cognomen>Maximus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status>1</status>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+         <person n="2">
+            <name>Urbano</name>
+            <praenomen/>
+            <nomen/>
+            <cognomen>Urbanus</cognomen>
+            <supernomen/>
+            <tribus/>
+            <origo/>
+            <geschlecht>M</geschlecht>
+            <status>1</status>
+            <beruf/>
+            <l_jahre/>
+            <l_monate/>
+            <l_tage/>
+            <l_stunden/>
+         </person>
+      </personen>
+      <textus>Dedicat[um] / VIIII a(nte) d(iem) K[al(endas)] / Oc[tobr]es / [P]u[pie]nio / Maximo II / et Urbano / co(n)s(ulibus)</textus>
+   </record>
+</EDH>
