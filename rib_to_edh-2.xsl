@@ -1079,8 +1079,11 @@
                                         select=" concat('http://romaninscriptionsofbritain.org/rib/inscriptions/', $currentinscription//t:idno[@type='rib'])"
                                     />
                                 </xsl:attribute>
+                                <xsl:if test="matches(.,'[a-z]')"><xsl:value-of
+                                    select="concat('RIB ', format-number(number(substring-before(.,'[a-z]')), '0000'), matches(.,'[a-z]'), '.')"/>
+                                </xsl:if>
                                 <xsl:value-of
-                                    select="concat('RIB 01, ', format-number(., '00000'), '.')"/>
+                                    select="concat('RIB ', format-number(., '0000'), '.')"/>
                             </lit_line>
                             <!--     <xsl:choose>
                         <xsl:when test="$currentinscription//t:div[@type='bibliography'][contains(., 'No bibliography')]">
@@ -1094,9 +1097,28 @@
                                 <xsl:if test="contains(.,'CIL')">
                                     <!--CIL-->
                                     <xsl:variable name="item">
-                                        <xsl:value-of
-                                            select="format-number(number(t:biblScope[@unit='item'])  , '00000')"
-                                        />
+                                        <xsl:choose>
+                                            <xsl:when test=".//t:biblScope[@unit='pp']">
+                                                <xsl:value-of select=".//t:biblScope[@unit='pp']"/>
+                                            </xsl:when>
+                                            <xsl:when test="matches(.//t:biblScope[@unit='item'],'[a-z]')">
+                                            <xsl:variable name="number">
+                                                <xsl:analyze-string select=".//t:biblScope[@unit='item']" regex="(\d+)">
+                                                    <xsl:matching-substring><xsl:value-of select="regex-group(1)"/>
+                                                    </xsl:matching-substring>    
+                                                </xsl:analyze-string></xsl:variable>
+                                            <xsl:variable name="letter">
+                                                <xsl:analyze-string select=".//t:biblScope[@unit='item']" regex="([a-z])">
+                                            <xsl:matching-substring><xsl:value-of select="regex-group(1)"/>
+                                            </xsl:matching-substring>    
+                                            </xsl:analyze-string></xsl:variable>
+                                            
+                                            <xsl:value-of select="format-number($number, '00000')"/>
+                                            <xsl:value-of select="$letter"/>
+                                           </xsl:when>
+                                        <xsl:otherwise><xsl:value-of
+                                            select="format-number(number(.//t:biblScope[@unit='item']), '00000')"
+                                        /></xsl:otherwise></xsl:choose>
                                     </xsl:variable>
                                     <lit_line>
                                         <xsl:value-of select="concat('CIL ', '07, ', $item,'.')"/>
@@ -1176,6 +1198,12 @@
                                                 </xsl:if>
                                             </xsl:variable>
                                             <xsl:choose>
+                                                <xsl:when test="$praenomen = 'Sextus'">
+                                                    <xsl:text>Sex.</xsl:text>
+                                                </xsl:when>
+                                                <xsl:when test="$praenomen = 'Gaius'">
+                                                    <xsl:text>C.</xsl:text>
+                                                </xsl:when>
                                                 <xsl:when test="$praenomen = 'Caius'">
                                                   <xsl:text>C.</xsl:text>
                                                 </xsl:when>
@@ -1320,11 +1348,11 @@
                                         <geschlecht>
                                             <xsl:choose>
                                                 <xsl:when
-                                                    test="ends-with(.//t:name[@type='praenomen'][1]/@nymRef, 'us') or ends-with(.//t:name[1][@type='gentilicium']/@nymRef, 'us') or ends-with(.//t:name[1][@type='cognomen']/@nymRef, 'us')">
+                                                    test="ends-with(.//t:name[@type='praenomen']/@nymRef, 'us') or ends-with(.//t:name[@type='gentilicium']/@nymRef, 'us') or ends-with(.//t:name[@type='cognomen']/@nymRef, 'us')">
                                                   <xsl:text>M</xsl:text>
                                                 </xsl:when>
                                                 <xsl:when
-                                                  test="ends-with(.//t:name[1][@type='praenomen']/@nymRef, 'a') or ends-with(.//t:name[1][@type='gentilicium']/@nymRef, 'a') or ends-with(.//t:name[1][@type='cognomen']/@nymRef, 'a')">
+                                                  test="ends-with(.//t:name[@type='praenomen']/@nymRef, 'a') or ends-with(.//t:name[@type='gentilicium']/@nymRef, 'a') or ends-with(.//t:name[@type='cognomen']/@nymRef, 'a')">
                                                   <xsl:text>W</xsl:text>
                                                 </xsl:when>
                                                 <xsl:otherwise>
