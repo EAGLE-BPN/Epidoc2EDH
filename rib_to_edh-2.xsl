@@ -6,21 +6,24 @@
     exclude-result-prefixes="html xs t skos rdf xi" version="2.0">
 
     <!-- 
-     IRT - generate table for EDH
+   created from  IRT - generate table for EDH
      RV 07-07-2009 ; GB 2009-12-08
-     latest revision: 2012-06-21 GB
-
-     RIB xml to EDH flat file (one xsl transformation)
-     updates: 2014-03-10 PML
-     updates: 2014-03-18 SV, PML
-     updates: 2014-04-02 PML
-     updates 2014-04-04 GB and PML
-    updates 2014-04-09 JC, FG, PML 
-    updates 2014-04-25 SV, PML
-    updates 2014-05-08 PML (some changes for validation of results to xml2edh prepared by FG)
-    updates 2014-06-04 GB and PML
+     
     
-     to be run on RIB files list
+     RIB xml to EDH  in one xsl transformation
+     
+     updates: 2014-03-10 Pietro Liuzzo
+     updates: 2014-03-18 Scott Vanderbilt, Pietro Liuzzo
+     updates: 2014-04-02 Pietro Liuzzo
+     updates 2014-04-04 Gabriel Bodard and Pietro Liuzzo
+    updates 2014-04-09 James Cowey, Frank Grieshaber, Pietro Liuzzo 
+    updates 2014-04-25 Scott Vanderbilt, James Cowey, Pietro Liuzzo
+    updates 2014-05-08 Pietro Liuzzo (some changes for validation of results to xml2edh prepared by Frank Grieshaber)
+    updates 2014-06-04 Gabriel Bodard and Pietro Liuzzo
+    updates 2014-07-02 Francisca Feraudi Gruénais and Pietro Liuzzo
+    
+   
+     to be run on:  RIB files list, produces one file with all records.
     
      
 -->
@@ -858,7 +861,7 @@
                                                   <xsl:when
                                                   test="current()//t:support/t:dimensions[not(@n|@source)]//t:width/@quantity">
                                                   <xsl:value-of
-                                                  select="format-number(xs:decimal(current()//t:support/t:dimensions[not(@n|@source)]//t:width/@quantity) * 100, '-#.0')"
+                                                  select="format-number(xs:decimal(current()//t:support/t:dimensions[not(@n|@source)]//t:width[1]/@quantity) * 100, '-#.0')"
                                                   />
                                                   </xsl:when>
                                                   <xsl:otherwise>
@@ -1074,11 +1077,11 @@
                         </datum>
                         <lit>
                             <lit_line>
-                                <xsl:attribute name="href">
+<!--                                <xsl:attribute name="href">
                                     <xsl:value-of
                                         select=" concat('http://romaninscriptionsofbritain.org/rib/inscriptions/', $currentinscription//t:idno[@type='rib'])"
                                     />
-                                </xsl:attribute>
+                                </xsl:attribute>-->
                                 <xsl:if test="matches(.,'[a-z]')"><xsl:value-of
                                     select="concat('RIB ', format-number(number(substring-before(.,'[a-z]')), '0000'), matches(.,'[a-z]'), '.')"/>
                                 </xsl:if>
@@ -1101,14 +1104,14 @@
                                             <xsl:when test=".//t:biblScope[@unit='pp']">
                                                 <xsl:value-of select=".//t:biblScope[@unit='pp']"/>
                                             </xsl:when>
-                                            <xsl:when test="matches(.//t:biblScope[@unit='item'],'[a-z]')">
+                                            <xsl:when test="matches(.//t:biblScope[@unit='item' and position()=1],'[a-z]')">
                                             <xsl:variable name="number">
-                                                <xsl:analyze-string select=".//t:biblScope[@unit='item']" regex="(\d+)">
+                                                <xsl:analyze-string select=".//t:biblScope[@unit='item' and position() = 1]" regex="(\d+)">
                                                     <xsl:matching-substring><xsl:value-of select="regex-group(1)"/>
                                                     </xsl:matching-substring>    
                                                 </xsl:analyze-string></xsl:variable>
                                             <xsl:variable name="letter">
-                                                <xsl:analyze-string select=".//t:biblScope[@unit='item']" regex="([a-z])">
+                                                <xsl:analyze-string select=".//t:biblScope[@unit='item' and position() = 1]" regex="([a-z])">
                                             <xsl:matching-substring><xsl:value-of select="regex-group(1)"/>
                                             </xsl:matching-substring>    
                                             </xsl:analyze-string></xsl:variable>
@@ -1117,7 +1120,7 @@
                                             <xsl:value-of select="$letter"/>
                                            </xsl:when>
                                         <xsl:otherwise><xsl:value-of
-                                            select="format-number(number(.//t:biblScope[@unit='item']), '00000')"
+                                            select="format-number(number(.//t:biblScope[@unit='item' and position() = 1]), '00000')"
                                         /></xsl:otherwise></xsl:choose>
                                     </xsl:variable>
                                     <lit_line>
@@ -1269,10 +1272,6 @@
                                                   <xsl:value-of select="."/>
                                                   </xsl:non-matching-substring>
                                                 </xsl:analyze-string>
-                                                <xsl:if
-                                                  test=".//t:name[@type='gentilicium'][1]/t:expan or .//t:name[@type='gentilicium'][1]//t:expan">
-                                                  <xsl:text>*</xsl:text>
-                                                </xsl:if>
                                                 <xsl:choose>
                                                   <xsl:when
                                                   test=".//t:name[@type='gentilicium'][1]/t:supplied[@reason='lost'] 
@@ -1289,6 +1288,11 @@
                                                   <xsl:text>++</xsl:text>
                                                   </xsl:when>
                                                 </xsl:choose>
+                                                <xsl:if
+                                                    test=".//t:name[@type='gentilicium'][1]/t:expan or .//t:name[@type='gentilicium'][1]//t:expan">
+                                                    <xsl:text>*</xsl:text>
+                                                </xsl:if>
+                                                
                                             </xsl:if>
                                         </nomen>
                                         <cognomen>
@@ -1302,9 +1306,7 @@
                                                   <xsl:value-of select="."/>
                                                   </xsl:non-matching-substring>
                                                 </xsl:analyze-string>
-                                                <xsl:if test="child::t:expan or descendant::t:expan">
-                                                  <xsl:text>*</xsl:text>
-                                                </xsl:if>
+                                               
                                                 <xsl:choose>
                                                   <xsl:when
                                                   test="child::t:supplied[@reason='lost'] 
@@ -1321,6 +1323,9 @@
                                                   <xsl:text>++</xsl:text>
                                                   </xsl:when>
                                                 </xsl:choose>
+                                                <xsl:if test="child::t:expan or descendant::t:expan">
+                                                    <xsl:text>*</xsl:text>
+                                                </xsl:if>
                                                 <xsl:if test="not(position()=last())">
                                                   <xsl:text> </xsl:text>
                                                 </xsl:if>
@@ -1342,17 +1347,37 @@
                                                 <!--<xsl:if test="not(position()=last())">
                                                 <xsl:text> </xsl:text>
                                             </xsl:if>-->
+                                                <xsl:choose>
+                                                    <xsl:when
+                                                        test="child::t:supplied[@reason='lost'] 
+                                                        or descendant::t:supplied[@reason='lost'] 
+                                                        or parent::t:supplied[@reason='lost']
+                                                        or ancestor::t:supplied[@reason='lost']">
+                                                        <xsl:text>+</xsl:text>
+                                                    </xsl:when>
+                                                    <xsl:when
+                                                        test="child::t:del 
+                                                        or descendant::t:del 
+                                                        or parent::t:del
+                                                        or ancestor::t:del">
+                                                        <xsl:text>++</xsl:text>
+                                                    </xsl:when>
+                                                </xsl:choose>
+                                                <xsl:if test="child::t:expan or descendant::t:expan">
+                                                    <xsl:text>*</xsl:text>
+                                                </xsl:if>
+                                                
                                             </xsl:for-each>
                                         </tribus>
                                         <origo/>
                                         <geschlecht>
                                             <xsl:choose>
                                                 <xsl:when
-                                                    test="ends-with(.//t:name[@type='praenomen']/@nymRef, 'us') or ends-with(.//t:name[@type='gentilicium']/@nymRef, 'us') or ends-with(.//t:name[@type='cognomen']/@nymRef, 'us')">
+                                                    test="ends-with(.//t:name[@type='praenomen' and parent::t:persName[not(descendant::t:persName) and position() =1]]/@nymRef, 'us') or ends-with(.//t:name[@type='gentilicium' and parent::t:persName[not(descendant::t:persName)]  and position() =1]/@nymRef, 'us') or ends-with(.//t:name[@type='cognomen' and parent::t:persName[not(descendant::t:persName)] and position() =1]/@nymRef, 'us')">
                                                   <xsl:text>M</xsl:text>
                                                 </xsl:when>
                                                 <xsl:when
-                                                  test="ends-with(.//t:name[@type='praenomen']/@nymRef, 'a') or ends-with(.//t:name[@type='gentilicium']/@nymRef, 'a') or ends-with(.//t:name[@type='cognomen']/@nymRef, 'a')">
+                                                    test="ends-with(.//t:name[@type='praenomen' and parent::t:persName[not(descendant::t:persName)] and position() =1]/@nymRef, 'a') or ends-with(.//t:name[@type='gentilicium' and parent::t:persName[not(descendant::t:persName)] and position() =1]/@nymRef, 'a') or ends-with(.//t:name[@type='cognomen' and parent::t:persName[not(descendant::t:persName)] and position() =1]/@nymRef, 'a')">
                                                   <xsl:text>W</xsl:text>
                                                 </xsl:when>
                                                 <xsl:otherwise>
